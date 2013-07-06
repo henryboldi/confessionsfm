@@ -21,7 +21,7 @@ function __construct() {
     
      function get_data_from_post() {
         $data['confession'] = $this->input->post('confession', TRUE); 
-        $data['confesseddatetime'] = $this->input->post('confesseddatetime', TRUE);
+        $data['confessiondatetime'] = $this->input->post('confessiondatetime', TRUE);
         $data['pageid'] = $this->input->post('pageid', TRUE);
         return $data;
     }

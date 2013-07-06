@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 05, 2013 at 10:25 PM
+-- Generation Time: Jul 05, 2013 at 10:37 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.4.4
 
@@ -23,28 +23,43 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `comments`
+--
+
+CREATE TABLE `comments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `comment` text NOT NULL,
+  `commentdatetime` datetime NOT NULL,
+  `confessionid` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `confessions`
 --
 
 CREATE TABLE `confessions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `confession` text NOT NULL,
-  `confesseddatetime` datetime NOT NULL,
+  `confessiondatetime` datetime NOT NULL,
   `pageid` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `confessions`
 --
 
-INSERT INTO `confessions` (`id`, `confession`, `confesseddatetime`, `pageid`) VALUES
+INSERT INTO `confessions` (`id`, `confession`, `confessiondatetime`, `pageid`) VALUES
 (1, 'This is a test confession.', '0000-00-00 00:00:00', 0),
 (2, 'This is a test confession.', '0000-00-00 00:00:00', 0),
 (3, 'This is a test confession.', '0000-00-00 00:00:00', 0),
 (4, 'This is a test confession.', '0000-00-00 00:00:00', 0),
 (5, 'This is a test confession. Again...', '0000-00-00 00:00:00', 10),
-(6, 'This test I think will work fine', '2013-07-05 15:26:01', 10);
+(6, 'This test I think will work fine', '2013-07-05 15:26:01', 10),
+(7, 'This is a another test confession... yippy!', '2013-07-05 22:36:11', 0);
 
 -- --------------------------------------------------------
 
