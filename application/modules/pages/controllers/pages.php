@@ -40,7 +40,7 @@ class Pages extends MX_Controller {
                     $data = $this->get_data_from_post();
                                                                   
                     $this->_insert($data);
-                    redirect('pages');
+                    redirect('pages/create');
                      
                     
 		}
