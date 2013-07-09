@@ -8,27 +8,6 @@ class Gasps extends MX_Controller {
     function create() {
         
         
-        $confessionid = $this->uri->segment(3); //get id
-        
-        if (!isset($confessionid)) {
-            die();
-        }
-        
-        if (is_numeric($confessionid)) {
-            $data = $this->get_data_from_db($confessionid); //if it's there
-            var_dump($data);
-            $data['confessionid'] = $confessionid;
-        } else {
-            $data = $this->get_data_from_post(); //creating a new
-        }
-        
-        echo $confessionid;
-        
-        //var_dump($this->get_where_custom('confessionid', $confessionid));
-    
-        //$profile = $result[0];
-        
-        
         $data['module'] = "gasps";
         $data['view_file'] = "gasp_button";
         
@@ -36,53 +15,61 @@ class Gasps extends MX_Controller {
     
     }
     
+    function get_data_from_db($confessionid) {
+        $query = $this->get_where_custom('confessionid', $confessionid);
+        foreach($query->result() as $row) {
+            $data['id'] = $row->id;
+            $data['numberofgasps'] = $row->numberofgasps;
+            $data['confessionid'] = $row->confessionid;              
+        }
+        return $data;
+    }
     
-    
+ 
+    //problem finding if it's been done or not
     function get_data_from_post() {
-        $data['numberofgasps'] = $this->input->post('numberofgasps', TRUE);
+        
+        //here
+        
+            $data = $this->get_data_from_db($this->uri->segment(3));
+       
+        if ($data['numberofgasps'] < 1) {
+            $data['numberofgasps'] = $this->input->post('numberofgasps', TRUE);
+            $data['confessionid'] = $this->input->post('confessionid', TRUE);          
+        } else {
+            $data['numberofgasps'] = $data['numberofgasps'] + 1;
+            $data['confessionid'] = $this->input->post('confessionid', TRUE);
+        }
         return $data;
     }
     
     
     //issue here
-    function get_data_from_db($confessionid) {
-        $query = $this->get_where_custom('confessionid', $confessionid);
-        foreach($query->result() as $row) {
-            $data['numberofgasps'] = $row->numberofgasps;
-        }
-        return $data;
-    }
+ 
     
     function submit() {
     
-
-		$this->load->library('form_validation');
-                //checks
-                $this->form_validation->set_rules('numberofgasps', 'Numberofgasps', 'required|xss_clean');
 		
-                $numberofgasps = $this->input->post('numberofgasps', TRUE);
+                $confessionid = $this->input->post('confessionid', TRUE);
+
                 
                 
                 
                 
-                if ($this->form_validation->run() == FALSE)
-		{
-                    //mistake
-                    $this->create();
-		}
-		else
-		{
+
                     //success
                     $data = $this->get_data_from_post();
                     
-                        if (is_numeric($confessionid)) {
-                            $this->_update($confessionid, $data);
+                    //need to fix to know if it's updating
+                        if ($data['numberofgasps'] > 1) {
+                            $this->_update($data['id'], $data);
+                            redirect('addedgaspupdate');
                         } else {                                            
                             $this->_insert($data);
-                            redirect('gasps/create');
+                            redirect('firstgaspinsert');
                         }
                     
-		}
+	
     }
     
     
