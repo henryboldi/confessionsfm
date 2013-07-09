@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 05, 2013 at 10:37 PM
+-- Generation Time: Jul 08, 2013 at 09:27 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.4.4
 
@@ -32,7 +32,7 @@ CREATE TABLE `comments` (
   `commentdatetime` datetime NOT NULL,
   `confessionid` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -46,20 +46,20 @@ CREATE TABLE `confessions` (
   `confessiondatetime` datetime NOT NULL,
   `pageid` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+-- --------------------------------------------------------
 
 --
--- Dumping data for table `confessions`
+-- Table structure for table `gasps`
 --
 
-INSERT INTO `confessions` (`id`, `confession`, `confessiondatetime`, `pageid`) VALUES
-(1, 'This is a test confession.', '0000-00-00 00:00:00', 0),
-(2, 'This is a test confession.', '0000-00-00 00:00:00', 0),
-(3, 'This is a test confession.', '0000-00-00 00:00:00', 0),
-(4, 'This is a test confession.', '0000-00-00 00:00:00', 0),
-(5, 'This is a test confession. Again...', '0000-00-00 00:00:00', 10),
-(6, 'This test I think will work fine', '2013-07-05 15:26:01', 10),
-(7, 'This is a another test confession... yippy!', '2013-07-05 22:36:11', 0);
+CREATE TABLE `gasps` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `numberofgasps` int(11) NOT NULL,
+  `confessionid` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -72,14 +72,6 @@ CREATE TABLE `pages` (
   `name` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `pages`
---
-
-INSERT INTO `pages` (`id`, `name`) VALUES
-(1, 'Highland Park High School'),
-(2, 'This is a test confesion.');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
