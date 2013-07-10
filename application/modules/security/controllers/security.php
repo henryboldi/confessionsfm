@@ -10,6 +10,7 @@ function __construct() {
 
     function make_hash($password) {
         $safe_pass = sha1($password);
+        return $safe_pass;
     }
 
 

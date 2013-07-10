@@ -8,6 +8,26 @@ function __construct() {
 
 // Change the table & class same. Get rollin'
 
+/*
+ * Don't need this yet.
+
+function pword_check($name, $pword) {
+    $table = $this->get_table();
+    $this->db->where('name', $name);
+    $this->db->where('pword', $pword);
+    $query=$this->db->get($table);
+    $num_rows = $query->num_rows();
+    
+    if ($num_rows > 0) {
+        return TRUE;
+    } else {
+        return FALSE;
+    }
+        
+}
+ * 
+ */
+
 function get_table() {
     $table = "pages";
     return $table;

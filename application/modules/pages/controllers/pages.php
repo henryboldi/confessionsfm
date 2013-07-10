@@ -16,6 +16,7 @@ class Pages extends MX_Controller {
     
      function get_data_from_post() {
         $data['name'] = $this->input->post('name', TRUE);
+        $data['pword'] = $this->input->post('pword', TRUE);
         return $data;
     }
     
@@ -25,12 +26,13 @@ class Pages extends MX_Controller {
 		$this->load->library('form_validation');
                 //checks
                 $this->form_validation->set_rules('name', 'Name', 'required|min_length[3]|xss_clean|max_length[45]');
+                $this->form_validation->set_rules('pword', 'Pword', 'required|min_length[3]|xss_clean|max_length[240]');
 		
                 
+               
                 
                 
-                
-                if ($this->form_validation->run() == FALSE) {
+                if ($this->form_validation->run($this) == FALSE) {
                     //mistake
                     $this->create();
 		}
@@ -38,6 +40,7 @@ class Pages extends MX_Controller {
 		{
                     //success
                     $data = $this->get_data_from_post();
+                    $data['pword'] = Modules::run('security/make_hash', $data['pword']);
                                                                   
                     $this->_insert($data);
                     redirect('pages/create');
@@ -45,6 +48,28 @@ class Pages extends MX_Controller {
                     
 		}
         }
+        
+    /*
+     * For future reference
+        
+    function pword_check($pword) {
+        
+        $name = $this->input->post('name', TRUE);
+        $this->load->model('mdl_pages');
+        $result = $this->mdl_pages->pword_check($name, $pword);
+                
+		if ($result == FALSE)
+		{
+			$this->form_validation->set_message('pword_check', 'WRONG.');
+			return FALSE;
+		}
+		else
+		{
+			return TRUE;
+		}
+	}
+     * 
+     */
     
     
     
