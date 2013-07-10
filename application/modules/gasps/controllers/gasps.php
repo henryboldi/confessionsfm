@@ -15,15 +15,7 @@ class Gasps extends MX_Controller {
     
     }
     
-    function get_data_from_db($confessionid) {
-        $query = $this->get_where_custom('confessionid', $confessionid);
-        foreach($query->result() as $row) {
-            $data['id'] = $row->id;
-            $data['numberofgasps'] = $row->numberofgasps;
-            $data['confessionid'] = $row->confessionid;              
-        }
-        return $data;
-    }
+
     
  
     //problem finding if it's been done or not
@@ -31,18 +23,29 @@ class Gasps extends MX_Controller {
         
         //here
         
-            $data = $this->get_data_from_db($this->uri->segment(3));
+            $data = $this->get_data_from_db($this->input->post('confessionid', TRUE));
        
         if ($data['numberofgasps'] < 1) {
             $data['numberofgasps'] = $this->input->post('numberofgasps', TRUE);
             $data['confessionid'] = $this->input->post('confessionid', TRUE);          
         } else {
             $data['numberofgasps'] = $data['numberofgasps'] + 1;
+            echo $data['numberofgasps'];
             $data['confessionid'] = $this->input->post('confessionid', TRUE);
         }
         return $data;
     }
     
+    
+    function get_data_from_db($id) {
+        $query = $this->get_where_custom('confessionid', $id);
+        foreach($query->result() as $row) {
+            $data['id'] = $row->id;
+            $data['numberofgasps'] = $row->numberofgasps;
+            $data['confessionid'] = $row->confessionid;              
+        }
+        return $data;
+    }
     
     //issue here
  
