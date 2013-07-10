@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 09, 2013 at 09:43 PM
+-- Generation Time: Jul 09, 2013 at 09:51 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.4.4
 
@@ -58,7 +58,8 @@ CREATE TABLE `gasps` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `number_of_gasps` int(11) NOT NULL,
   `confession_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `confession_id` (`confession_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
 
 -- --------------------------------------------------------
