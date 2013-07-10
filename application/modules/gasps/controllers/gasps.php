@@ -56,7 +56,7 @@ class Gasps extends MX_Controller {
 		
                 $confession_id = $this->input->post('confession_id', TRUE);
 
-                $this->load->library('session');
+              
                 
                 
                 
