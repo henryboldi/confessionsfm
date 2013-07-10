@@ -55,6 +55,8 @@ class Pages extends MX_Controller {
     function pword_check($pword) {
         
         $name = $this->input->post('name', TRUE);
+        $pword = Modules::run('security/make_hash', $pword);
+      
         $this->load->model('mdl_pages');
         $result = $this->mdl_pages->pword_check($name, $pword);
                 
