@@ -30,7 +30,6 @@ class Gasps extends MX_Controller {
             $data['confessionid'] = $this->input->post('confessionid', TRUE);          
         } else {
             $data['numberofgasps'] = $data['numberofgasps'] + 1;
-            echo $data['numberofgasps'];
             $data['confessionid'] = $this->input->post('confessionid', TRUE);
         }
         return $data;
@@ -44,7 +43,9 @@ class Gasps extends MX_Controller {
             $data['numberofgasps'] = $row->numberofgasps;
             $data['confessionid'] = $row->confessionid;              
         }
+        if (isset($data)) {
         return $data;
+        }
     }
     
     //issue here
