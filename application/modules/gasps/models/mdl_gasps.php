@@ -6,7 +6,6 @@ function __construct() {
     parent::__construct();
 }
 
-// Change the table & class same. Get rollin'
 
 function get_table() {
     $table = "gasps";

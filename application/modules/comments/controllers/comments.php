@@ -21,8 +21,8 @@ function __construct() {
     
      function get_data_from_post() {
         $data['comment'] = $this->input->post('comment', TRUE); 
-        $data['commentdatetime'] = $this->input->post('commentdatetime', TRUE);
-        $data['confessionid'] = $this->input->post('confessionid', TRUE);
+        $data['comment_date_time'] = $this->input->post('comment_date_time', TRUE);
+        $data['confession_id'] = $this->input->post('confession_id', TRUE);
         return $data;
     }
     
@@ -35,7 +35,7 @@ function __construct() {
 		$this->load->library('form_validation');
                 //checks
                 $this->form_validation->set_rules('comment', 'Comment', 'required|min_length[20]|xss_clean|max_length[300]');
-		//----NEED TO ADD VALIDATION THAT THE CONFESSIONID EXSISTS-------
+		//----NEED TO ADD VALIDATION THAT THE confession_id EXSISTS-------
                 
                 
                 

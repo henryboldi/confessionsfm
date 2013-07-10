@@ -23,25 +23,25 @@ class Gasps extends MX_Controller {
         
         //here
         
-            $data = $this->get_data_from_db($this->input->post('confessionid', TRUE));
+            $data = $this->get_data_from_db($this->input->post('confession_id', TRUE));
        
-        if ($data['numberofgasps'] < 1) {
-            $data['numberofgasps'] = $this->input->post('numberofgasps', TRUE);
-            $data['confessionid'] = $this->input->post('confessionid', TRUE);          
+        if ($data['number_of_gasps'] < 1) {
+            $data['number_of_gasps'] = $this->input->post('number_of_gasps', TRUE);
+            $data['confession_id'] = $this->input->post('confession_id', TRUE);          
         } else {
-            $data['numberofgasps'] = $data['numberofgasps'] + 1;
-            $data['confessionid'] = $this->input->post('confessionid', TRUE);
+            $data['number_of_gasps'] = $data['number_of_gasps'] + 1;
+            $data['confession_id'] = $this->input->post('confession_id', TRUE);
         }
         return $data;
     }
     
     
     function get_data_from_db($id) {
-        $query = $this->get_where_custom('confessionid', $id);
+        $query = $this->get_where_custom('confession_id', $id);
         foreach($query->result() as $row) {
             $data['id'] = $row->id;
-            $data['numberofgasps'] = $row->numberofgasps;
-            $data['confessionid'] = $row->confessionid;              
+            $data['number_of_gasps'] = $row->number_of_gasps;
+            $data['confession_id'] = $row->confession_id;              
         }
         if (isset($data)) {
         return $data;
@@ -54,9 +54,9 @@ class Gasps extends MX_Controller {
     function submit() {
     
 		
-                $confessionid = $this->input->post('confessionid', TRUE);
+                $confession_id = $this->input->post('confession_id', TRUE);
 
-                
+                $this->load->library('session');
                 
                 
                 
@@ -65,7 +65,7 @@ class Gasps extends MX_Controller {
                     $data = $this->get_data_from_post();
                     
                     //need to fix to know if it's updating
-                        if ($data['numberofgasps'] > 1) {
+                        if ($data['number_of_gasps'] > 1) {
                             $this->_update($data['id'], $data);
                             redirect('addedgaspupdate');
                         } else {                                            

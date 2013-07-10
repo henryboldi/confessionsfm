@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 08, 2013 at 09:27 PM
+-- Generation Time: Jul 09, 2013 at 09:43 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.4.4
 
@@ -29,8 +29,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `comment` text NOT NULL,
-  `commentdatetime` datetime NOT NULL,
-  `confessionid` int(11) NOT NULL,
+  `comment_date_time` datetime NOT NULL,
+  `confession_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
@@ -43,8 +43,8 @@ CREATE TABLE `comments` (
 CREATE TABLE `confessions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `confession` text NOT NULL,
-  `confessiondatetime` datetime NOT NULL,
-  `pageid` int(11) NOT NULL,
+  `confession_date_time` datetime NOT NULL,
+  `page_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
@@ -56,10 +56,10 @@ CREATE TABLE `confessions` (
 
 CREATE TABLE `gasps` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `numberofgasps` int(11) NOT NULL,
-  `confessionid` int(11) NOT NULL,
+  `number_of_gasps` int(11) NOT NULL,
+  `confession_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
 
 -- --------------------------------------------------------
 
