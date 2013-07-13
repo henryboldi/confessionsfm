@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 11, 2013 at 11:10 PM
+-- Generation Time: Jul 12, 2013 at 11:17 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.4.4
 
@@ -46,7 +46,7 @@ CREATE TABLE `confessions` (
   `confession_date_time` datetime NOT NULL,
   `page_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 -- --------------------------------------------------------
 
@@ -60,7 +60,20 @@ CREATE TABLE `gasps` (
   `confession_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `confession_id` (`confession_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=38 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `groups`
+--
+
+CREATE TABLE `groups` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `description` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 -- --------------------------------------------------------
 
@@ -71,7 +84,6 @@ CREATE TABLE `gasps` (
 CREATE TABLE `pages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
-  `pword` varchar(240) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
@@ -82,11 +94,15 @@ CREATE TABLE `pages` (
 --
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(30) NOT NULL,
-  `pword` varchar(240) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_email` varchar(255) NOT NULL DEFAULT '',
+  `user_pass` varchar(60) NOT NULL DEFAULT '',
+  `user_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `user_modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `user_last_login` datetime DEFAULT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `user_email` (`user_email`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
