@@ -5,11 +5,17 @@ class Gasps extends MX_Controller {
 
     
     
-    function create() {
-        
+    function create($confession_id) {
         
         $data['module'] = "gasps";
         $data['view_file'] = "gasp_button";
+        
+        $data['confession_id'] = $confession_id;
+        $query = $this->get_where_custom('confession_id', $confession_id);
+        foreach($query->result() as $row) {
+            $data['number_of_gasps'] = $row->number_of_gasps;
+            echo '<br>'.$data['number_of_gasps'].' gasp(s)';
+        }
         
         $this->load->view('gasp_button', $data);
     

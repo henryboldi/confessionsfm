@@ -18,6 +18,11 @@ function __construct() {
         $this->load->view('post_confession_form', $data); 
     
     }
+    function view() {
+        $this->load->model('mdl_confessions');
+        $data['query'] = $this->mdl_confessions->get_where_custom('page_id', $this->uri->segment(3));
+        $this->load->view('display', $data);
+    }
     
      function get_data_from_post() {
         $data['confession'] = $this->input->post('confession', TRUE); 

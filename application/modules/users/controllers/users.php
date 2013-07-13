@@ -14,9 +14,33 @@ class Users extends MX_Controller {
     
     }
     
+    function login() {
+        $data = $this->get_data_from_post(); //creating a new
+        
+        
+        $data['module'] = "users";
+        $data['view_file'] = "login";
+        
+        $this->load->view('login', $data); 
+    }
+    
+    function loginsubmit() {
+        $this->load->library('SimpleLoginSecure');
+        $data = $this->get_data_from_post();
+                                                                  
+        if($this->simpleloginsecure->login($data['user_email'], $data['user_pass'])) {
+            redirect('users/in');
+        } else {
+            $this->login();
+        }
+
+        
+    }
+    
+    
      function get_data_from_post() {
-        $data['username'] = $this->input->post('username', TRUE);
-        $data['pword'] = $this->input->post('pword', TRUE);
+        $data['user_email'] = $this->input->post('user_email', TRUE);
+        $data['user_pass'] = $this->input->post('user_pass', TRUE);
         return $data;
     }
     
@@ -24,9 +48,10 @@ class Users extends MX_Controller {
     
 
 		$this->load->library('form_validation');
+
                 //checks
-                $this->form_validation->set_rules('username', 'Username', 'required|min_length[3]|xss_clean|max_length[30]');
-                $this->form_validation->set_rules('pword', 'Pword', 'required|min_length[3]|xss_clean|max_length[240]');
+                $this->form_validation->set_rules('user_email', 'User_email', 'required|min_length[3]|xss_clean|max_length[255]');
+                $this->form_validation->set_rules('user_pass', 'User_pass', 'required|min_length[3]|xss_clean|max_length[60]valid_email|is_unique[users.user_email]');
 		
                 
                
@@ -40,35 +65,14 @@ class Users extends MX_Controller {
 		{
                     //success
                     $data = $this->get_data_from_post();
-                    $data['pword'] = Modules::run('security/make_hash', $data['pword']);
                                                                   
-                    $this->_insert($data);
-                    redirect('users/create');
+                    $this->simpleloginsecure->create($data['user_email'], $data['user_pass']);
+                    redirect('users/login');
                      
                     
 		}
         }
         
-        
-    function pword_check($pword) {
-        
-        $name = $this->input->post('name', TRUE);
-        $pword = Modules::run('security/make_hash', $pword);
-      
-        $this->load->model('mdl_users');
-        $result = $this->mdl_users->pword_check($name, $pword);
-                
-		if ($result == FALSE)
-		{
-			$this->form_validation->set_message('pword_check', 'WRONG.');
-			return FALSE;
-		}
-		else
-		{
-			return TRUE;
-		}
-	}
-    
     
     
     

@@ -1,22 +1,62 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Pages extends MX_Controller {
+    
+    function index() {
+        
+        $this->load->model('mdl_pages');
+       
+        $data['query'] = $this->mdl_pages->get('id');
+        
+        $this->load->view('display', $data);
+                
+    }
+    
 
     function create() {
+        if($this->session->userdata('logged_in')) {
+            
+            $data = $this->get_data_from_post(); //creating a new
         
-        $data = $this->get_data_from_post(); //creating a new
+        
+            $data['module'] = "pages";
+            $data['view_file'] = "create_page_form";
+        
+            $this->load->view('create_page_form', $data); 
+        } else {
+            redirect('users/login');
+        }
+        
+    
+    }
+    
+    function page_name($page_id) {
+            //not working
+            
+            $data = $this->get_data_from_post(); //creating a new
         
         
-        $data['module'] = "pages";
-        $data['view_file'] = "create_page_form";
+            $data['module'] = "pages";
+            $data['view_file'] = "page_name";
+            
+           
+            $query = $this->get_where($page_id);
+            foreach($query->result() as $row) {
+                $name = $row->name;
+            }   
+            echo $name;
+            
+            
+            
         
-        $this->load->view('create_page_form', $data); 
+            $this->load->view('page_name', $data); 
+       
+        
     
     }
     
      function get_data_from_post() {
         $data['name'] = $this->input->post('name', TRUE);
-        $data['pword'] = $this->input->post('pword', TRUE);
         return $data;
     }
     

@@ -8,9 +8,6 @@ echo "Confession Page Name: ";
 echo form_input('name', $name);
 echo "<br>";
 
-echo "Password: ";
-echo form_password('pword', $pword);
-echo "<br>";
 
 
 echo form_submit('submit', 'Submit');
