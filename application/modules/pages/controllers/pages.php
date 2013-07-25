@@ -24,6 +24,7 @@ class Pages extends MX_Controller {
         
             $this->load->view('create_page_form', $data); 
         } else {
+            $this->session->set_flashdata('login_required', 'You must be logged in to add a new confessions page.');
             redirect('users/login');
         }
         

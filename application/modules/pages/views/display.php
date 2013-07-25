@@ -8,7 +8,9 @@ foreach ($query->result() as $row) {
     echo "<h2><a href='../../confessions/view/".$row->id."'>".$row->name."</a></h1>";
     echo Modules::run('gasps/create', $firstname, $lastname);
 }
-    
+echo '<hr>';
+
+echo Modules::run('users/login_status');
     
 
 ?>

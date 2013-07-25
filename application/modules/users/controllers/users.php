@@ -24,6 +24,26 @@ class Users extends MX_Controller {
         $this->load->view('login', $data); 
     }
     
+    function login_status() {
+        
+        //Do I need to pass data?
+        $this->load->view('login_status'); 
+        
+        if($this->session->userdata('logged_in')) {
+            //logged in
+            print_r($this->session->all_userdata());
+            // full see $this->session->userdata('item');
+        } else {
+            //NOT logged in
+            echo "You are not logged in. ";
+            echo anchor('users/login', 'Login');
+        }
+    }
+    
+    function logout() {
+        $this->simpleloginsecure->logout();
+    }
+    
     function loginsubmit() {
         $this->load->library('SimpleLoginSecure');
         $data = $this->get_data_from_post();

@@ -1,5 +1,6 @@
 <?php
 
+echo $this->session->flashdata('login_required');
 echo validation_errors('<p style="color: red;">', '</p>');
 
 echo form_open('users/loginsubmit');
