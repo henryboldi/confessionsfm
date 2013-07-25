@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Users extends MX_Controller {
+    
+
 
     function create() {
         
@@ -31,8 +33,12 @@ class Users extends MX_Controller {
         
         if($this->session->userdata('logged_in')) {
             //logged in
-            print_r($this->session->all_userdata());
-            // full see $this->session->userdata('item');
+            echo "You are currently logged in as: ";
+            //$this->data['user_email'] = $this->session->userdata('user_email');
+            //print_r($this->session->all_userdata());
+            $user_data = $this->session->all_userdata();
+            echo $user_data['user_email'].' ';
+            echo anchor('users/logout', 'Logout');
         } else {
             //NOT logged in
             echo "You are not logged in. ";
@@ -41,7 +47,9 @@ class Users extends MX_Controller {
     }
     
     function logout() {
+        //flash data needed here
         $this->simpleloginsecure->logout();
+        redirect('pages/');
     }
     
     function loginsubmit() {

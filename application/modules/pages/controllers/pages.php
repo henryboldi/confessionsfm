@@ -67,7 +67,6 @@ class Pages extends MX_Controller {
 		$this->load->library('form_validation');
                 //checks
                 $this->form_validation->set_rules('name', 'Name', 'required|min_length[3]|xss_clean|max_length[45]');
-                $this->form_validation->set_rules('pword', 'Pword', 'required|min_length[3]|xss_clean|max_length[240]');
 		
                 
                
