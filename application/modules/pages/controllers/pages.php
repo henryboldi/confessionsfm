@@ -80,7 +80,7 @@ class Pages extends MX_Controller {
 		{
                     //success
                     $data = $this->get_data_from_post();
-                    $data['pword'] = Modules::run('security/make_hash', $data['pword']);
+                   
                                                                   
                     $this->_insert($data);
                     redirect('pages/create');
