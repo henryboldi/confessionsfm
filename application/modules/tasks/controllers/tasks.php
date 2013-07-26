@@ -1,5 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
+/*
+ * This is not relevent to confessions.fm
+ * left as a reference
+ * will be removed soon
+ * 
+ */
 class Tasks extends MX_Controller {
     
 
