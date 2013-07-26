@@ -36,7 +36,7 @@ class Users extends MX_Controller {
             echo "You are currently logged in as: ";
             //$this->data['user_email'] = $this->session->userdata('user_email');
             //print_r($this->session->all_userdata());
-            $user_data = $this->session->all_userdata();
+            $user_data = $this->session->all_userdata(); //i know there is a better way of doing this.
             echo $user_data['user_email'].' ';
             echo anchor('users/logout', 'Logout');
         } else {
@@ -44,6 +44,17 @@ class Users extends MX_Controller {
             echo "You are not logged in. ";
             echo anchor('users/login', 'Login');
         }
+    }
+    
+    function get_user_id() {
+        if($this->session->userdata('logged_in')) {
+            $user_data = $this->session->all_userdata(); //better way can be used here
+            return $user_data['user_id'];
+            
+        } else {
+            return false;
+        }
+        
     }
     
     function logout() {

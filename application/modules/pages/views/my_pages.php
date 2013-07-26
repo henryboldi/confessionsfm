@@ -1,4 +1,4 @@
-<h1>Confession Pages</h1>
+<h1>Your Pages</h1>
 <?php
 
 echo anchor('pages/create', '<p>Create New Page</p>');

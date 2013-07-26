@@ -12,6 +12,16 @@ class Pages extends MX_Controller {
                 
     }
     
+    function my_pages() {
+        $this->load->model('mdl_pages');
+
+        $user_id = modules::run('users/get_user_id');       
+        $data['query'] = $this->mdl_pages->get_where_by_user_id($user_id); //not working: only pulling first page by user.
+        
+        $this->load->view('my_pages', $data);
+        
+    }
+    
 
     function create() {
         if($this->session->userdata('logged_in')) {
@@ -58,6 +68,8 @@ class Pages extends MX_Controller {
     
      function get_data_from_post() {
         $data['name'] = $this->input->post('name', TRUE);
+        $user_id = modules::run('users/get_user_id');
+        $data['user_id'] = $user_id;
         return $data;
     }
     
