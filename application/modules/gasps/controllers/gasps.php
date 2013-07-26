@@ -14,8 +14,15 @@ class Gasps extends MX_Controller {
         $query = $this->get_where_custom('confession_id', $confession_id);
         foreach($query->result() as $row) {
             $data['number_of_gasps'] = $row->number_of_gasps;
-            echo '<br>'.$data['number_of_gasps'].' gasp(s)';
+
         }
+            if (isset($data['number_of_gasps'])) {
+                echo '<br>'.$data['number_of_gasps'].' gasp(s)';
+            } else {
+                //no gasps yet
+                echo '<br>Be the first to GASP!';
+            }
+        
         
         $this->load->view('gasp_button', $data);
     
