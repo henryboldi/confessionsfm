@@ -56,7 +56,7 @@ function __construct() {
                                                                   
                     $this->_insert($data);
                     redirect('confessions/create');
-                     
+                    //needs to redirect to page it was created on with flash data. 
                     
 		}
         }

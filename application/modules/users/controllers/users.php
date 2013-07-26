@@ -50,6 +50,7 @@ class Users extends MX_Controller {
         //flash data needed here
         $this->simpleloginsecure->logout();
         redirect('pages/');
+        //need to add flash data
     }
     
     function loginsubmit() {
@@ -57,7 +58,7 @@ class Users extends MX_Controller {
         $data = $this->get_data_from_post();
                                                                   
         if($this->simpleloginsecure->login($data['user_email'], $data['user_pass'])) {
-            redirect('users/in');
+            redirect('pages/');
         } else {
             $this->login();
         }
@@ -96,6 +97,7 @@ class Users extends MX_Controller {
                                                                   
                     $this->simpleloginsecure->create($data['user_email'], $data['user_pass']);
                     redirect('users/login');
+                    //need to add flash data that the account has been made or have it auto-login
                      
                     
 		}

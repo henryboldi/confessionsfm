@@ -81,9 +81,11 @@ class Gasps extends MX_Controller {
                         if ($data['number_of_gasps'] > 1) {
                             $this->_update($data['id'], $data);
                             redirect('addedgaspupdate');
+                            //needs to refresh
                         } else {                                            
                             $this->_insert($data);
                             redirect('firstgaspinsert');
+                            //here also
                         }
                     
 	

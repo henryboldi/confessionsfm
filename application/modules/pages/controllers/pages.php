@@ -83,7 +83,8 @@ class Pages extends MX_Controller {
                    
                                                                   
                     $this->_insert($data);
-                    redirect('pages/create');
+                    redirect('pages/');
+                    //need to add flash data here
                      
                     
 		}
