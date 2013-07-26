@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
+-- version 4.0.3
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Jul 12, 2013 at 11:17 PM
--- Server version: 5.5.25
--- PHP Version: 5.4.4
+-- Host: 127.0.0.1
+-- Generation Time: Jul 26, 2013 at 08:24 AM
+-- Server version: 5.6.11-log
+-- PHP Version: 5.5.0
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `confessionsfm`
 --
+CREATE DATABASE IF NOT EXISTS `confessionsfm` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `confessionsfm`;
 
 -- --------------------------------------------------------
 
@@ -26,13 +28,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `comments`
 --
 
-CREATE TABLE `comments` (
+CREATE TABLE IF NOT EXISTS `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `comment` text NOT NULL,
   `comment_date_time` datetime NOT NULL,
   `confession_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -40,13 +42,13 @@ CREATE TABLE `comments` (
 -- Table structure for table `confessions`
 --
 
-CREATE TABLE `confessions` (
+CREATE TABLE IF NOT EXISTS `confessions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `confession` text NOT NULL,
   `confession_date_time` datetime NOT NULL,
   `page_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 -- --------------------------------------------------------
 
@@ -54,13 +56,13 @@ CREATE TABLE `confessions` (
 -- Table structure for table `gasps`
 --
 
-CREATE TABLE `gasps` (
+CREATE TABLE IF NOT EXISTS `gasps` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `number_of_gasps` int(11) NOT NULL,
   `confession_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `confession_id` (`confession_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=38 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 -- --------------------------------------------------------
 
@@ -68,12 +70,12 @@ CREATE TABLE `gasps` (
 -- Table structure for table `groups`
 --
 
-CREATE TABLE `groups` (
+CREATE TABLE IF NOT EXISTS `groups` (
   `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(20) NOT NULL,
   `description` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -81,11 +83,12 @@ CREATE TABLE `groups` (
 -- Table structure for table `pages`
 --
 
-CREATE TABLE `pages` (
+CREATE TABLE IF NOT EXISTS `pages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
+  `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 -- --------------------------------------------------------
 
@@ -93,7 +96,7 @@ CREATE TABLE `pages` (
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_email` varchar(255) NOT NULL DEFAULT '',
   `user_pass` varchar(60) NOT NULL DEFAULT '',
@@ -102,7 +105,7 @@ CREATE TABLE `users` (
   `user_last_login` datetime DEFAULT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_email` (`user_email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
