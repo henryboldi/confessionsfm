@@ -57,9 +57,11 @@ function get_where($id){
 
 function get_where_by_user_id($where) {
     
-    $table = $this->get_table();
-    $this->db->order_by('user_id', 'asc')->where($where);//not working
-    $query=$this->db->get($table);
+    $table = $this->get_table();    
+    $this->db->where('user_id', $where);
+    $this->db->order_by('id');
+    //$this->db->limit(15);
+    $query = $this->db->get($table);
     return $query;
     
     

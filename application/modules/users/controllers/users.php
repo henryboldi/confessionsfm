@@ -52,7 +52,8 @@ class Users extends MX_Controller {
             return $user_data['user_id'];
             
         } else {
-            return false;
+            redirect('users/login');
+            //need to add flash data
         }
         
     }
