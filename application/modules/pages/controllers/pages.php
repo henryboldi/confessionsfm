@@ -7,8 +7,12 @@ class Pages extends MX_Controller {
         $this->load->model('mdl_pages');
        
         $data['query'] = $this->mdl_pages->get('id');
+       
+        $data['module'] = "pages";
+        $data['view_file'] = "display";
+        echo Modules::run('templates/general', $data);
         
-        $this->load->view('display', $data);
+        //$this->load->view('display', $data);
                 
     }
     
@@ -18,7 +22,10 @@ class Pages extends MX_Controller {
         $user_id = modules::run('users/get_user_id');       
         $data['query'] = $this->mdl_pages->get_where_by_user_id($user_id); //not working: only pulling first page by user.
         
-        $this->load->view('my_pages', $data);
+        $data['module'] = "pages";
+        $data['view_file'] = "my_pages";
+        echo Modules::run('templates/general', $data);
+        //$this->load->view('my_pages', $data);
         
     }
     
@@ -31,8 +38,8 @@ class Pages extends MX_Controller {
         
             $data['module'] = "pages";
             $data['view_file'] = "create_page_form";
-        
-            $this->load->view('create_page_form', $data); 
+            echo Modules::run('templates/general', $data);
+           // $this->load->view('create_page_form', $data); 
         } else {
             $this->session->set_flashdata('login_required', 'You must be logged in to add a new confessions page.');
             redirect('users/login');
@@ -44,23 +51,20 @@ class Pages extends MX_Controller {
     function page_name($page_id) {
             //not working
             
-            $data = $this->get_data_from_post(); //creating a new
+            //creating a new
         
-        
-            $data['module'] = "pages";
-            $data['view_file'] = "page_name";
             
            
             $query = $this->get_where($page_id);
             foreach($query->result() as $row) {
                 $name = $row->name;
+                return $name;
             }   
-            echo $name;
+            
             
             
             
         
-            $this->load->view('page_name', $data); 
        
         
     

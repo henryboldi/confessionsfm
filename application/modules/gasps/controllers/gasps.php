@@ -35,7 +35,7 @@ class Gasps extends MX_Controller {
     function get_data_from_post() {
         
         //here
-        
+            
             $data = $this->get_data_from_db($this->input->post('confession_id', TRUE));
        
         if ($data['number_of_gasps'] < 1) {
@@ -54,7 +54,7 @@ class Gasps extends MX_Controller {
         foreach($query->result() as $row) {
             $data['id'] = $row->id;
             $data['number_of_gasps'] = $row->number_of_gasps;
-            $data['confession_id'] = $row->confession_id;              
+            $data['confession_id'] = $row->confession_id;  
         }
         if (isset($data)) {
         return $data;
@@ -80,11 +80,11 @@ class Gasps extends MX_Controller {
                     //need to fix to know if it's updating
                         if ($data['number_of_gasps'] > 1) {
                             $this->_update($data['id'], $data);
-                            redirect('addedgaspupdate');
+                            redirect('confession/view/');
                             //needs to refresh
                         } else {                                            
                             $this->_insert($data);
-                            redirect('firstgaspinsert');
+                            redirect('confession/view/');
                             //here also
                         }
                     

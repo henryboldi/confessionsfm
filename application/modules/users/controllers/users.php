@@ -39,6 +39,7 @@ class Users extends MX_Controller {
             $user_data = $this->session->all_userdata(); //i know there is a better way of doing this.
             echo $user_data['user_email'].' ';
             echo anchor('users/logout', 'Logout');
+            echo anchor('pages/my_pages', 'My Pages');
         } else {
             //NOT logged in
             echo "You are not logged in. ";

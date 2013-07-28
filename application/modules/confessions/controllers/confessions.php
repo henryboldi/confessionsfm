@@ -14,14 +14,18 @@ function __construct() {
         
         $data['module'] = "confessions";
         $data['view_file'] = "post_confession_form";
-        
-        $this->load->view('post_confession_form', $data); 
+        echo Modules::run('templates/general', $data);
+        //$this->load->view('post_confession_form', $data); 
     
     }
     function view() {
         $this->load->model('mdl_confessions');
         $data['query'] = $this->mdl_confessions->get_where_custom('page_id', $this->uri->segment(3));
-        $this->load->view('display', $data);
+        
+        $data['module'] = "confessions";
+        $data['view_file'] = "display";
+        echo Modules::run('templates/general', $data);
+        //$this->load->view('display', $data);
     }
     
      function get_data_from_post() {
@@ -47,7 +51,8 @@ function __construct() {
                 
                 if ($this->form_validation->run() == FALSE) {
                     //mistake
-                    $this->create();
+                    $data = $this->get_data_from_post(); //this is kinda wrong to do here
+                    redirect('confessions/create/'.$data['page_id']);
 		}
 		else
 		{
@@ -55,8 +60,9 @@ function __construct() {
                     $data = $this->get_data_from_post();
                                                                   
                     $this->_insert($data);
-                    redirect('confessions/create');
+                    redirect('confessions/view/'.$data['page_id']);
                     //needs to redirect to page it was created on with flash data. 
+                    
                     
 		}
         }

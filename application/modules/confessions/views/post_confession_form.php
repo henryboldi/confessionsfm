@@ -11,6 +11,8 @@ echo "<br>";
 
 echo form_hidden('page_id', $this->uri->segment(3));
 
+date_default_timezone_set('America/Chicago');
+
 echo form_hidden('confession_date_time', date('Y-m-d H:i:s'));
 
 echo form_submit('submit', 'Submit');
