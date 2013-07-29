@@ -45,6 +45,7 @@ class Gasps extends MX_Controller {
             $data['number_of_gasps'] = $data['number_of_gasps'] + 1;
             $data['confession_id'] = $this->input->post('confession_id', TRUE);
         }
+        
         return $data;
     }
     

@@ -37,7 +37,9 @@ function get_where($id){
 
 function get_where_custom($col, $value) {
     $table = $this->get_table();
+    $this->db->order_by('id', 'desc'); // added for sort by latest
     $this->db->where($col, $value);
+    
     $query=$this->db->get($table);
     return $query;
 }
