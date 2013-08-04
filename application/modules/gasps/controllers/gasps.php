@@ -70,31 +70,34 @@ class Gasps extends MX_Controller {
 		
                 $confession_id = $this->input->post('confession_id', TRUE);
 
-              
-                
                 
                 
 
                     //success
                     $data = $this->get_data_from_post();
                     if($this->session->userdata('logged_in')) {
-                        
-                        $user_id = modules::run('users/get_user_id');
-                        modules::run('did_user_gasp/add_user_gasp', $data['id'], $user_id);
-                    //need to fix to know if it's updating
-                        if ($data['number_of_gasps'] > 1) {
-                            //already had a gasp
-                            $this->_update($data['id'], $data);
-                            redirect('confession/view/');
-                            //needs to refresh
+                    $user_id = modules::run('users/get_user_id');
+                    $did = modules::run('did_user_gasp/did_user_gasp', $data['id'], $user_id);
+                        if ($did == FALSE) { 
+                            
+                            modules::run('did_user_gasp/add_user_gasp', $data['id'], $user_id);
+                            //need to fix to know if it's updating
+                            if ($data['number_of_gasps'] > 1) {
+                                //already had a gasp
+                                $this->_update($data['id'], $data);
+                                redirect('confession/view/');
+                                //needs to refresh
+                            } else {
+                                //new                           
+                                $this->_insert($data);                   
+                                redirect('confession/view/');
+                                //here also
+                            }
                         } else {
-                            //new                           
-                            $this->_insert($data);                   
-                            redirect('confession/view/');
-                            //here also
+                            echo "You already gasped!";
                         }
-                    }
 	
+                   }
     }
     
     

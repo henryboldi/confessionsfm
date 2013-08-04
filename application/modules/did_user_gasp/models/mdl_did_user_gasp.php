@@ -15,11 +15,11 @@ function get_table() {
     return $table;
 }
 
-function get_where_by_user_id($where) {
+function get_where_gasp_user($gasp_id, $user_id) {
     
     $table = $this->get_table();    
-    $this->db->where('gasp_id', $where);
-    $this->db->order_by('id');
+    $this->db->where('gasp_id', $gasp_id);
+    $this->db->where('user_id', $user_id);
     //$this->db->limit(15);
     $query = $this->db->get($table);
     return $query;

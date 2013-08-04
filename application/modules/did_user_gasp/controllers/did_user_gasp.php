@@ -18,18 +18,28 @@ function add_user_gasp($gasp_id, $user_id) {
 
 function index() {
     $data = $this->did_user_gasp(1, 1);
-    print_r($data);
+    if ($data == TRUE) {
+        echo 'win';
+    } elseif ($data == FALSE) {
+        echo 'nope yet';
+    } else {
+        echo 'oh no!';
+    }
 }
 
 
 
 function did_user_gasp($gasp_id, $user_id){
-    $data = $this->get_data_from_db($gasp_id);
-    return $data;
+    $data = $this->get_data_from_db($gasp_id, $user_id);
+    if (count($data) == 2) {
+        return TRUE;
+    } else {
+        return FALSE;
+    }
 }
 
-    function get_data_from_db($gasp_id) {
-        $query = $this->get_where_custom('gasp_id', $gasp_id);
+    function get_data_from_db($gasp_id, $user_id) {
+        $query = $this->get_where_gasp_user($gasp_id, $user_id);
         foreach($query->result() as $row) {
             $data['gasp_id'] = $row->gasp_id;
             $data['user_id'] = $row->user_id; 
@@ -43,6 +53,12 @@ function get($order_by){
     $this->load->model('mdl_did_user_gasp');
     $query = $this->mdl_did_user_gasp->get($order_by);
     return $query;
+}
+
+function get_where_gasp_user($gasp_id, $user_id) {
+    $this->load->model('mdl_did_user_gasp');
+    $query = $this->mdl_did_user_gasp->get_where_gasp_user($gasp_id, $user_id);
+    return $query;    
 }
 
 function get_with_limit($limit, $offset, $order_by) {
