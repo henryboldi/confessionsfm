@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.3
+-- version 3.5.6
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Jul 26, 2013 at 08:24 AM
--- Server version: 5.6.11-log
--- PHP Version: 5.5.0
+-- Host: localhost
+-- Generation Time: Aug 04, 2013 at 05:29 AM
+-- Server version: 5.5.29-log
+-- PHP Version: 5.3.21
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `confessionsfm`
 --
-CREATE DATABASE IF NOT EXISTS `confessionsfm` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `confessionsfm`;
 
 -- --------------------------------------------------------
 
@@ -48,7 +46,18 @@ CREATE TABLE IF NOT EXISTS `confessions` (
   `confession_date_time` datetime NOT NULL,
   `page_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `did_user_gasp`
+--
+
+CREATE TABLE IF NOT EXISTS `did_user_gasp` (
+  `gasp_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -88,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `name` varchar(45) NOT NULL,
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 -- --------------------------------------------------------
 
@@ -105,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `user_last_login` datetime DEFAULT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_email` (`user_email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
