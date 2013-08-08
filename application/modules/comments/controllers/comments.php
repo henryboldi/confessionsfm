@@ -5,11 +5,25 @@ class Comments extends MX_Controller {
 function __construct() {
     parent::__construct();
 }
+    function view($confession_id) {
+        
+        $this->load->model('mdl_comments');
+       
+        $data['query'] = $this->get_where_custom('confession_id', $confession_id);
 
-    function create() {
+       
+        $data['module'] = "comments";
+        $data['view_file'] = "confession_comments";
+        echo Modules::run('templates/general', $data);
+        
+        //$this->load->view('display', $data);
+                
+    }
+
+    function create($confession_id) {//somehow not passing?
         
         $data = $this->get_data_from_post(); //creating a new
-
+        $data['confession_id'] = $confession_id;
         
         
         $data['module'] = "comments";
@@ -22,7 +36,7 @@ function __construct() {
      function get_data_from_post() {
         $data['comment'] = $this->input->post('comment', TRUE); 
         $data['comment_date_time'] = $this->input->post('comment_date_time', TRUE);
-        $data['confession_id'] = $this->input->post('confession_id', TRUE);
+        //$data['confession_id'] = $this->input->post('confession_id', TRUE);
         return $data;
     }
     

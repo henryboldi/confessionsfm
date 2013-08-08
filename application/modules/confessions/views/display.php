@@ -11,6 +11,12 @@ foreach ($query->result() as $row) {
     echo '<p>'.$row->confession.'</p> at '.$row->confession_date_time;
     $this->load->module('gasps');
     $this->gasps->create($row->id);
+  /*  $this->load->module('comments');
+    $this->comments->create($row->id);
+    $this->comments->view($row->id);
+   * 
+   */
+    Modules::run('comments/view', $row->id);
 }
     
     
