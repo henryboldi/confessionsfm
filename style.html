@@ -1,0 +1,151 @@
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="normalize.css" type="text/css"/>
+
+        <title>Confessions.fm</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            #header {
+                background-color: #dc075e;
+                border-bottom: solid #b90850;
+                width: 100%;
+                position: fixed;
+                top: 0px;
+                
+            }
+            h1 {
+                
+                font-size: 1.2em;
+                color: #ffffff;
+                font-family: sans-serif;   
+                vertical-align: middle;
+                padding-bottom: 0.85em;
+                padding-top: 0.85em;
+                font-weight: normal;
+                text-align: center;
+            }
+            body {
+                background-color: #0c0c0d;
+                color: #ffffff;
+                font-family: sans-serif;
+            }
+            #fly_in {
+                position:absolute; left:0 ;
+                overflow:auto;
+                margin-left: 1em;
+                margin-top: 0.4em;
+                height: 2.5em;
+                width: 2.5em;
+                background: #870a3d; /* Old browsers */
+                background: -moz-linear-gradient(top,  #870a3d 0%, #980440 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#870a3d), color-stop(100%,#980440)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #870a3d 0%,#980440 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #870a3d 0%,#980440 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #870a3d 0%,#980440 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  #870a3d 0%,#980440 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#870a3d', endColorstr='#980440',GradientType=0 ); /* IE6-9 */
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+            a {
+                color: #9c9c9c;
+                text-decoration: none;
+            }
+            .a_big {
+                font-size: 1.2em;
+            }
+            .red {
+                color: #dc075e;
+            }
+            .post {
+                background-color: #1a1a1c;
+                margin-bottom: 1em;
+                border-bottom: solid #080809;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+            #first {
+                margin-top: 3.8em;
+            }
+            hr {
+                border-color: #333338;
+                margin-top: 0.7em;
+                margin-bottom: 0.7em;
+            }
+            .time {
+                float: right;
+                color: #333338;
+            }
+            .margin_b {
+                padding-bottom: 0.7em;
+            }
+            .slim_margin {
+                padding-bottom: 0.3em;
+            }
+            .group {
+                display: box;
+                margin-bottom: em;
+             
+            }
+            .buttons {
+                
+                margin-top: .5em;
+                margin-bottom: 0.2em;
+            }
+            .a_space {
+                margin-right: 1.2em;
+            }
+            
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="fly_in">
+                Menu
+            </div>
+            <h1>Confession <b>Feed</b></h1>
+        </div>
+        <div id="main">
+            <div class="post" id="first">
+                <p class="time">1h</p><p class="margin_b"><a href="#none" class="red group">Confession Group</a></p>
+                <p>Sample confession. Oh dayam! huuh? Yah that's right lets get this on the second line like so.</p>
+                <hr>99 Gasps!<hr>
+                <p class="margin_b a_big"><a href="#none">See 2 earlier comments</a></p>
+                <p class="slim_margin">Study? psssh. no</p>
+                <p class="margin_b">I could not agree more.</p>
+                <div class="buttons">
+                    <a href="#none" class="a_big a_space">Gasp!</a><a href="#none" class="a_big a_space">Comment</a><a href="#none" class="a_big">Share</a>
+                </div>
+            </div>
+            <div class="post">
+                <p class="time">1h</p><p class="margin_b"><a href="#none" class="red group">Confession Group</a></p>
+                <p>Sample confession. Oh dayam! huuh?</p>
+                <hr>99 Gasps!<hr>
+                <p class="margin_b"><a href="#none">See 2 earlier comments</a></p>
+                <p class="slim_margin">Study? psssh. no</p>
+                <p class="margin_b">I could not agree more.</p>
+                <a href="#none">Gasp</a><a href="#none">Comment</a><a href="#none">Share</a>
+            </div>
+            <div class="post">
+                <p class="time">1h</p><p class="margin_b"><a href="#none" class="red group">Confession Group</a></p>
+                <p>Sample confession. Oh dayam! huuh?</p>
+                <hr>99 Gasps!<hr>
+                <p class="margin_b"><a href="#none">See 2 earlier comments</a></p>
+                <p class="slim_margin">Study? psssh. no</p>
+                <p class="margin_b">I could not agree more.</p>
+                <a href="#none">Gasp</a><a href="#none">Comment</a><a href="#none">Share</a>
+            </div>
+        </div>
+    </body>
+</html>
