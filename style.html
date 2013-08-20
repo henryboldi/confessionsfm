@@ -6,11 +6,12 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="normalize.css" type="text/css"/>
 
         <title>Confessions.fm</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width">
         <style>
             #header {
                 background-color: #dc075e;
@@ -35,6 +36,7 @@ and open the template in the editor.
                 background-color: #0c0c0d;
                 color: #ffffff;
                 font-family: sans-serif;
+                font-weight: 100;
             }
             #fly_in {
                 position:absolute; left:0 ;
@@ -51,12 +53,13 @@ and open the template in the editor.
                 background: -ms-linear-gradient(top,  #870a3d 0%,#980440 100%); /* IE10+ */
                 background: linear-gradient(to bottom,  #870a3d 0%,#980440 100%); /* W3C */
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#870a3d', endColorstr='#980440',GradientType=0 ); /* IE6-9 */
-                -moz-border-radius: 5px;
-                border-radius: 5px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
             }
             a {
                 color: #9c9c9c;
                 text-decoration: none;
+                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
             }
             .a_big {
                 font-size: 1.2em;
@@ -74,7 +77,7 @@ and open the template in the editor.
                 padding-right: 1em;
             }
             #first {
-                margin-top: 3.8em;
+                margin-top: 4.5em;
             }
             hr {
                 border-color: #333338;
@@ -108,12 +111,46 @@ and open the template in the editor.
 
             
         </style>
+        <script type="text/javascript" language="javascript" src="jquery.js"></script>
+        <script type="text/javascript" language="javascript" src="jquery.mmenu.js"></script>
+        <link type="text/css" rel="stylesheet" media="all" href="mmenu.css" />
+        <link type="text/css" rel="stylesheet" href="mmenu-zposition.css" />
+        <script type="application/javascript" src="/lib/fastclick.js"></script> 
+        <script type="application/javascript">
+	window.addEventListener('load', function() {
+		var textInput = document.querySelector('input');
+
+		FastClick.attach(document.body);
+		Array.prototype.forEach.call(document.getElementsByClassName('body'), function(testEl) {
+			testEl.addEventListener('click', function() {
+				textInput.focus();
+			}, false)
+		});
+	}, false);
+			$(function() {
+				var $org = $('nav#menu').detach();
+
+				$('a[href="#menu"]').click(function(e) {
+                                       
+					$('#menu').remove();
+					var $clone = $org.clone().appendTo('body').mmenu({
+						position: $('input[name="pos"]:checked').val(),
+						zposition: $('input[name="zpos"]:checked').val()
+					});
+					setTimeout(function() {
+						$clone.trigger( 'open' );
+					}, 50);
+                                e.preventDefault();
+				});
+			});
+    </script> 
     </head>
     <body>
+        <div> <!-- the wrapper -->
         <div id="header">
-            <div id="fly_in">
+            <a href="#menu"><div id="fly_in">
                 Menu
-            </div>
+                </div></a>
             <h1>Confession <b>Feed</b></h1>
         </div>
         <div id="main">
@@ -147,5 +184,13 @@ and open the template in the editor.
                 <a href="#none">Gasp</a><a href="#none">Comment</a><a href="#none">Share</a>
             </div>
         </div>
+        </div>
+                <nav id="menu">
+   <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About us</a></li>
+      <li><a href="/contact/">Contact</a></li>
+   </ul>
+</nav>
     </body>
 </html>
