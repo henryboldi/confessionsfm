@@ -182,8 +182,8 @@
 		);
 	};
 	$.fn.mmenu.defaults = {
-		position		: 'left',
-		zposition		: 'back',
+		position		: 'right',
+		zposition		: 'next',
 		slidingSubmenus	: true,
 		modal			: false,
 		onClick			: {
@@ -196,7 +196,7 @@
 		},
 		configuration	: {
 			preventTabbing		: true,
-			hardwareAcceleration: true,
+			hardwareAcceleration: true, //default true
 			selectedClass		: 'Selected',
 			labelClass			: 'Label',
 			counterClass		: 'Counter',
