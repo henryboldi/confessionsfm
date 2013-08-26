@@ -12,110 +12,8 @@ and open the template in the editor.
 
         <title>Confessions.fm</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <style>
-            #header {
-                background-color: #dc075e;
-                border-bottom: solid #b90850;
-                width: 100%;
-                position: fixed;
-                top: 0px;
-                left: 0px;
-                
-            }
-            h1 {
-                
-                font-size: 1.2em;
-                color: #ffffff;
-                font-family: sans-serif;   
-                vertical-align: middle;
-                padding-bottom: 0.85em;
-                padding-top: 0.85em;
-                font-weight: normal;
-                text-align: center;
-            }
-            body {
-                background-color: #0c0c0d;
-                color: #ffffff;
-                font-family: sans-serif;
-                font-weight: 100;
-            }
-            #fly_in {
-                position:absolute; left:0 ;
-                overflow:auto;
-                margin-left: 1em;
-                margin-top: 0.4em;
-                height: 2.5em;
-                width: 2.5em;
-                background: #870a3d; /* Old browsers */
-                background: -moz-linear-gradient(top,  #870a3d 0%, #980440 100%); /* FF3.6+ */
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#870a3d), color-stop(100%,#980440)); /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(top,  #870a3d 0%,#980440 100%); /* Chrome10+,Safari5.1+ */
-                background: -o-linear-gradient(top,  #870a3d 0%,#980440 100%); /* Opera 11.10+ */
-                background: -ms-linear-gradient(top,  #870a3d 0%,#980440 100%); /* IE10+ */
-                background: linear-gradient(to bottom,  #870a3d 0%,#980440 100%); /* W3C */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#870a3d', endColorstr='#980440',GradientType=0 ); /* IE6-9 */
-                -moz-border-radius: 3px;
-                border-radius: 3px;
-            }
-            a {
-                color: #9c9c9c;
-                text-decoration: none;
-                -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            }
-            .a_big {
-                font-size: 1.2em;
-            }
-            .red {
-                color: #dc075e;
-            }
-            .post {
-                background-color: #1a1a1c;
-                margin-bottom: 1em;
-                border-bottom: solid #080809;
-                padding-top: 1em;
-                padding-bottom: 1em;
-                padding-left: 1em;
-                padding-right: 1em;
-            }
-            #first {
-                margin-top: 4.5em;
-            }
-            hr {
-                border-color: #333338;
-                margin-top: 0.7em;
-                margin-bottom: 0.7em;
-            }
-            .time {
-                float: right;
-                color: #333338;
-            }
-            .margin_b {
-                padding-bottom: 0.7em;
-            }
-            .slim_margin {
-                padding-bottom: 0.3em;
-            }
-            .group {
-                display: box;
-                margin-bottom: em;
-             
-            }
-            .buttons {
-                
-                margin-top: .5em;
-                margin-bottom: 0.2em;
-            }
-            .a_space {
-                margin-right: 1.2em;
-            }
-            
-
-            
-        </style>
         <script type="text/javascript" language="javascript" src="jquery.js"></script>
-        <script type="text/javascript" language="javascript" src="jquery.mmenu.js"></script>
-        <link type="text/css" rel="stylesheet" media="all" href="mmenu.css" />
-        <link type="text/css" rel="stylesheet" href="mmenu-zposition.css" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
         <script type="application/javascript" src="/lib/fastclick.js"></script> 
         <script type="application/javascript">
 	window.addEventListener('load', function() {
@@ -128,34 +26,28 @@ and open the template in the editor.
 			}, false)
 		});
 	}, false);
-			$(function() {
-				var $org = $('nav#menu').detach();
-
-				$('a[href="#menu"]').click(function(e) {
-                                       
-					$('#menu').remove();
-					var $clone = $org.clone().appendTo('body').mmenu({
-						position: $('input[name="pos"]:checked').val(),
-						zposition: $('input[name="zpos"]:checked').val()
-					});
-					setTimeout(function() {
-						$clone.trigger( 'open' );
-					}, 50);
-                                e.preventDefault();
-				});
-			});
+	
     </script> 
     </head>
     <body>
-        <div> <!-- the wrapper -->
-        <div id="header">
-            <a href="#menu"><div id="fly_in">
-                Menu
-                </div></a>
-            <h1>Confession <b>Feed</b></h1>
-        </div>
         
-        <div id="main">
+
+<!--<input type="checkbox" name="handler-right" class="handler" id="handler-right" onclick="null" />-->
+<input type="checkbox" name="handler-left" class="handler" id="handler-left" onclick="null" />
+        <div id="wrapper"> <!-- the wrapper -->
+       
+           
+                <p id="button">
+        <!--<label for="handler-right" id="right" href="#">Open right →</label>-->
+         
+            <h1>Confession <b>Feed</b></h1>
+        
+        <label for="handler-left" id="left" href="#"><div id="fly_in">
+                Menu
+                </div></label>
+    </p>
+        
+        <div id="content">
             <div class="post" id="first">
                 <p class="time">1h</p><p class="margin_b"><a href="#none" class="red group">Confession Group</a></p>
                 <p>Sample confession. Oh dayam! huuh? Yah that's right lets get this on the second line like so.</p>
@@ -187,12 +79,25 @@ and open the template in the editor.
             </div>
         </div>
         </div>
-                <nav id="menu">
+                <div id="menu">
    <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about/">About us</a></li>
       <li><a href="/contact/">Contact</a></li>
    </ul>
-</nav>
+</div>
+	<script src='ftscroller.js'></script>
+
+<!--Set up the scroller, disabling horizontal scrolling-->
+<script>
+var scroller = new FTScroller(document.getElementById('content'), {
+scrollbars: false,
+scrollingX: false,
+updateOnChanges: true,
+alwaysScroll: true,
+updateOnWindowResize: true,
+bouncing: false
+});
+</script>
     </body>
 </html>
