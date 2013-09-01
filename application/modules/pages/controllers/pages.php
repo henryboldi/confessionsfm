@@ -8,11 +8,11 @@ class Pages extends MX_Controller {
        
         $data['query'] = $this->mdl_pages->get('id');
        
-        $data['module'] = "pages";
+        /*$data['module'] = "pages";
         $data['view_file'] = "display";
-        echo Modules::run('templates/general', $data);
+        echo Modules::run('templates/general', $data);*/
         
-        //$this->load->view('display', $data);
+        $this->load->view('display', $data);
                 
     }
     
