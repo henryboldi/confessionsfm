@@ -40,7 +40,7 @@ class Pages extends MX_Controller {
         
             $data['module'] = "pages";
             $data['view_file'] = "create_page_form";
-            $data['title'] = "New Confession Group";
+            $data['title'] = "New Confession Group";    
             echo Modules::run('templates/general', $data);
            // $this->load->view('create_page_form', $data); 
         } else {
