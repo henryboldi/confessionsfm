@@ -48,9 +48,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'root';
+$db['default']['hostname'] = 'us-cdbr-azure-east-c.cloudapp.net';
+$db['default']['username'] = 'b18bf4c02907bb';
+$db['default']['password'] = '2c0f07d5';
 $db['default']['database'] = 'confessionsfm';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
