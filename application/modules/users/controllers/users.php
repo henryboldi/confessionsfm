@@ -11,8 +11,9 @@ class Users extends MX_Controller {
         
         $data['module'] = "users";
         $data['view_file'] = "create_user";
+        $data['title'] = "Sign Up";
+        echo Modules::run('templates/general', $data); 
         
-        $this->load->view('create_user', $data); 
     
     }
     
@@ -22,8 +23,9 @@ class Users extends MX_Controller {
         
         $data['module'] = "users";
         $data['view_file'] = "login";
+        $data['title'] = "Login";
         
-        $this->load->view('login', $data); 
+        echo Modules::run('templates/general', $data); 
     }
     
     function login_status() {
@@ -33,16 +35,16 @@ class Users extends MX_Controller {
         
         if($this->session->userdata('logged_in')) {
             //logged in
-            echo "You are currently logged in as: ";
+            //echo "You are currently logged in as: ";
             //$this->data['user_email'] = $this->session->userdata('user_email');
             //print_r($this->session->all_userdata());
             $user_data = $this->session->all_userdata(); //i know there is a better way of doing this.
-            echo $user_data['user_email'].' ';
-            echo anchor('users/logout', 'Logout');
-            echo anchor('pages/my_pages', 'My Pages');
+            //echo $user_data['user_email'].' ';
+            echo anchor('pages/my_groups', 'My Groups');
+            echo anchor('users/logout', 'Logout');            
         } else {
             //NOT logged in
-            echo "You are not logged in. ";
+            //echo "You are not logged in. ";
             echo anchor('users/login', 'Login');
         }
     }

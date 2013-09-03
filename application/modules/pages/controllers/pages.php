@@ -8,15 +8,16 @@ class Pages extends MX_Controller {
        
         $data['query'] = $this->mdl_pages->get('id');
        
-        /*$data['module'] = "pages";
+        $data['module'] = "pages";
         $data['view_file'] = "display";
-        echo Modules::run('templates/general', $data);*/
+        $data['title'] = "Confession Groups";
+        echo Modules::run('templates/general', $data);
         
-        $this->load->view('display', $data);
+       // $this->load->view('display', $data);
                 
     }
     
-    function my_pages() {
+    function my_groups() {
         $this->load->model('mdl_pages');
 
         $user_id = modules::run('users/get_user_id');       
@@ -24,6 +25,7 @@ class Pages extends MX_Controller {
         
         $data['module'] = "pages";
         $data['view_file'] = "my_pages";
+        $data['title'] = "My Groups";
         echo Modules::run('templates/general', $data);
         //$this->load->view('my_pages', $data);
         
@@ -38,6 +40,7 @@ class Pages extends MX_Controller {
         
             $data['module'] = "pages";
             $data['view_file'] = "create_page_form";
+            $data['title'] = "New Confession Group";
             echo Modules::run('templates/general', $data);
            // $this->load->view('create_page_form', $data); 
         } else {

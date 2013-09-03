@@ -1,6 +1,7 @@
 #header {
   background-color: #dc075e;
-  border-bottom: solid #b90850;
+  border-style: solid;
+  border-bottom: 10px solid #b90850;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -11,12 +12,12 @@ h1 {
   top: 0px;
   position: absolute;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #ffffff;
   font-family: sans-serif;
   vertical-align: middle;
-  padding-bottom: 0.85em;
-  padding-top: 0.85em;
+  padding-bottom: 0.90em;
+  padding-top: 1em;
   font-weight: normal;
   text-align: center;
 }
@@ -38,8 +39,8 @@ label {
   top: 0;
   overflow: auto;
   margin-left: 1em;
-  margin-top: 0.4em;
-  height: 2.5em;
+  margin-top: 0.6em;
+  height: 2.3em;
   width: 2.5em;
   background: #870a3d;
   /* Old browsers */
@@ -59,6 +60,16 @@ label {
   /* IE6-9 */
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+#fly_in img {
+  display: block;
+  margin: 0px auto;
+  margin-top: 27%;
+}
+
+#loading {
+  display: block;
+  margin-left: 0px;
 }
 
 a {
