@@ -30,7 +30,7 @@ and open the template in the editor.
     </script> 
     </head>
     <body>
-        
+     
 
 <!--<input type="checkbox" name="handler-right" class="handler" id="handler-right" onclick="null" />-->
 <input type="checkbox" name="handler-left" class="handler" id="handler-left" onclick="null" />
@@ -40,26 +40,28 @@ and open the template in the editor.
                 <p id="button">
         <!--<label for="handler-right" id="right" href="#">Open right →</label>-->
          
-            <h1>Confession <b>Feed</b></h1>
+            <h1><?php echo $title; ?></h1>
         
         <label for="handler-left" id="left" href="#"><div id="fly_in">
-                Menu
+                <img src="<?php echo base_url().'lib/menu.png'; ?>" width="22px" height="16px">
                 </div></label>
                 </p>
         
         <div id="content">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, ligula sit amet aliquam viverra, eros risus molestie eros, eu euismod urna turpis id justo. Integer rhoncus augue ut convallis venenatis. Aenean tempus leo dolor. Vestibulum eget sapien ut lorem hendrerit iaculis. Aenean et nibh commodo, bibendum sapien nec, suscipit tellus. Aenean consectetur quis urna mattis dapibus. Suspendisse quis volutpat sem, in consectetur nulla. Mauris quis nulla in turpis consequat sollicitudin ac tempor est. Nullam dictum aliquam condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis volutpat rutrum hendrerit. Integer ornare tempus tincidunt. Ut quis dui orci. Suspendisse fermentum augue ac fringilla dignissim. Suspendisse nec risus ut dui ultrices auctor. Ut vitae mi vitae sem porta commodo blandit at orci.</p>
+        <?php
+        $this->load->view($module.'/'.$view_file)
+        ?>
+
         </div>
     </div>
                 <div id="menu">
    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about/">About us</a></li>
-      <li><a href="/contact/">Contact</a></li>
+      <li><a href="#" id="test">Confession Groups</a></li>
+      <li><?php echo Modules::run('users/login_status'); ?></li>
    </ul>
 </div>
 <script type="application/javascript" src="<?php echo base_url().'ftscroller.js'; ?>"></script> 
-    
+  
 
 <!--Set up the scroller, disabling horizontal scrolling-->
 <script type="application/javascript">
@@ -70,6 +72,10 @@ updateOnChanges: true,
 alwaysScroll: true,
 updateOnWindowResize: true,
 bouncing: false
+});
+
+$('a').click(function() {
+    $('#handler-left').prop('checked', false);
 });
 </script>
 </body>

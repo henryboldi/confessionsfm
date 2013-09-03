@@ -14,6 +14,7 @@ function __construct() {
         
         $data['module'] = "confessions";
         $data['view_file'] = "post_confession_form";
+        $data['title'] = "Confess";
         echo Modules::run('templates/general', $data);
         //$this->load->view('post_confession_form', $data); 
     
@@ -21,9 +22,12 @@ function __construct() {
     function view() {
         $this->load->model('mdl_confessions');
         $data['query'] = $this->mdl_confessions->get_where_custom('page_id', $this->uri->segment(3));
+        $this->load->module('pages');
+        $name = $this->pages->page_name($this->uri->segment(3));
         
         $data['module'] = "confessions";
         $data['view_file'] = "display";
+        $data['title'] = $name;
         echo Modules::run('templates/general', $data);
         //$this->load->view('display', $data);
     }
