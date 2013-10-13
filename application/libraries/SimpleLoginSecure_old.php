@@ -72,8 +72,8 @@ class SimpleLoginSecure
 		$data = array(
 					'user_email' => $user_email,
 					'user_pass' => $user_pass_hashed,
-					'user_date' => date("Y-m-d H:i:s"),
-					'user_modified' => date("Y-m-d H:i:s"),
+					'user_date' => date('c'),
+					'user_modified' => date('c'),
 				);
 
 		$this->CI->db->set($data); 
@@ -119,7 +119,7 @@ class SimpleLoginSecure
 		//Update account into the database
 		$data = array(
 					'user_email' => $user_email,
-					'user_modified' => date("Y-m-d H:i:s"),
+					'user_modified' => date('c'),
 				);
  
 		$this->CI->db->where('user_id', $user_id);
@@ -177,7 +177,7 @@ class SimpleLoginSecure
 			//Create a fresh, brand new session
 			$this->CI->session->sess_create();
 
-			$this->CI->db->simple_query('UPDATE ' . $this->user_table  . ' SET user_last_login = "' . date("Y-m-d H:i:s") . '" WHERE user_id = ' . $user_data['user_id']);
+			$this->CI->db->simple_query('UPDATE ' . $this->user_table  . ' SET user_last_login = NOW() WHERE user_id = ' . $user_data['user_id']);
 
 			//Set session data
 			unset($user_data['user_pass']);
@@ -253,7 +253,7 @@ class SimpleLoginSecure
 		// Insert new password into the database
 		$data = array(
 			'user_pass' => $user_pass_hashed,
-			'user_modified' => date("Y-m-d H:i:s")
+			'user_modified' => date('c')
 		);
 		
 		$this->CI->db->set($data);
