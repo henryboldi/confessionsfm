@@ -7,7 +7,7 @@ echo anchor('confessions/create/'.$this->uri->segment(3), 'Confess');
 
 foreach ($query->result() as $row) {
     $edit_url = base_url().'confessions/'.$row->id;
-    echo '<p>'.$row->confession.'</p> at '.$row->confession_date_time;
+    echo "<div class='post'><p>".$row->confession.'</p> at '.$row->confession_date_time;
     $this->load->module('gasps');
     $this->gasps->create($row->id);
   /*  $this->load->module('comments');
@@ -16,6 +16,7 @@ foreach ($query->result() as $row) {
    * 
    */
     Modules::run('comments/view', $row->id);
+    echo '</div>';
 }
     
     
