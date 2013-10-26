@@ -2730,3 +2730,54 @@ DEBUG - 2013-10-13 23:31:28 --> File loaded: application/modules/users/views/log
 DEBUG - 2013-10-13 23:31:28 --> File loaded: application/modules/templates/views/general.php
 DEBUG - 2013-10-13 23:31:28 --> Final output sent to browser
 DEBUG - 2013-10-13 23:31:28 --> Total execution time: 0.3681
+DEBUG - 2013-10-13 23:32:19 --> Config Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Hooks Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Utf8 Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> UTF-8 Support Enabled
+DEBUG - 2013-10-13 23:32:19 --> URI Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Router Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Output Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Security Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Input Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-13 23:32:19 --> Language Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Language Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Config Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Loader Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Helper loaded: form_helper
+DEBUG - 2013-10-13 23:32:19 --> Helper loaded: url_helper
+DEBUG - 2013-10-13 23:32:19 --> Helper loaded: html_helper
+DEBUG - 2013-10-13 23:32:19 --> Database Driver Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Session Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Helper loaded: string_helper
+DEBUG - 2013-10-13 23:32:19 --> Session routines successfully run
+DEBUG - 2013-10-13 23:32:19 --> Controller Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> Confessions MX_Controller Initialized
+DEBUG - 2013-10-13 23:32:19 --> Model Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/confessions/models/mdl_confessions.php
+DEBUG - 2013-10-13 23:32:19 --> Model Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/controllers/../modules/pages/controllers/pages.php
+DEBUG - 2013-10-13 23:32:19 --> Pages MX_Controller Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/pages/models/mdl_pages.php
+DEBUG - 2013-10-13 23:32:19 --> Model Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-13 23:32:19 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/controllers/../modules/gasps/controllers/gasps.php
+DEBUG - 2013-10-13 23:32:19 --> Gasps MX_Controller Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/gasps/models/mdl_gasps.php
+DEBUG - 2013-10-13 23:32:19 --> Model Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/gasps/views/gasp_button.php
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/controllers/../modules/comments/controllers/comments.php
+DEBUG - 2013-10-13 23:32:19 --> Comments MX_Controller Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/comments/models/mdl_comments.php
+DEBUG - 2013-10-13 23:32:19 --> Model Class Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/comments/views/confession_comments.php
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/controllers/../modules/users/controllers/users.php
+DEBUG - 2013-10-13 23:32:19 --> Users MX_Controller Initialized
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/confessions/views/display.php
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-13 23:32:19 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-13 23:32:19 --> Final output sent to browser
+DEBUG - 2013-10-13 23:32:19 --> Total execution time: 0.3777

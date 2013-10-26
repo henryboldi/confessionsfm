@@ -15,10 +15,22 @@ foreach ($query->result() as $row) {
     $this->comments->view($row->id);
    * 
    */
+    echo "<div id='result'></div>";
     Modules::run('comments/view', $row->id);
     echo '</div>';
 }
     
-    
+
 
 ?>
+
+    <script type="text/javascript">
+              $(document).ready( function()
+			{
+                            $( "#result" ).load( "https://www.google.com/", function() {
+                                alert( "Load was performed." );
+                            });
+                        });
+
+    </script> 
+    

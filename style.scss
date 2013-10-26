@@ -1,7 +1,5 @@
             #header {
-                background-color: #dc075e;                
-                border-style:solid;
-                border-bottom:10px solid #b90850;
+                background-color: #dc075e;    
                 width: 100%;
                 position: fixed;
                 top: 0px;
@@ -30,24 +28,18 @@
             label{
                 display: block;
             }
-            #fly_in {                
+            #fly_in {
                 position:absolute; left:0 ;
+                //padding-top: 9.894px;
                 top: 0;
-                overflow:auto;
-                margin-left: 1em;
-                margin-top: 0.6em;
-                height: 2.3em;
-                width: 2.5em;
-                background: #870a3d; /* Old browsers */
-                background: -moz-linear-gradient(top,  #870a3d 0%, #980440 100%); /* FF3.6+ */
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#870a3d), color-stop(100%,#980440)); /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(top,  #870a3d 0%,#980440 100%); /* Chrome10+,Safari5.1+ */
-                background: -o-linear-gradient(top,  #870a3d 0%,#980440 100%); /* Opera 11.10+ */
-                background: -ms-linear-gradient(top,  #870a3d 0%,#980440 100%); /* IE10+ */
-                background: linear-gradient(to bottom,  #870a3d 0%,#980440 100%); /* W3C */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#870a3d', endColorstr='#980440',GradientType=0 ); /* IE6-9 */
-                -moz-border-radius: 3px;
-                border-radius: 3px;
+                background-image:url('menulogo.svg');
+                background-repeat: no-repeat;
+                width: 54.624px;
+                height: 55px;
+                padding-right: 8px;
+                &:active {
+                    background-color: #AD1050;
+                }
                 img {
                     display: block;
                     margin: 0px auto;
@@ -71,15 +63,14 @@
             }
             .post {
                 background-color: #1a1a1c;
-                margin-bottom: 1em;
-                border-bottom: solid #080809;
+                margin-bottom: 1px;
                 padding-top: 1em;
                 padding-bottom: 1em;
                 padding-left: 1em;
                 padding-right: 1em;
             }
             #first {
-                margin-top: 1em;
+                margin-top: 0px;
             }
             hr {
                 border-color: #333338;
@@ -224,7 +215,6 @@ body {
         height: 35px;
         padding: 10px;
         background: #dc075e;
-        border-bottom: solid #b90850;
         line-height: 20px;
     
         label {
@@ -248,7 +238,7 @@ body {
         //font-weight: 300;
         height: auto;
         position: absolute;
-        top: 58px;
+        top: 55px;
         left: 0;
         right: 0;
         bottom: 0;
