@@ -27,7 +27,13 @@ and open the template in the editor.
         });
     }, false);
     
+
+                        
+
+    
     </script> 
+    
+    
     </head>
     <body>
      
@@ -43,7 +49,7 @@ and open the template in the editor.
             <h1><?php echo $title; ?></h1>
         
         <label for="handler-left" id="left" href="#"><div id="fly_in">
-                <img src="<?php echo base_url().'lib/menu.png'; ?>" width="22px" height="16px">
+                
                 </div></label>
                 </p>
         

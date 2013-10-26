@@ -26,8 +26,8 @@ function __construct() {
         $data['confession_id'] = $confession_id;
         
         
-        $data['module'] = "comments";
-        $data['view_file'] = "post_comment_form";
+        //$data['module'] = "comments";
+        //$data['view_file'] = "post_comment_form";
         
         $this->load->view('post_comment_form', $data); 
     
