@@ -1666,3 +1666,200 @@ DEBUG - 2013-10-26 20:07:14 --> File loaded: application/modules/users/views/log
 DEBUG - 2013-10-26 20:07:14 --> File loaded: application/modules/templates/views/general.php
 DEBUG - 2013-10-26 20:07:14 --> Final output sent to browser
 DEBUG - 2013-10-26 20:07:14 --> Total execution time: 0.5451
+DEBUG - 2013-10-26 20:14:20 --> Config Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Hooks Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 20:14:20 --> URI Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Router Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> No URI present. Default controller set.
+DEBUG - 2013-10-26 20:14:20 --> Output Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Security Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Input Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 20:14:20 --> Language Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Language Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Config Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Loader Class Initialized
+DEBUG - 2013-10-26 20:14:20 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 20:14:20 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 20:14:20 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 20:14:20 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Config Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Hooks Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 20:14:25 --> URI Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Router Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> No URI present. Default controller set.
+DEBUG - 2013-10-26 20:14:25 --> Output Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Security Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Input Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 20:14:25 --> Language Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Language Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Config Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Loader Class Initialized
+DEBUG - 2013-10-26 20:14:25 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 20:14:25 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 20:14:25 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 20:14:25 --> Database Driver Class Initialized
+ERROR - 2013-10-26 20:14:39 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: MySQL server has gone away C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2013-10-26 20:14:39 --> Session Class Initialized
+DEBUG - 2013-10-26 20:14:39 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 20:14:39 --> Session routines successfully run
+DEBUG - 2013-10-26 20:14:39 --> Controller Class Initialized
+DEBUG - 2013-10-26 20:14:39 --> Pages MX_Controller Initialized
+DEBUG - 2013-10-26 20:14:39 --> Model Class Initialized
+DEBUG - 2013-10-26 20:14:39 --> File loaded: application/modules/pages/models/mdl_pages.php
+DEBUG - 2013-10-26 20:14:39 --> Model Class Initialized
+DEBUG - 2013-10-26 20:14:39 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 20:14:39 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 20:14:39 --> File loaded: application/modules/pages/views/display.php
+DEBUG - 2013-10-26 20:14:39 --> File loaded: application/controllers/../modules/users/controllers/users.php
+DEBUG - 2013-10-26 20:14:39 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 20:14:39 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 20:14:39 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 20:14:39 --> Final output sent to browser
+DEBUG - 2013-10-26 20:14:39 --> Total execution time: 19.5842
+ERROR - 2013-10-26 20:14:44 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: MySQL server has gone away C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-10-26 20:14:44 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Link to server lost, unable to reconnect C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-10-26 20:14:44 --> Unable to connect to the database
+DEBUG - 2013-10-26 20:14:44 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2013-10-26 20:14:49 --> Config Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Hooks Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 20:14:49 --> URI Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Router Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> No URI present. Default controller set.
+DEBUG - 2013-10-26 20:14:49 --> Output Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Security Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Input Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 20:14:49 --> Language Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Language Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Config Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Loader Class Initialized
+DEBUG - 2013-10-26 20:14:49 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 20:14:49 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 20:14:49 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 20:14:49 --> Database Driver Class Initialized
+ERROR - 2013-10-26 20:14:49 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: User 'b18bf4c02907bb' has exceeded the 'max_user_connections' resource (current value: 4) C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-10-26 20:14:49 --> Unable to connect to the database
+DEBUG - 2013-10-26 20:14:49 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2013-10-26 20:16:03 --> Config Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Hooks Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 20:16:03 --> URI Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Router Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> No URI present. Default controller set.
+DEBUG - 2013-10-26 20:16:03 --> Output Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Security Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Input Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 20:16:03 --> Language Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Language Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Config Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Loader Class Initialized
+DEBUG - 2013-10-26 20:16:03 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 20:16:03 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 20:16:03 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 20:16:03 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 20:16:05 --> Session Class Initialized
+DEBUG - 2013-10-26 20:16:05 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 20:16:05 --> Session routines successfully run
+DEBUG - 2013-10-26 20:16:05 --> Controller Class Initialized
+DEBUG - 2013-10-26 20:16:05 --> Pages MX_Controller Initialized
+DEBUG - 2013-10-26 20:16:05 --> Model Class Initialized
+DEBUG - 2013-10-26 20:16:05 --> File loaded: application/modules/pages/models/mdl_pages.php
+DEBUG - 2013-10-26 20:16:05 --> Model Class Initialized
+DEBUG - 2013-10-26 20:16:05 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 20:16:05 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 20:16:05 --> File loaded: application/modules/pages/views/display.php
+DEBUG - 2013-10-26 20:16:05 --> File loaded: application/controllers/../modules/users/controllers/users.php
+DEBUG - 2013-10-26 20:16:05 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 20:16:05 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 20:16:05 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 20:16:05 --> Final output sent to browser
+DEBUG - 2013-10-26 20:16:05 --> Total execution time: 1.7877
+DEBUG - 2013-10-26 20:18:20 --> Config Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Hooks Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 20:18:20 --> URI Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Router Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> No URI present. Default controller set.
+DEBUG - 2013-10-26 20:18:20 --> Output Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Security Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Input Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 20:18:20 --> Language Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Language Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Config Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Loader Class Initialized
+DEBUG - 2013-10-26 20:18:20 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 20:18:20 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 20:18:20 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 20:18:20 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 20:18:22 --> Session Class Initialized
+DEBUG - 2013-10-26 20:18:22 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 20:18:22 --> Session routines successfully run
+DEBUG - 2013-10-26 20:18:22 --> Controller Class Initialized
+DEBUG - 2013-10-26 20:18:22 --> Pages MX_Controller Initialized
+DEBUG - 2013-10-26 20:18:22 --> Model Class Initialized
+DEBUG - 2013-10-26 20:18:22 --> File loaded: application/modules/pages/models/mdl_pages.php
+DEBUG - 2013-10-26 20:18:22 --> Model Class Initialized
+DEBUG - 2013-10-26 20:18:22 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 20:18:22 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 20:18:22 --> File loaded: application/modules/pages/views/display.php
+DEBUG - 2013-10-26 20:18:22 --> File loaded: application/controllers/../modules/users/controllers/users.php
+DEBUG - 2013-10-26 20:18:22 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 20:18:22 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 20:18:22 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 20:18:22 --> Final output sent to browser
+DEBUG - 2013-10-26 20:18:22 --> Total execution time: 2.4038
+DEBUG - 2013-10-26 20:18:22 --> Config Class Initialized
+DEBUG - 2013-10-26 20:18:22 --> Hooks Class Initialized
+DEBUG - 2013-10-26 20:18:22 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 20:18:22 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 20:18:22 --> URI Class Initialized
+DEBUG - 2013-10-26 20:18:22 --> Router Class Initialized
+ERROR - 2013-10-26 20:18:22 --> 404 Page Not Found --> 
+DEBUG - 2013-10-26 20:18:33 --> Config Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Hooks Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 20:18:33 --> URI Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Router Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> No URI present. Default controller set.
+DEBUG - 2013-10-26 20:18:33 --> Output Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Security Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Input Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 20:18:33 --> Language Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Language Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Config Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Loader Class Initialized
+DEBUG - 2013-10-26 20:18:33 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 20:18:33 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 20:18:33 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 20:18:33 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 20:18:34 --> Session Class Initialized
+DEBUG - 2013-10-26 20:18:34 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 20:18:34 --> Session routines successfully run
+DEBUG - 2013-10-26 20:18:34 --> Controller Class Initialized
+DEBUG - 2013-10-26 20:18:34 --> Pages MX_Controller Initialized
+DEBUG - 2013-10-26 20:18:34 --> Model Class Initialized
+DEBUG - 2013-10-26 20:18:34 --> File loaded: application/modules/pages/models/mdl_pages.php
+DEBUG - 2013-10-26 20:18:34 --> Model Class Initialized
+DEBUG - 2013-10-26 20:18:34 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 20:18:34 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 20:18:34 --> File loaded: application/modules/pages/views/display.php
+DEBUG - 2013-10-26 20:18:34 --> File loaded: application/controllers/../modules/users/controllers/users.php
+DEBUG - 2013-10-26 20:18:34 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 20:18:34 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 20:18:34 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 20:18:34 --> Final output sent to browser
+DEBUG - 2013-10-26 20:18:34 --> Total execution time: 1.0444
