@@ -171,12 +171,12 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 80%;
+  width: 80.1%;
   z-index: 1;
   background: #333;
   overflow: auto;
   opacity: 0;
-  -webkit-transition: opacity 0s 0.5s;
+  -webkit-transition: opacity 0s 0.2s;
 }
 #menu ul, #favorites ul {
   display: block;
@@ -214,8 +214,8 @@ body {
   -moz-transition: opacity 0s 0s;
 }
 .handler#handler-right:checked ~ #wrapper {
-  -webkit-transform: translate3D(-80%, 0, 0);
-  -moz-transform: translate3D(-80%, 0, 0);
+  -webkit-transform: translate3D(-80.1%, 0, 0);
+  -moz-transform: translate3D(-80.1%, 0, 0);
 }
 .handler#handler-left:checked ~ #menu {
   opacity: 1;
@@ -223,8 +223,8 @@ body {
   -moz-transition: opacity 0s 0s;
 }
 .handler#handler-left:checked ~ #wrapper {
-  -webkit-transform: translate3D(80%, 0, 0);
-  -moz-transform: translate3D(80%, 0, 0);
+  -webkit-transform: translate3D(80.1%, 0, 0);
+  -moz-transform: translate3D(80.1%, 0, 0);
 }
 
 #wrapper {
@@ -235,8 +235,8 @@ body {
   box-shadow: 0 0 3px #000;
   -webkit-transform: translate3D(0, 0, 0);
   -moz-transform: translate3D(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  -moz-transition: -moz-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.2s ease-in-out;
 }
 #wrapper #button {
   height: 35px;

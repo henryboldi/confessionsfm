@@ -3875,3 +3875,65 @@ DEBUG - 2013-10-26 22:15:01 --> File loaded: application/modules/users/views/log
 DEBUG - 2013-10-26 22:15:01 --> File loaded: application/modules/templates/views/general.php
 DEBUG - 2013-10-26 22:15:01 --> Final output sent to browser
 DEBUG - 2013-10-26 22:15:01 --> Total execution time: 0.3865
+DEBUG - 2013-10-26 22:21:51 --> Config Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:21:51 --> URI Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Router Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Output Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Security Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Input Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:21:51 --> Language Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Language Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Config Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:21:51 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:21:51 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:21:51 --> Database Driver Class Initialized
+ERROR - 2013-10-26 22:21:51 --> Severity: Notice  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: send of 5 bytes failed with errno=10053 An established connection was aborted by the software in your host machine.
+ C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2013-10-26 22:21:51 --> Session Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:21:51 --> Session routines successfully run
+DEBUG - 2013-10-26 22:21:51 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:21:51 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:21:51 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:21:51 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:21:51 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:21:51 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:21:51 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:21:51 --> Final output sent to browser
+DEBUG - 2013-10-26 22:21:51 --> Total execution time: 0.5953
+DEBUG - 2013-10-26 22:22:09 --> Config Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:22:09 --> URI Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Router Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Output Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Security Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Input Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:22:09 --> Language Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Language Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Config Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:22:09 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:22:10 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:22:10 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:22:10 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:22:10 --> Session Class Initialized
+DEBUG - 2013-10-26 22:22:10 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:22:10 --> Session routines successfully run
+DEBUG - 2013-10-26 22:22:10 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:22:10 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:22:10 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:22:10 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:22:10 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:22:10 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:22:10 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:22:10 --> Final output sent to browser
+DEBUG - 2013-10-26 22:22:10 --> Total execution time: 0.3931
