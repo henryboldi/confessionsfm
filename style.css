@@ -50,6 +50,36 @@ label {
   margin-top: 27%;
 }
 
+input[type="submit"] {
+  background-color: #dc075e;
+  color: #ffffff;
+  border: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+input[type="text"], input[type="password"], textarea {
+  background-color: #78787F;
+  width: 100%;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+  outline: #FFFFFF solid 1px;
+}
+
 #loading {
   display: block;
   margin-left: 0px;
