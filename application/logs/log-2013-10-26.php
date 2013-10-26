@@ -3937,3 +3937,1015 @@ DEBUG - 2013-10-26 22:22:10 --> File loaded: application/modules/users/views/log
 DEBUG - 2013-10-26 22:22:10 --> File loaded: application/modules/templates/views/general.php
 DEBUG - 2013-10-26 22:22:10 --> Final output sent to browser
 DEBUG - 2013-10-26 22:22:10 --> Total execution time: 0.3931
+DEBUG - 2013-10-26 22:26:24 --> Config Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:26:24 --> URI Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Router Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Output Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Security Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Input Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:26:24 --> Language Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Language Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Config Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:26:24 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:26:24 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:26:24 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:26:24 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:26:26 --> Config Class Initialized
+DEBUG - 2013-10-26 22:26:26 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:26:26 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:26:26 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:26:26 --> URI Class Initialized
+DEBUG - 2013-10-26 22:26:27 --> Router Class Initialized
+DEBUG - 2013-10-26 22:26:27 --> Output Class Initialized
+DEBUG - 2013-10-26 22:26:27 --> Security Class Initialized
+DEBUG - 2013-10-26 22:26:27 --> Input Class Initialized
+DEBUG - 2013-10-26 22:26:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:26:27 --> Language Class Initialized
+DEBUG - 2013-10-26 22:26:27 --> Language Class Initialized
+DEBUG - 2013-10-26 22:26:27 --> Config Class Initialized
+DEBUG - 2013-10-26 22:26:27 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:26:27 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:26:27 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:26:27 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:26:27 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Config Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:26:29 --> URI Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Router Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Output Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Security Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Input Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:26:29 --> Language Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Language Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Config Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:26:29 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:26:29 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:26:29 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Session Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:26:29 --> Session routines successfully run
+DEBUG - 2013-10-26 22:26:29 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:26:29 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:26:29 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:26:29 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:26:29 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:26:29 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:26:29 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:26:29 --> Final output sent to browser
+DEBUG - 2013-10-26 22:26:29 --> Total execution time: 0.5526
+ERROR - 2013-10-26 22:26:43 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: MySQL server has gone away C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2013-10-26 22:26:43 --> Session Class Initialized
+DEBUG - 2013-10-26 22:26:43 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:26:43 --> Session routines successfully run
+DEBUG - 2013-10-26 22:26:43 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:26:43 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:26:43 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:26:43 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:26:43 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:26:43 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:26:43 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:26:43 --> Final output sent to browser
+DEBUG - 2013-10-26 22:26:43 --> Total execution time: 19.4054
+ERROR - 2013-10-26 22:26:46 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: MySQL server has gone away C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2013-10-26 22:26:46 --> Session Class Initialized
+DEBUG - 2013-10-26 22:26:46 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:26:46 --> Session routines successfully run
+DEBUG - 2013-10-26 22:26:46 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:26:46 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:26:46 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:26:46 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:26:46 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:26:46 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:26:46 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:26:46 --> Final output sent to browser
+DEBUG - 2013-10-26 22:26:46 --> Total execution time: 19.3872
+DEBUG - 2013-10-26 22:27:05 --> Config Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:27:05 --> URI Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Router Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Output Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Security Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Input Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:27:05 --> Language Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Language Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Config Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:27:05 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:27:05 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:27:05 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Session Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:27:05 --> Session routines successfully run
+DEBUG - 2013-10-26 22:27:05 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:27:05 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:27:05 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:27:05 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:27:05 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:27:05 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:27:05 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:27:05 --> Final output sent to browser
+DEBUG - 2013-10-26 22:27:05 --> Total execution time: 0.3632
+DEBUG - 2013-10-26 22:27:33 --> Config Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:27:33 --> URI Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Router Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Output Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Security Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Input Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:27:33 --> Language Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Language Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Config Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:27:33 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:27:33 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:27:33 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Session Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:27:33 --> Session routines successfully run
+DEBUG - 2013-10-26 22:27:33 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:27:33 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:27:33 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:27:33 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:27:33 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:27:33 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:27:33 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:27:33 --> Final output sent to browser
+DEBUG - 2013-10-26 22:27:33 --> Total execution time: 0.4134
+DEBUG - 2013-10-26 22:36:03 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:36:03 --> URI Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Router Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Output Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Security Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Input Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:36:03 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:36:03 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:36:03 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:36:03 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:36:03 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:36:07 --> URI Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Router Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Output Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Security Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Input Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:36:07 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:36:07 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:36:07 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:36:07 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:36:07 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:36:14 --> URI Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Router Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Output Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Security Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Input Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:36:14 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:36:14 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:36:14 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:36:14 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:36:14 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:36:16 --> URI Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Router Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Output Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Security Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Input Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:36:16 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:36:16 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:36:16 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:36:16 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:36:16 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:36:17 --> Session Class Initialized
+DEBUG - 2013-10-26 22:36:17 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:36:17 --> Session routines successfully run
+DEBUG - 2013-10-26 22:36:17 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:36:17 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:36:17 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:36:17 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:36:17 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:36:17 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:36:17 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:36:17 --> Final output sent to browser
+DEBUG - 2013-10-26 22:36:17 --> Total execution time: 1.2485
+DEBUG - 2013-10-26 22:36:21 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:36:21 --> URI Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Router Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Output Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Security Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Input Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:36:21 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Language Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Config Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:36:21 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:36:21 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:36:21 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Session Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:36:21 --> Session routines successfully run
+DEBUG - 2013-10-26 22:36:21 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:36:21 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:36:21 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:36:21 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:36:21 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:36:21 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:36:21 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:36:21 --> Final output sent to browser
+DEBUG - 2013-10-26 22:36:21 --> Total execution time: 0.6042
+ERROR - 2013-10-26 22:36:22 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: MySQL server has gone away C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2013-10-26 22:36:23 --> Session Class Initialized
+DEBUG - 2013-10-26 22:36:23 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:36:23 --> Session routines successfully run
+DEBUG - 2013-10-26 22:36:23 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:36:23 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:36:23 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:36:23 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:36:23 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:36:23 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:36:23 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:36:23 --> Final output sent to browser
+DEBUG - 2013-10-26 22:36:23 --> Total execution time: 19.5430
+ERROR - 2013-10-26 22:36:26 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: MySQL server has gone away C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2013-10-26 22:36:26 --> Session Class Initialized
+DEBUG - 2013-10-26 22:36:26 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:36:26 --> Session routines successfully run
+DEBUG - 2013-10-26 22:36:26 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:36:26 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:36:26 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:36:26 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:36:26 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:36:26 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:36:26 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:36:26 --> Final output sent to browser
+DEBUG - 2013-10-26 22:36:26 --> Total execution time: 19.3960
+ERROR - 2013-10-26 22:36:33 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: MySQL server has gone away C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-10-26 22:36:33 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Link to server lost, unable to reconnect C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-10-26 22:36:33 --> Unable to connect to the database
+DEBUG - 2013-10-26 22:36:33 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2013-10-26 22:37:40 --> Config Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:37:40 --> URI Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Router Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Output Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Security Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Input Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:37:40 --> Language Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Language Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Config Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:37:40 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:37:40 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:37:40 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:37:40 --> Database Driver Class Initialized
+ERROR - 2013-10-26 22:37:41 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: User 'b18bf4c02907bb' has exceeded the 'max_user_connections' resource (current value: 4) C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-10-26 22:37:41 --> Unable to connect to the database
+DEBUG - 2013-10-26 22:37:41 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2013-10-26 22:37:42 --> Config Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:37:42 --> URI Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Router Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Output Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Security Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Input Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:37:42 --> Language Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Language Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Config Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:37:42 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:37:42 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:37:42 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:37:42 --> Database Driver Class Initialized
+ERROR - 2013-10-26 22:37:43 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: User 'b18bf4c02907bb' has exceeded the 'max_user_connections' resource (current value: 4) C:\Program Files (x86)\Ampps\www\app\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-10-26 22:37:43 --> Unable to connect to the database
+DEBUG - 2013-10-26 22:37:43 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2013-10-26 22:38:01 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:38:01 --> URI Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Router Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Output Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Security Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Input Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:38:01 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:38:01 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:38:01 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:38:01 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:38:01 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:38:02 --> Session Class Initialized
+DEBUG - 2013-10-26 22:38:02 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:38:02 --> Session routines successfully run
+DEBUG - 2013-10-26 22:38:02 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:38:02 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:02 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:38:02 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:02 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:38:02 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:38:02 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:38:02 --> Final output sent to browser
+DEBUG - 2013-10-26 22:38:02 --> Total execution time: 0.4773
+DEBUG - 2013-10-26 22:38:04 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:38:04 --> URI Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Router Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Output Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Security Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Input Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:38:04 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:38:04 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:38:04 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:38:04 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Session Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:38:04 --> Session routines successfully run
+DEBUG - 2013-10-26 22:38:04 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:38:04 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:04 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:38:04 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:04 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:38:04 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:38:04 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:38:04 --> Final output sent to browser
+DEBUG - 2013-10-26 22:38:04 --> Total execution time: 0.4032
+DEBUG - 2013-10-26 22:38:13 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:38:13 --> URI Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Router Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Output Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Security Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Input Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:38:13 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:38:13 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:38:13 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:38:13 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Session Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:38:13 --> Session routines successfully run
+DEBUG - 2013-10-26 22:38:13 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:38:13 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:13 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:38:13 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:13 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:38:13 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:38:13 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:38:13 --> Final output sent to browser
+DEBUG - 2013-10-26 22:38:13 --> Total execution time: 0.4010
+DEBUG - 2013-10-26 22:38:15 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:38:15 --> URI Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Router Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Output Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Security Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Input Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:38:15 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:38:15 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:38:15 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:38:15 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:38:15 --> Session Class Initialized
+DEBUG - 2013-10-26 22:38:16 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:38:16 --> Session routines successfully run
+DEBUG - 2013-10-26 22:38:16 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:38:16 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:16 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:38:16 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:16 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:38:16 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:38:16 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:38:16 --> Final output sent to browser
+DEBUG - 2013-10-26 22:38:16 --> Total execution time: 0.3762
+DEBUG - 2013-10-26 22:38:26 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:38:26 --> URI Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Router Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Output Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Security Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Input Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:38:26 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Language Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Config Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:38:26 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:38:26 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:38:26 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Session Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:38:26 --> Session routines successfully run
+DEBUG - 2013-10-26 22:38:26 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:38:26 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:26 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:38:26 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:38:26 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:38:26 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:38:26 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:38:26 --> Final output sent to browser
+DEBUG - 2013-10-26 22:38:26 --> Total execution time: 0.5634
+DEBUG - 2013-10-26 22:39:43 --> Config Class Initialized
+DEBUG - 2013-10-26 22:39:43 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:39:44 --> URI Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Router Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Output Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Security Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Input Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:39:44 --> Language Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Language Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Config Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:39:44 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:39:44 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:39:44 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Session Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:39:44 --> Session routines successfully run
+DEBUG - 2013-10-26 22:39:44 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:39:44 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:39:44 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:39:44 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:39:44 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:39:44 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:39:44 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:39:44 --> Final output sent to browser
+DEBUG - 2013-10-26 22:39:44 --> Total execution time: 0.3886
+DEBUG - 2013-10-26 22:39:46 --> Config Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:39:46 --> URI Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Router Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Output Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Security Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Input Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:39:46 --> Language Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Language Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Config Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:39:46 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:39:46 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:39:46 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Session Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:39:46 --> Session routines successfully run
+DEBUG - 2013-10-26 22:39:46 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:39:46 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:39:46 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:39:46 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:39:46 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:39:46 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:39:46 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:39:46 --> Final output sent to browser
+DEBUG - 2013-10-26 22:39:46 --> Total execution time: 0.3881
+DEBUG - 2013-10-26 22:39:48 --> Config Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:39:48 --> URI Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Router Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Output Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Security Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Input Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:39:48 --> Language Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Language Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Config Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:39:48 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:39:48 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:39:49 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:39:49 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:39:49 --> Session Class Initialized
+DEBUG - 2013-10-26 22:39:49 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:39:49 --> Session routines successfully run
+DEBUG - 2013-10-26 22:39:49 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:39:49 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:39:49 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:39:49 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:39:49 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:39:49 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:39:49 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:39:49 --> Final output sent to browser
+DEBUG - 2013-10-26 22:39:49 --> Total execution time: 0.4187
+DEBUG - 2013-10-26 22:40:11 --> Config Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:40:11 --> URI Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Router Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Output Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Security Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Input Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:40:11 --> Language Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Language Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Config Class Initialized
+DEBUG - 2013-10-26 22:40:11 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:40:12 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:40:12 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:40:12 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:40:12 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:40:12 --> Session Class Initialized
+DEBUG - 2013-10-26 22:40:12 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:40:12 --> Session routines successfully run
+DEBUG - 2013-10-26 22:40:12 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:40:12 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:40:12 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:40:12 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:40:12 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:40:12 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:40:12 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:40:12 --> Final output sent to browser
+DEBUG - 2013-10-26 22:40:12 --> Total execution time: 0.3892
+DEBUG - 2013-10-26 22:40:19 --> Config Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:40:19 --> URI Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Router Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Output Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Security Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Input Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:40:19 --> Language Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Language Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Config Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:40:19 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:40:19 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:40:19 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Session Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:40:19 --> Session routines successfully run
+DEBUG - 2013-10-26 22:40:19 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:40:19 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:40:19 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:40:19 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:40:19 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:40:19 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:40:19 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:40:19 --> Final output sent to browser
+DEBUG - 2013-10-26 22:40:19 --> Total execution time: 0.3891
+DEBUG - 2013-10-26 22:40:35 --> Config Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:40:35 --> URI Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Router Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Output Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Security Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Input Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:40:35 --> Language Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Language Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Config Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:40:35 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:40:36 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:40:36 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:40:36 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:40:36 --> Session Class Initialized
+DEBUG - 2013-10-26 22:40:36 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:40:36 --> Session routines successfully run
+DEBUG - 2013-10-26 22:40:36 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:40:36 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:40:36 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:40:36 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:40:36 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:40:36 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:40:36 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:40:36 --> Final output sent to browser
+DEBUG - 2013-10-26 22:40:36 --> Total execution time: 0.4063
+DEBUG - 2013-10-26 22:41:21 --> Config Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:41:21 --> URI Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Router Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Output Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Security Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Input Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:41:21 --> Language Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Language Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Config Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:41:21 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:41:21 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:41:21 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Session Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:41:21 --> Session routines successfully run
+DEBUG - 2013-10-26 22:41:21 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:41:21 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:41:21 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:41:21 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:41:21 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:41:21 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:41:21 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:41:21 --> Final output sent to browser
+DEBUG - 2013-10-26 22:41:21 --> Total execution time: 0.3964
+DEBUG - 2013-10-26 22:41:29 --> Config Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:41:29 --> URI Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Router Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Output Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Security Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Input Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:41:29 --> Language Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Language Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Config Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:41:29 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:41:29 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:41:29 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Session Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:41:29 --> Session routines successfully run
+DEBUG - 2013-10-26 22:41:29 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:41:29 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:41:29 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:41:29 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:41:29 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:41:29 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:41:29 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:41:29 --> Final output sent to browser
+DEBUG - 2013-10-26 22:41:29 --> Total execution time: 0.3921
+DEBUG - 2013-10-26 22:41:50 --> Config Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:41:50 --> URI Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Router Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Output Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Security Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Input Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:41:50 --> Language Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Language Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Config Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:41:50 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:41:50 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:41:50 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:41:50 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:41:51 --> Session Class Initialized
+DEBUG - 2013-10-26 22:41:51 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:41:51 --> Session routines successfully run
+DEBUG - 2013-10-26 22:41:51 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:41:51 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:41:51 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:41:51 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:41:51 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:41:51 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:41:51 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:41:51 --> Final output sent to browser
+DEBUG - 2013-10-26 22:41:51 --> Total execution time: 0.4025
+DEBUG - 2013-10-26 22:42:19 --> Config Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:42:19 --> URI Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Router Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Output Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Security Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Input Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:42:19 --> Language Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Language Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Config Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:42:19 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:42:19 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:42:19 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Session Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:42:19 --> Session routines successfully run
+DEBUG - 2013-10-26 22:42:19 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:42:19 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:42:19 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:42:19 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:42:19 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:42:19 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:42:19 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:42:19 --> Final output sent to browser
+DEBUG - 2013-10-26 22:42:19 --> Total execution time: 0.4027
+DEBUG - 2013-10-26 22:43:07 --> Config Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:43:07 --> URI Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Router Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Output Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Security Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Input Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:43:07 --> Language Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Language Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Config Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:43:07 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:43:07 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:43:07 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Session Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:43:07 --> Session routines successfully run
+DEBUG - 2013-10-26 22:43:07 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:43:07 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:43:07 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:43:07 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:43:07 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:43:07 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:43:07 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:43:07 --> Final output sent to browser
+DEBUG - 2013-10-26 22:43:07 --> Total execution time: 0.4059
+DEBUG - 2013-10-26 22:43:16 --> Config Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:43:16 --> URI Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Router Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Output Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Security Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Input Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:43:16 --> Language Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Language Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Config Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:43:16 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:43:16 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:43:16 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Session Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:43:16 --> Session routines successfully run
+DEBUG - 2013-10-26 22:43:16 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:43:16 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:43:16 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:43:16 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:43:16 --> File loaded: application/modules/users/views/login.php
+DEBUG - 2013-10-26 22:43:16 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:43:16 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:43:16 --> Final output sent to browser
+DEBUG - 2013-10-26 22:43:16 --> Total execution time: 0.4208
+DEBUG - 2013-10-26 22:43:17 --> Config Class Initialized
+DEBUG - 2013-10-26 22:43:17 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:43:17 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:43:17 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:43:17 --> URI Class Initialized
+DEBUG - 2013-10-26 22:43:17 --> Router Class Initialized
+DEBUG - 2013-10-26 22:43:17 --> Output Class Initialized
+DEBUG - 2013-10-26 22:43:17 --> Security Class Initialized
+DEBUG - 2013-10-26 22:43:17 --> Input Class Initialized
+DEBUG - 2013-10-26 22:43:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:43:17 --> Language Class Initialized
+DEBUG - 2013-10-26 22:43:17 --> Language Class Initialized
+DEBUG - 2013-10-26 22:43:18 --> Config Class Initialized
+DEBUG - 2013-10-26 22:43:18 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:43:18 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:43:18 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:43:18 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:43:18 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:43:18 --> Session Class Initialized
+DEBUG - 2013-10-26 22:43:18 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:43:18 --> Session routines successfully run
+DEBUG - 2013-10-26 22:43:18 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:43:18 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:43:18 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:43:18 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:43:18 --> File loaded: application/modules/users/views/create_user.php
+DEBUG - 2013-10-26 22:43:18 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:43:18 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:43:18 --> Final output sent to browser
+DEBUG - 2013-10-26 22:43:18 --> Total execution time: 0.3652
+DEBUG - 2013-10-26 22:44:21 --> Config Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:44:21 --> URI Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Router Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Output Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Security Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Input Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:44:21 --> Language Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Language Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Config Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:44:21 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:44:21 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:44:21 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Session Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:44:21 --> Session routines successfully run
+DEBUG - 2013-10-26 22:44:21 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> Pages MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:21 --> Model Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> File loaded: application/modules/pages/models/mdl_pages.php
+DEBUG - 2013-10-26 22:44:21 --> Model Class Initialized
+DEBUG - 2013-10-26 22:44:21 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:44:21 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:21 --> File loaded: application/modules/pages/views/display.php
+DEBUG - 2013-10-26 22:44:21 --> File loaded: application/controllers/../modules/users/controllers/users.php
+DEBUG - 2013-10-26 22:44:21 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:21 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:44:21 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:44:21 --> Final output sent to browser
+DEBUG - 2013-10-26 22:44:21 --> Total execution time: 0.4902
+DEBUG - 2013-10-26 22:44:28 --> Config Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:44:28 --> URI Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Router Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Output Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Security Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Input Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:44:28 --> Language Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Language Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Config Class Initialized
+DEBUG - 2013-10-26 22:44:28 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:44:29 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:44:29 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:44:29 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:44:29 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:44:29 --> Session Class Initialized
+DEBUG - 2013-10-26 22:44:29 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:44:29 --> Session routines successfully run
+DEBUG - 2013-10-26 22:44:29 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:44:29 --> Confessions MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:29 --> Model Class Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/confessions/models/mdl_confessions.php
+DEBUG - 2013-10-26 22:44:29 --> Model Class Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/controllers/../modules/pages/controllers/pages.php
+DEBUG - 2013-10-26 22:44:29 --> Pages MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/pages/models/mdl_pages.php
+DEBUG - 2013-10-26 22:44:29 --> Model Class Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:44:29 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/controllers/../modules/gasps/controllers/gasps.php
+DEBUG - 2013-10-26 22:44:29 --> Gasps MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/gasps/models/mdl_gasps.php
+DEBUG - 2013-10-26 22:44:29 --> Model Class Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/gasps/views/gasp_button.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/controllers/../modules/comments/controllers/comments.php
+DEBUG - 2013-10-26 22:44:29 --> Comments MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/comments/models/mdl_comments.php
+DEBUG - 2013-10-26 22:44:29 --> Model Class Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/comments/views/confession_comments.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/controllers/../modules/users/controllers/users.php
+DEBUG - 2013-10-26 22:44:29 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/gasps/views/gasp_button.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/comments/views/confession_comments.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/gasps/views/gasp_button.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/comments/views/confession_comments.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:44:29 --> File loaded: application/modules/gasps/views/gasp_button.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/comments/views/confession_comments.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/gasps/views/gasp_button.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/comments/views/confession_comments.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/confessions/views/display.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 22:44:30 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 22:44:30 --> Final output sent to browser
+DEBUG - 2013-10-26 22:44:30 --> Total execution time: 1.3539
+DEBUG - 2013-10-26 22:44:34 --> Config Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Hooks Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Utf8 Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> UTF-8 Support Enabled
+DEBUG - 2013-10-26 22:44:34 --> URI Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Router Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Output Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Security Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Input Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2013-10-26 22:44:34 --> Language Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Language Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Config Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Loader Class Initialized
+DEBUG - 2013-10-26 22:44:34 --> Helper loaded: form_helper
+DEBUG - 2013-10-26 22:44:34 --> Helper loaded: url_helper
+DEBUG - 2013-10-26 22:44:34 --> Helper loaded: html_helper
+DEBUG - 2013-10-26 22:44:35 --> Database Driver Class Initialized
+DEBUG - 2013-10-26 22:44:35 --> Session Class Initialized
+DEBUG - 2013-10-26 22:44:35 --> Helper loaded: string_helper
+DEBUG - 2013-10-26 22:44:35 --> Session routines successfully run
+DEBUG - 2013-10-26 22:44:35 --> Controller Class Initialized
+DEBUG - 2013-10-26 22:44:35 --> Confessions MX_Controller Initialized
+DEBUG - 2013-10-26 22:44:35 --> File loaded: application/controllers/../modules/templates/controllers/templates.php
+DEBUG - 2013-10-26 22:44:35 --> Templates MX_Controller Initialized
+DEBUG - 2013-10-26 16:44:35 --> File loaded: application/modules/confessions/views/post_confession_form.php
+DEBUG - 2013-10-26 16:44:35 --> File loaded: application/controllers/../modules/users/controllers/users.php
+DEBUG - 2013-10-26 16:44:35 --> Users MX_Controller Initialized
+DEBUG - 2013-10-26 16:44:35 --> File loaded: application/modules/users/views/login_status.php
+DEBUG - 2013-10-26 16:44:35 --> File loaded: application/modules/templates/views/general.php
+DEBUG - 2013-10-26 16:44:35 --> Final output sent to browser
+DEBUG - 2013-10-26 16:44:35 --> Total execution time: 0.4154
