@@ -61,7 +61,7 @@ and open the template in the editor.
     </div>
                 <div id="menu">
    <ul>
-      <li><a href="/" id="test">Confession Groups</a></li>
+      <li><a href="/pages" id="test">Confession Groups</a></li>
       <li><?php echo Modules::run('users/login_status'); ?></li>
    </ul>
 </div>
