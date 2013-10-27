@@ -1,20 +1,19 @@
 $(document).ready(function()  {
     // initial
-    $('#content').load('pages',  function (responseText, textStatus, XMLHttpRequest) {
-    if (textStatus == "success") {
-        // handle menu clicks
+    $('#content').load('pages');
+    
+    $( document ).ajaxComplete(function( event,request, settings ) {
+        alert('ajax complete!');
         $('a').click(function() {
-            alert('Ok');
+            //alert('Ok');
             var page = $(this).attr('href');
-            alert(page);
-            $('#content').load(page);
+            //alert(page);
+            $('#content').html( "<p>loading...</p>" ).load(page);
             return false;
+            
         });
-    }
-    if (textStatus == "error") {
-         alert('Something went wrong! :O');
-    }
-  });
+    });
+    
     
     
 });

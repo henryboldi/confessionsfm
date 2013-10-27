@@ -15,8 +15,8 @@ function __construct() {
         $data['module'] = "confessions";
         $data['view_file'] = "post_confession_form";
         $data['title'] = "Confess";
-        echo Modules::run('templates/general', $data);
-        //$this->load->view('post_confession_form', $data); 
+        //echo Modules::run('templates/general', $data);
+        $this->load->view('post_confession_form', $data); 
     
     }
     function view() {
@@ -28,8 +28,8 @@ function __construct() {
         $data['module'] = "confessions";
         $data['view_file'] = "display";
         $data['title'] = $name;
-        echo Modules::run('templates/general', $data);
-        //$this->load->view('display', $data);
+        //echo Modules::run('templates/general', $data);
+        $this->load->view('display', $data);
     }
     
      function get_data_from_post() {

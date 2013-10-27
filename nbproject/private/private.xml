@@ -5,10 +5,21 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/gasps/controllers/gasps.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/gasps/views/gasp_button.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/confessions/views/display.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/style.scss</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/comments/controllers/comments.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/templates/controllers/templates.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/config/routes.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/Web.config</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/pages/controllers/pages.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/gasps/views/gasp_button.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/users/views/login.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/templates/views/index.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/config/config.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/templates/views/general.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/confessions/views/post_confession_form.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/users/controllers/users.php</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/assests/loading.js</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/app/application/modules/users/views/create_user.php</file>
         </group>
     </open-files>
 </project-private>
