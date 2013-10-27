@@ -25,7 +25,8 @@ class Users extends MX_Controller {
         $data['view_file'] = "login";
         $data['title'] = "Login";
         
-        echo Modules::run('templates/general', $data); 
+        //echo Modules::run('templates/general', $data);
+        $this->load->view('login', $data);
     }
     
     function login_status() {
