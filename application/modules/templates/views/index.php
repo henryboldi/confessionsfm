@@ -47,7 +47,7 @@ and open the template in the editor.
                 <p id="button">
         <!--<label for="handler-right" id="right" href="#">Open right →</label>-->
          
-            <h1><?php echo $title; ?></h1>
+            <h1>testing</h1>
         
         <label for="handler-left" id="left" href="#"><div id="fly_in">
                 
@@ -55,9 +55,7 @@ and open the template in the editor.
                 </p>
         
         <div id="content">
-        <?php
-        $this->load->view($module.'/'.$view_file)
-        ?>
+
 
         </div>
     </div>
