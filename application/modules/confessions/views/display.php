@@ -23,14 +23,4 @@ foreach ($query->result() as $row) {
 
 
 ?>
-
-    <script type="text/javascript">
-              $(document).ready( function()
-			{
-                            $( "#result" ).load( "https://www.google.com/", function() {
-                                alert( "Load was performed." );
-                            });
-                        });
-
-    </script> 
     
