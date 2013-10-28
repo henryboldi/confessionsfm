@@ -12,7 +12,8 @@ class Users extends MX_Controller {
         $data['module'] = "users";
         $data['view_file'] = "create_user";
         $data['title'] = "Sign Up";
-        echo Modules::run('templates/general', $data); 
+        //echo Modules::run('templates/general', $data); 
+        $this->load->view('create_user', $data);
         
     
     }

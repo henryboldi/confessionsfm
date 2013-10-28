@@ -85,18 +85,23 @@ class Gasps extends MX_Controller {
                             if ($data['number_of_gasps'] > 1) {
                                 //already had a gasp
                                 $this->_update($confession_id, $data);
-                                redirect('confession/view/');
+                                //redirect('confession/view/');
+                                echo "<meta http-equiv='refresh' content='1'>";
                                 //needs to refresh
                             } else {
                                 //new                           
                                 $this->_insert($data);                   
-                                redirect('confession/view/');
+                                //redirect('confession/view/');
+                                echo "<meta http-equiv='refresh' content='1'>";
                                 //here also
                             }
                         } else {
                             echo "You already gasped!";
                         }
 	
+                   } else {
+                       header("Location: /pages");
+                       die();
                    }
     }
     

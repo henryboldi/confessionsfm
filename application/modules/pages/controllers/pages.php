@@ -26,8 +26,8 @@ class Pages extends MX_Controller {
         $data['module'] = "pages";
         $data['view_file'] = "my_pages";
         $data['title'] = "My Groups";
-        echo Modules::run('templates/general', $data);
-        //$this->load->view('my_pages', $data);
+        //echo Modules::run('templates/general', $data);
+        $this->load->view('my_pages', $data);
         
     }
     
