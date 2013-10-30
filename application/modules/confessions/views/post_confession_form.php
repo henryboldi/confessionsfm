@@ -1,8 +1,9 @@
 <?php
 
 echo validation_errors('<p style="color: red;">', '</p>');
+$attributes = array('id' => 'post_confession');
 
-echo form_open('confessions/submit');
+echo form_open('', $attributes);
 echo "<div class='post' id='first'>";
 echo "Confession: ";
 echo form_input('confession', $confession);
