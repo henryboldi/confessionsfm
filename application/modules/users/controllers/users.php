@@ -12,8 +12,7 @@ class Users extends MX_Controller {
         $data['module'] = "users";
         $data['view_file'] = "create_user";
         $data['title'] = "Sign Up";
-        //echo Modules::run('templates/general', $data); 
-        $this->load->view('create_user', $data);
+        echo Modules::run('templates/general', $data); 
         
     
     }
@@ -26,8 +25,7 @@ class Users extends MX_Controller {
         $data['view_file'] = "login";
         $data['title'] = "Login";
         
-        //echo Modules::run('templates/general', $data);
-        $this->load->view('login', $data);
+        echo Modules::run('templates/general', $data); 
     }
     
     function login_status() {

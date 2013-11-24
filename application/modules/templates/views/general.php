@@ -14,8 +14,7 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" language="javascript" src="<?php echo base_url().'jquery.js'; ?>"></script>
         <link type="text/css" rel="stylesheet" href="<?php echo base_url().'style.css'; ?>" />
-        <script type="application/javascript" src="<?php echo base_url().'lib/fastclick.js'; ?>"></script>
-        <script type="application/javascript" src="<?php echo base_url().'assests/loading.js'; ?>"></script> 
+        <script type="application/javascript" src="<?php echo base_url().'lib/fastclick.js'; ?>"></script> 
         <script type="application/javascript">
     window.addEventListener('load', function() {
         var textInput = document.querySelector('input');
