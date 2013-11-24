@@ -87,8 +87,10 @@ input[type="text"], input[type="password"], textarea {
   border-radius: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
+  border: 1px solid #78787F;
 }
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+  border: 1px solid #dc075e;
   -webkit-box-shadow: 0px 0px 5px #dc075e;
   -moz-box-shadow: 0px 0px 5px #dc075e;
   box-shadow: 0px 0px 5px #dc075e;
