@@ -10,8 +10,8 @@ echo form_input('comment', $comment);
 echo "<br>";
 
 echo form_hidden('comment_date_time', date('Y-m-d H:i:s'));
+echo form_hidden('confession_id', $confession_id);
 
 echo form_submit('submit', 'Submit');
-
 
 echo form_close();

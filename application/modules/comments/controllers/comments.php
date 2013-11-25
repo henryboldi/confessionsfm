@@ -14,13 +14,13 @@ function __construct() {
        
         $data['module'] = "comments";
         $data['view_file'] = "confession_comments";
-        echo Modules::run('templates/general', $data);
+        //echo Modules::run('templates/general', $data);
         
-        //$this->load->view('display', $data);
+        $this->load->view('confession_comments', $data);
                 
     }
 
-    function create($confession_id) {//somehow not passing?
+    function create($confession_id) {
         
         $data = $this->get_data_from_post(); //creating a new
         $data['confession_id'] = $confession_id;
@@ -36,7 +36,7 @@ function __construct() {
      function get_data_from_post() {
         $data['comment'] = $this->input->post('comment', TRUE); 
         $data['comment_date_time'] = $this->input->post('comment_date_time', TRUE);
-        //$data['confession_id'] = $this->input->post('confession_id', TRUE);
+        $data['confession_id'] = $this->input->post('confession_id', TRUE);
         return $data;
     }
     
@@ -49,7 +49,6 @@ function __construct() {
 		$this->load->library('form_validation');
                 //checks
                 $this->form_validation->set_rules('comment', 'Comment', 'required|min_length[20]|xss_clean|max_length[300]');
-		//----NEED TO ADD VALIDATION THAT THE confession_id EXSISTS-------
                 
                 
                 
@@ -62,9 +61,11 @@ function __construct() {
 		{
                     //success
                     $data = $this->get_data_from_post();
-                                                                  
+                    
+                    error_reporting(E_ALL);
+                    ini_set('display_errors', '1');
                     $this->_insert($data);
-                    redirect('comments/create');
+                    redirect('/index.php/');
                      
                     
 		}

@@ -10,11 +10,13 @@ foreach ($query->result() as $row) {
     echo "<div class='post'><a class='red' href='/confessions/view/".$row->page_id."'>".$this->pages->page_name($this->uri->segment(3))."</a><p>".$row->confession.'</p> at '.$row->confession_date_time;
     $this->load->module('gasps');
     $this->gasps->create($row->id);
-  /*  $this->load->module('comments');
+    
+    //load comments
+    $this->load->module('comments');
     $this->comments->create($row->id);
     $this->comments->view($row->id);
-   * 
-   */
+    
+    //end div
     echo "<div id='result'></div>";
     Modules::run('comments/view', $row->id);
     echo '</div>';
