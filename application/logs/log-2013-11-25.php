@@ -194,3 +194,6 @@ DEBUG - 2013-11-25 02:03:24 --> File loaded: application/modules/users/views/log
 DEBUG - 2013-11-25 02:03:24 --> File loaded: application/modules/templates/views/general.php
 DEBUG - 2013-11-25 02:03:24 --> Final output sent to browser
 DEBUG - 2013-11-25 02:03:24 --> Total execution time: 1.0586
+ERROR - 2013-11-25 18:44:20 --> Severity: Warning  --> mysql_pconnect(): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-11-25 18:44:20 --> Unable to connect to the database

@@ -12,9 +12,10 @@ foreach ($query->result() as $row) {
     $this->gasps->create($row->id);
     
     //load comments
-    $this->load->module('comments');
-    $this->comments->create($row->id);
-    $this->comments->view($row->id);
+    $this->load->module('comments'); // load comments module
+    $this->comments->view($row->id); // load comments view
+    $this->comments->create($row->id); // load comments create
+    
     
     //end div
     echo "<div id='result'></div>";
