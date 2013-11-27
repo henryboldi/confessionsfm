@@ -55,6 +55,13 @@ function get_where($id){
     return $query;
 }
 
+function get_search($search_query){
+    $table = $this->get_table();
+    $this->db->like('name', $search_query);
+    $query=$this->db->get($table);
+    return $query;
+}
+
 function get_where_by_user_id($where) {
     
     $table = $this->get_table();    

@@ -50,6 +50,15 @@ class Pages extends MX_Controller {
         
     
     }
+    function search($search_query) {
+        $query = $this->get_search($search_query);
+        foreach($query->result() as $row) {
+            $name = $row->name;
+            $link = '/confessions/view/'.$row->id;
+            echo $name.$link.'<br>';
+        }
+        
+    }
     
     function page_name($page_id) {
             //not working
@@ -150,6 +159,11 @@ function get_with_limit($limit, $offset, $order_by) {
 function get_where($id){
     $this->load->model('mdl_pages');
     $query = $this->mdl_pages->get_where($id);
+    return $query;
+}
+function get_search($search_query){
+    $this->load->model('mdl_pages');
+    $query = $this->mdl_pages->get_search($search_query);
     return $query;
 }
 
