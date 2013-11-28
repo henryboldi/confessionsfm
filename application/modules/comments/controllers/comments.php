@@ -67,7 +67,7 @@ function __construct() {
                     $this->load->module('confessions');// load confessions
                     $query = $this->confessions->get_where($data[confession_id]); // place confession id to get array
                     foreach ($query->result() as $row) {
-                        $url = '/confessions/view/'.$row->page_id;
+                        $url = '/confessions/view/'.$row->page_id.'/#'.$row->id;
                     }
                     //row 
                     redirect($url);
