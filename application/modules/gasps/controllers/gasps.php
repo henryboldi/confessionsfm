@@ -90,13 +90,21 @@ class Gasps extends MX_Controller {
                             } else {
                                 //new                           
                                 $this->_insert($data);                   
-                                redirect('confession/view/');
+                                $this->load->module('confessions');// load confessions
+                                $query = $this->confessions->get_where($data[confession_id]); // place confession id to get array
+                                foreach ($query->result() as $row) {
+                                    $url = '/confessions/view/'.$row->page_id.'/#'.$row->id;
+                                }
+                                //row 
+                                redirect($url);
                                 //here also
                             }
                         } else {
                             echo "You already gasped!";
                         }
 	
+                   } else {
+                       echo "You must me logged in to gasp.";
                    }
     }
     
