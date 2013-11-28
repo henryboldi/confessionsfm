@@ -28,3 +28,13 @@ ERROR - 2013-11-27 16:30:10 --> Severity: Notice  --> mysql_pconnect(): send of 
 ERROR - 2013-11-27 16:33:45 --> Severity: Warning  --> mysql_pconnect(): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
  C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\database\drivers\mysql\mysql_driver.php 91
 ERROR - 2013-11-27 16:33:45 --> Unable to connect to the database
+ERROR - 2013-11-27 16:42:48 --> Severity: Warning  --> mysql_pconnect(): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-11-27 16:42:48 --> Unable to connect to the database
+ERROR - 2013-11-27 20:35:28 --> Severity: Warning  --> Missing argument 1 for Comments::create(), called in C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php on line 58 and defined C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 23
+ERROR - 2013-11-27 20:35:28 --> Severity: Notice  --> Undefined variable: confession_id C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 26
+ERROR - 2013-11-27 20:36:23 --> Severity: Warning  --> Missing argument 1 for Comments::create(), called in C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php on line 58 and defined C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 23
+ERROR - 2013-11-27 20:36:23 --> Severity: Notice  --> Undefined variable: confession_id C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 26
+ERROR - 2013-11-27 20:51:36 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 68
+ERROR - 2013-11-27 20:51:36 --> 404 Page Not Found --> 
+ERROR - 2013-11-27 20:52:42 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 68

@@ -5,7 +5,9 @@ class Comments extends MX_Controller {
 function __construct() {
     parent::__construct();
 }
+
     function view($confession_id) {
+        
         
         $this->load->model('mdl_comments');
        
@@ -61,11 +63,14 @@ function __construct() {
 		{
                     //success
                     $data = $this->get_data_from_post();
-                    
-                    error_reporting(E_ALL);
-                    ini_set('display_errors', '1');
                     $this->_insert($data);
-                    redirect('/index.php/');
+                    $this->load->module('confessions');// load confessions
+                    $query = $this->confessions->get_where($data[confession_id]); // place confession id to get array
+                    foreach ($query->result() as $row) {
+                        $url = '/confessions/view/'.$row->page_id;
+                    }
+                    //row 
+                    redirect($url);
                      
                     
 		}
