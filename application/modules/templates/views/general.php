@@ -63,6 +63,7 @@ and open the template in the editor.
                 <div id="menu">
    <ul>
       <li><a href="/" id="test">Confession Groups</a></li>
+      <li><a href="/pages/search_field/">Search</a></li>
       <li><?php echo Modules::run('users/login_status'); ?></li>
    </ul>
 </div>

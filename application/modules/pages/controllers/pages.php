@@ -50,16 +50,32 @@ class Pages extends MX_Controller {
         
     
     }
-    function search($search_query) {
-        $query = $this->get_search($search_query);
-        foreach($query->result() as $row) {
-            $name = $row->name;
-            $link = '/confessions/view/'.$row->id;
-            echo $name.$link.'<br>';
-        }
-        
+    function search() {
+        $search_query = $this->get_query();
+        $data['query'] = $this->get_search($search_query);
+       
+        $data['module'] = "pages";
+        $data['view_file'] = "search_results";
+        $data['title'] = "Search Results";
+        echo Modules::run('templates/general', $data);
+                
+    }
+    function search_field() {
+        $data['module'] = "pages";
+        $data['view_file'] = "search_field";
+        $data['title'] = "Search";
+        echo Modules::run('templates/general', $data);
     }
     
+    function get_query() {
+             
+        $search_query = $this->input->post('search_query', TRUE);
+        return $search_query;
+
+    }
+    
+         
+         
     function page_name($page_id) {
             //not working
             
