@@ -74,7 +74,7 @@ class Users extends MX_Controller {
         if($this->simpleloginsecure->login($data['user_email'], $data['user_pass'])) {
             redirect('pages/');
         } else {
-            $error = 'Password and username do not match.';
+            $error = 'Email and password do not match.';
             $this->login($error);
         }        
     }
