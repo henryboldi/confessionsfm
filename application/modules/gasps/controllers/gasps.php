@@ -104,7 +104,18 @@ class Gasps extends MX_Controller {
                         }
 	
                    } else {
-                       echo "You must me logged in to gasp.";
+                       
+                       $this->load->module('confessions');// load confessions
+                                $query = $this->confessions->get_where($data[confession_id]); // place confession id to get array
+                                foreach ($query->result() as $row) {
+                                    $url = '/confessions/view/'.$row->page_id.'/#'.$row->id;
+                                }
+                                //row 
+                                
+                                echo "<script>
+                                alert('You must be logged in to gasp!');
+                                window.location.href='".$url."';
+                                </script>";
                    }
     }
     

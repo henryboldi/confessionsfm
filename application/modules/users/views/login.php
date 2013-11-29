@@ -7,6 +7,9 @@ echo form_open('users/loginsubmit');
 
 //echo "<h1>Login</h1>";
 echo "<div class='post' id='first'>";
+if (isset($error)) {
+    echo $error.'<br><br>';
+}
 echo "Email: ";
 echo form_input('user_email', $user_email);
 echo "<br>";

@@ -17,9 +17,9 @@ class Users extends MX_Controller {
     
     }
     
-    function login() {
+    function login($error = NULL) {
         $data = $this->get_data_from_post(); //creating a new
-        
+        $data['error'] = $error; //error from loginsubmit()
         
         $data['module'] = "users";
         $data['view_file'] = "login";
@@ -70,15 +70,13 @@ class Users extends MX_Controller {
     
     function loginsubmit() {
         $this->load->library('SimpleLoginSecure');
-        $data = $this->get_data_from_post();
-                                                                  
+        $data = $this->get_data_from_post();                                                                  
         if($this->simpleloginsecure->login($data['user_email'], $data['user_pass'])) {
             redirect('pages/');
         } else {
-            $this->login();
-        }
-
-        
+            $error = 'Password and username do not match.';
+            $this->login($error);
+        }        
     }
     
     
