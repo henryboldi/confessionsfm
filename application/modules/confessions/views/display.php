@@ -8,8 +8,16 @@ echo '</div>';
 foreach ($query->result() as $row) {
     $edit_url = base_url().'confessions/'.$row->id;
     echo "<div id='".$row->id."'class='post'><a class='red' href='/confessions/view/".$row->page_id."'>".$this->pages->page_name($this->uri->segment(3))."</a><p>".$row->confession.'</p> at '.$row->confession_date_time;
+    
+    
     $this->load->module('gasps');
+    
     $this->gasps->create($row->id);
+    if ($this->session->flashdata('errors')){ //change!
+        echo "<div class='error'>";
+        echo $this->session->flashdata('errors');
+        echo "</div>";
+    }
     
     //load comments
     $this->load->module('comments'); // load comments module

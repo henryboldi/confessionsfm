@@ -67,7 +67,7 @@ class Gasps extends MX_Controller {
     
     function submit() {
     
-		
+		$this->load->library('session');
                 $confession_id = $this->input->post('confession_id', TRUE);
 
                 
@@ -111,11 +111,8 @@ class Gasps extends MX_Controller {
                                     $url = '/confessions/view/'.$row->page_id.'/#'.$row->id;
                                 }
                                 //row 
-                                
-                                echo "<script>
-                                alert('You must be logged in to gasp!');
-                                window.location.href='".$url."';
-                                </script>";
+                                $this->session->set_flashdata('errors', 'You must be logged in to gasp!');
+                                redirect($url);
                    }
     }
     

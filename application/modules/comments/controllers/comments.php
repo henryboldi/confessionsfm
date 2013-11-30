@@ -57,7 +57,15 @@ function __construct() {
                 
                 if ($this->form_validation->run() == FALSE) {
                     //mistake
-                    $this->create();
+                    $data = $this->get_data_from_post();
+                    $this->load->module('confessions');// load confessions
+                                $query = $this->confessions->get_where($data[confession_id]); // place confession id to get array
+                                foreach ($query->result() as $row) {
+                                    $url = '/confessions/view/'.$row->page_id.'/#'.$row->id;                                    
+                                }
+                                //row 
+                                $this->session->set_flashdata('errors', 'Min 20 chars');
+                                redirect($url);
 		}
 		else
 		{
