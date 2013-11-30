@@ -13,10 +13,13 @@ foreach ($query->result() as $row) {
     $this->load->module('gasps');
     
     $this->gasps->create($row->id);
+    
     if ($this->session->flashdata('errors')){ //change!
-        echo "<div class='error'>";
-        echo $this->session->flashdata('errors');
-        echo "</div>";
+        if ($this->session->flashdata('id') == $row->id) {
+            echo "<div class='error'>";
+            echo $this->session->flashdata('errors');
+            echo "</div>";
+        }
     }
     
     //load comments

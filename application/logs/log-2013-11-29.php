@@ -30,3 +30,6 @@ ERROR - 2013-11-29 19:46:45 --> Severity: Notice  --> Undefined variable: data C
 ERROR - 2013-11-29 19:46:45 --> Severity: Notice  --> Undefined variable: fail_url C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 67
 ERROR - 2013-11-29 19:47:27 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 62
 ERROR - 2013-11-29 19:47:50 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 62
+ERROR - 2013-11-29 20:04:58 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-11-29 20:17:36 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 62
+ERROR - 2013-11-29 20:19:26 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109

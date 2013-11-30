@@ -112,6 +112,7 @@ class Gasps extends MX_Controller {
                                 }
                                 //row 
                                 $this->session->set_flashdata('errors', 'You must be logged in to gasp!');
+                                $this->session->set_flashdata('id', $row->id);
                                 redirect($url);
                    }
     }

@@ -65,6 +65,7 @@ function __construct() {
                                 }
                                 //row 
                                 $this->session->set_flashdata('errors', 'Min 20 chars');
+                                $this->session->set_flashdata('id', $row->id);
                                 redirect($url);
 		}
 		else
