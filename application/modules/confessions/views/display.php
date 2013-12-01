@@ -8,7 +8,7 @@ echo '</div>';
 foreach ($query->result() as $row) {
     $edit_url = base_url().'confessions/'.$row->id;
     //echo "<div id='".$row->id."'class='post'><a class='red' href='/confessions/view/".$row->page_id."'>".$this->pages->page_name($this->uri->segment(3))."</a><p>".$row->confession.'</p> at '.$row->confession_date_time;
-    echo '<div class="post-img"><img src="images/post-img1.png" alt=""></div><div class="post-snippet"><h2 class="post-title"><a href="/confessions/view/'.$row->page_id.'">'.$this->pages->page_name($this->uri->segment(3)).'</a></h2><div class="post-body"><p>'.$row->confession.'</p></div>'; //then title
+    //echo '<div class="post-img"><img src="images/post-img1.png" alt=""></div><div class="post-snippet"><h2 class="post-title"><a href="/confessions/view/'.$row->page_id.'">'.$this->pages->page_name($this->uri->segment(3)).'</a></h2><div class="post-body"><p>'.$row->confession.'</p></div>'; //then title
      //load comments
     echo '
      <!-- /.post -->
@@ -22,12 +22,14 @@ foreach ($query->result() as $row) {
                         <p>
                                 '.$row->confession.'
                         </p>
-                        <a href="#" class="comments" id="button_'.$row->id.'">
-                             Show comments   
-                        </a>
-                        <span id="comments_'.$row->id.'">';
-    $this->load->module('comments'); // load comments module
-    $comments = $this->comments->view($row->id); // load comments view;
+                        <a href="#" class="comments" id="button_'.$row->id.'">';
+                        $this->load->module('comments'); // load comments module
+                        $this->comments->number_of_comments($row->id);
+                        echo '</a>
+                        <span class="comments_view" id="comments_'.$row->id.'">';
+    
+    $this->comments->view($row->id); // load comments view
+    $this->comments->create($row->id); // load comments create
     echo '</span>
                 </div>
                 <div class="post-foot">
@@ -37,7 +39,7 @@ foreach ($query->result() as $row) {
                                         <a href="#" class="btn btn-pink"><i class="icon icon-gasp"></i> Gasp</a>
                                 </li>
                                 <li>
-                                        <a href="#" class="btn btn-pink"><i class="icon icon-comment"></i> Comment</a>
+                                        <a href="#" id="2_button_'.$row->id.'" class="btn btn-pink"><i class="icon icon-comment"></i> Comment</a>
                                 </li>
                                 <li>
                                         <a href="#"><span>Share</span></a>
@@ -54,9 +56,28 @@ foreach ($query->result() as $row) {
     ';
     
     echo "<script type='text/javascript'>
+  function hide()
+  {
+    var div = document.getElementById('comments_".$row->id."');
+    div.style.display = 'none';
+  }
+  window.onload=hide;        
+
 var button = document.getElementById('button_".$row->id."');
 
 button.onclick = function() {
+    var div = document.getElementById('comments_".$row->id."');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};  
+
+var button_2 = document.getElementById('2_button_".$row->id."');
+
+button_2.onclick = function() {
     var div = document.getElementById('comments_".$row->id."');
     if (div.style.display !== 'none') {
         div.style.display = 'none';
@@ -79,10 +100,6 @@ button.onclick = function() {
             echo "</div>";
         }
     }
-    
-   
-    
-    $this->comments->create($row->id); // load comments create
     
     
     //end div

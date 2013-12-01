@@ -142,6 +142,10 @@ body {
     border-bottom:thin solid #171515;
 }
 
+.comments_view {
+    display: none;
+}
+
 .content-area  {
 	float: left;
 	background: #252323;

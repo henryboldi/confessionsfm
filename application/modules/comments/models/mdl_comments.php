@@ -42,6 +42,13 @@ function get_where_custom($col, $value) {
     return $query;
 }
 
+function count_where_custom($col, $value) {
+    $table = $this->get_table();
+    $this->db->where($col, $value);
+    $query=$this->db->count_all_results($table);
+    return $query;
+}
+
 function _insert($data){
     $table = $this->get_table();
     $this->db->insert($table, $data);

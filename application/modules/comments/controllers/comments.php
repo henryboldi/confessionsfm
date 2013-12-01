@@ -21,6 +21,21 @@ function __construct() {
         $this->load->view('confession_comments', $data);
                 
     }
+    
+    function number_of_comments($confession_id) {
+        $this->load->model('mdl_comments');
+       
+        $data['number_of_comments'] = $this->count_where_custom('confession_id', $confession_id);
+        
+        if ($data['number_of_comments'] == 1) {
+            echo $data['number_of_comments'].' Comment';
+        } elseif ($data['number_of_comments'] == 0) {
+            echo 'No comments';
+        } else {
+            echo $data['number_of_comments'].' Comments';
+        }
+        
+    }
 
     function create($confession_id) {
         
@@ -108,6 +123,12 @@ function get_where($id){
 function get_where_custom($col, $value) {
     $this->load->model('mdl_comments');
     $query = $this->mdl_comments->get_where_custom($col, $value);
+    return $query;
+}
+
+function count_where_custom($col, $value) {
+    $this->load->model('mdl_comments');
+    $query = $this->mdl_comments->count_where_custom($col, $value);
     return $query;
 }
 

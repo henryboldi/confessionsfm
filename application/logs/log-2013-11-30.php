@@ -51,3 +51,4 @@ ERROR - 2013-11-30 18:08:12 --> Severity: Notice  --> mysql_pconnect(): send of 
 ERROR - 2013-11-30 18:08:13 --> 404 Page Not Found --> 
 ERROR - 2013-11-30 18:42:20 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 77
 ERROR - 2013-11-30 20:30:33 --> 404 Page Not Found --> 
+ERROR - 2013-11-30 21:05:59 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 92
