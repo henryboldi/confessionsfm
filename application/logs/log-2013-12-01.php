@@ -50,3 +50,15 @@ ERROR - 2013-12-01 10:28:09 --> Severity: Notice  --> Use of undefined constant 
 ERROR - 2013-12-01 10:28:10 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
 ERROR - 2013-12-01 10:38:08 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
 ERROR - 2013-12-01 10:38:09 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-12-01 11:14:15 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-12-01 11:14:34 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-12-01 11:18:44 --> 404 Page Not Found --> 
+ERROR - 2013-12-01 13:28:25 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-12-01 13:36:14 --> Severity: Notice  --> Undefined property: CI::$comments C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\third_party\MX\Controller.php 58
+ERROR - 2013-12-01 13:56:30 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 77
+ERROR - 2013-12-01 13:56:54 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 77
+ERROR - 2013-12-01 13:57:13 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 92
+ERROR - 2013-12-01 14:26:06 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 94
+ERROR - 2013-12-01 14:26:41 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 92
+ERROR - 2013-12-01 14:27:03 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 92
+ERROR - 2013-12-01 15:43:22 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 77

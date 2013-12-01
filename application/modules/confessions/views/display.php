@@ -13,9 +13,7 @@ foreach ($query->result() as $row) {
     echo '
      <!-- /.post -->
 <div class="post clearfix">
-        <div class="post-img">
-                <img src="images/post-img1.png" alt="">
-        </div>
+        
         <div class="post-snippet">
                 <h2 class="post-title"><a href="/confessions/view/'.$row->page_id.'">'.$this->pages->page_name($this->uri->segment(3)).'</a></h2>
                 <div class="post-body">
@@ -104,81 +102,9 @@ button_2.onclick = function() {
     
     
     //end div
-    echo "<div id='result'></div>";
-    Modules::run('comments/view', $row->id);
-    echo '</div>';
+
 }
     
 echo $this->pagination->create_links();
 
 ?>
-
-<!-- /.post -->
-<div class="post clearfix">
-        <div class="post-img">
-                <img src="images/post-img1.png" alt="">
-        </div>
-        <div class="post-snippet">
-                <h2 class="post-title"><a href="#">Highland Park High School</a></h2>
-                <div class="post-body">
-                        <p>
-                                This is the most amazing confession ever read in the history of historical confessions. This is truely amazing! Just wow.
-                        </p>
-                        <a href="#" class="comments">
-                                <span>5 Comments</span>
-                        </a>
-                </div>
-                <div class="post-foot">
-                        <ul class="inline-list">
-                                <li>
-                                        <span class="gasp-count">16</span>
-                                        <a href="#" class="btn btn-pink"><i class="icon icon-gasp"></i> Gasp</a>
-                                </li>
-                                <li>
-                                        <a href="#" class="btn btn-pink"><i class="icon icon-comment"></i> Comment</a>
-                                </li>
-                                <li>
-                                        <a href="#"><span>Share</span></a>
-                                </li>
-                        </ul>
-                </div>
-                <span class="post-time">
-                        <a href="#"><span>A few seconds ago</span></a>
-                </span>
-        </div>
-</div>
-<!-- /.post -->
-<div class="post clearfix">
-        <div class="post-img">
-                <img src="images/post-img1.png" alt="">
-        </div>
-        <div class="post-snippet">
-                <h2 class="post-title"><a href="#">Highland Park High School</a></h2>
-                <div class="post-body">
-                        <p>
-                                This is the most amazing confession ever read in the history of historical confessions. This is truely amazing! Just wow.
-                        </p>
-                        <a href="#" class="comments">
-                                <span>5 Comments</span>
-                        </a>
-                </div>
-                <div class="post-foot">
-                        <ul class="inline-list">
-                                <li>
-                                        <span class="gasp-count">16</span>
-                                        <a href="#" class="btn btn-pink"><i class="icon icon-gasp"></i> Gasp</a>
-                                </li>
-                                <li>
-                                        <a href="#" class="btn btn-pink"><i class="icon icon-comment"></i> Comment</a>
-                                </li>
-                                <li>
-                                        <a href="#"><span>Share</span></a>
-                                </li>
-                        </ul>
-                </div>
-                <span class="post-time">
-                        <a href="#"><span>A few seconds ago</span></a>
-                </span>
-        </div>
-</div>
-<!-- /.post -->

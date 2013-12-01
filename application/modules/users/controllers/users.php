@@ -30,8 +30,8 @@ class Users extends MX_Controller {
     
     function login_status() {
         
-        //Do I need to pass data?
-        $this->load->view('login_status'); 
+        //Do I need to pass data?s
+        //$this->load->view('login_status'); 
         
         if($this->session->userdata('logged_in')) {
             //logged in
@@ -39,7 +39,7 @@ class Users extends MX_Controller {
             //$this->data['user_email'] = $this->session->userdata('user_email');
             //print_r($this->session->all_userdata());
             $user_data = $this->session->all_userdata(); //i know there is a better way of doing this.
-            //echo $user_data['user_email'].' ';
+            echo 'You are logged in as '.$user_data['user_email'].' ';
             echo anchor('pages/my_groups', 'My Groups');
             echo anchor('users/logout', 'Logout');            
         } else {

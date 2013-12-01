@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'us-cdbr-azure-east-c.cloudapp.net';
+$db['default']['hostname'] = 'localhost:1550';
 $db['default']['username'] = 'b18bf4c02907bb';
 $db['default']['password'] = '2c0f07d5';
 $db['default']['database'] = 'confessionsfm';
