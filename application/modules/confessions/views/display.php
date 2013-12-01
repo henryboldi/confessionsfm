@@ -39,11 +39,10 @@ foreach ($query->result() as $row) {
     
     $this->gasps->create($row->id);
     echo '
-                                        <span class="gasp-count">16</span>
-                                        <a href="#" class="btn btn-pink"><i class="icon icon-gasp"></i> Gasp</a>
+                                        
                                 </li>
                                 <li>
-                                        <a href="#" id="2_button_'.$row->id.'" class="btn btn-pink"><i class="icon icon-comment"></i> Comment</a>
+                                        <input id="2_button_'.$row->id.'" class="btn btn-pink inline" type="submit" value="Comment"></input>
                                 </li>
                                 <li>
                                         <a href="#"><span>Share</span></a>

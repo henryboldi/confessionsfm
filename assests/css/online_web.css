@@ -205,6 +205,10 @@ body {
   margin-left: 0;
 }
 
+.inline {
+    display: inline-block;
+}
+
 .post-foot ul li .gasp-count {
 	border: 1px solid #434040;
 	height: 30px;
@@ -215,6 +219,7 @@ body {
 	line-height: 31px;
 	text-align: center;
 	vertical-align: top;
+        margin-right: 10px;
 }
 
 .post-foot ul li .gasp-count:after {
