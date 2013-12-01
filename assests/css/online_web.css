@@ -1,0 +1,279 @@
+/*************************
+**** =refont
+*************************/
+
+body {
+    font-family: sans-serif;
+}
+
+.main p{
+        font-family: sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.online_web_page {
+	background: #171515;
+}
+
+
+.online_web_page .center {
+	width: 1025px;
+        margin-top: 60px;
+}
+
+/*************************
+**** =header 
+*************************/
+
+.online_web_page .header {
+  background: #c70d58;
+  position: fixed;
+  top: 0px;
+  margin-top: -60px;
+  z-index:9999999;
+  width: 100%;
+}
+
+.online_web_page .header .center {
+	width: 1141px;
+}
+
+.header .logo {
+  margin-right: 55px;
+}
+
+.header .logo a {
+	background-image: url(../images/logo2.png);
+}
+
+.header .searchbox {
+  float: left;
+  position: relative;
+  margin-top: 5px;
+}
+
+.header .searchbox input[type=text] {
+  width: 470px;
+  padding: 6px 15px 6px 40px;
+  background: #740a35;
+}
+
+.header .searchbox input[type=submit] {
+  background: url(../images/search-ico.png) no-repeat center center;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  text-indent: -99999px;
+}
+
+.header .hr-nav {
+	float: right;
+	margin-top: 7px;
+}
+
+.header .hr-nav li {
+	margin-left: 27px;
+}
+
+.header .hr-nav li a.home {
+}
+
+.header .hr-nav li a {
+	line-height: normal;
+	vertical-align: middle;
+	display: block;
+}
+
+/*************************
+**** =maiin 
+*************************/
+
+.main a span {
+	color: #717070;
+}
+
+.main a:hover span {
+	color: #8f8e8e;
+}
+
+/*** =sidebar1
+*********************************/
+
+.main .sidebar1 {
+	width: 182px;
+	padding: 20px 0;
+	float: left;
+}
+
+.main .sidebar1 p {
+	color: #717070;
+	margin-top: 0;
+	margin-bottom: 3px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: normal;
+}
+
+.main .sidebar1 .sb-signin {
+	margin-bottom: 15px;
+}
+
+.main .sidebar1 .sb-sec {
+	margin-bottom: 15px;
+}
+
+.main .sidebar1 .icon {
+	margin-top: -5px;
+}
+
+.main .sidebar1 li a span {
+	margin-left: 23px;
+}
+
+/*** =content-area
+*********************************/
+.post{
+    width: 549px;
+    padding-bottom: 30px;
+    border-bottom:thin solid #171515;
+}
+
+.content-area  {
+	float: left;
+	background: #252323;
+        
+}
+
+.content-area .ca-inner {
+	padding: 29px 36px 10px;
+}
+
+.main .posts {
+
+}
+
+.content-area .posts .post {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.content-area .post .post-img {
+  float: left;
+  margin-right: 15px;
+  border-radius: 4px;
+  width: 47px;
+  height: 47px;
+  overflow: hidden;
+}
+
+.content-area .post .post-snippet {
+	width: 461px;
+	float: left;
+}
+
+.content-area .post .post-snippet .post-title {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.content-area .post .post-snippet .post-body {
+  margin-bottom: 15px;
+}
+
+.content-area .post .post-snippet .post-body .post-body p {
+  font-size: 16px;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+.content-area .post .post-snippet .post-foot ul {
+  margin-bottom: 0;
+}
+
+.content-area .post .post-snippet .post-foot ul li {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.post-foot ul li .gasp-count {
+	border: 1px solid #434040;
+	height: 30px;
+	min-width: 30px;
+	margin-right: 6px;
+	position: relative;
+	display: inline-block;
+	line-height: 31px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.post-foot ul li .gasp-count:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #434040;
+	margin-top: -8px;
+	z-index: 10;
+}
+
+.post-foot ul li .gasp-count:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid #252323;
+	z-index: 11;
+	margin-top: -7px;
+}
+
+
+.content-area .post .post-snippet .post-foot ul li a {
+  box-shadow: none;
+  display: inline-block;
+}
+
+.content-area .post .post-snippet .post-time {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.post-foot ul li a .icon {
+	vertical-align: top;
+	margin-top: 4px;
+}
+
+
+/*** =footer
+*********************************/
+
+.footer {
+	padding-left: 10px;
+	padding-top: 21px;
+	float: left;
+	width: 212px;
+        background: none;
+}
+
+.footer p {
+	font-size: 14px;
+	font-weight: bold;
+	color: #747474;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+/*** =replace
+*********************************/
+	

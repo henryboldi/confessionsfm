@@ -1,89 +1,87 @@
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url().'normalize.css'; ?>" />
+<head>
+<title>Confessions.fm | <?php echo $title; ?></title>
+<meta charset="utf-8">
 
-        <title>Confessions.fm</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" language="javascript" src="<?php echo base_url().'jquery.js'; ?>"></script>
-        <link type="text/css" rel="stylesheet" href="<?php echo base_url().'style.css'; ?>" />
-        <script type="application/javascript" src="<?php echo base_url().'lib/fastclick.js'; ?>"></script> 
-        <script type="application/javascript">
-    window.addEventListener('load', function() {
-        var textInput = document.querySelector('input');
+<link type="text/css" rel="stylesheet" href="<?php echo base_url().'assests/css/style.css'; ?>" />
+<link type="text/css" rel="stylesheet" href="<?php echo base_url().'assests/css/online_web.css'; ?>" />
 
-        FastClick.attach(document.body);
-        Array.prototype.forEach.call(document.getElementsByClassName('body'), function(testEl) {
-            testEl.addEventListener('click', function() {
-                textInput.focus();
-            }, false)
-        });
-    }, false);
-    
+</head>
 
-                        
+<body class="online_web_page">
+<div id="container">
+	<!-- header starts here -->
+	<div class="header">	
+		<div class="center clearfix">
+			<div class="logo">
+				<h1><a href="#">Confession.fm</a></h1>
+			</div>
+			<!-- /.logo -->
+			<form action="#" method="post" class="searchbox">
+				<input type="text" name="search" placeholder="<?php echo $title; ?>" id="search">
+				<input type="submit" value="Search">
+			</form>
+			<!-- /.searchbox -->
+			<ul class="hr-nav inline-list">
+				<li><a href="#" class="home">Home</a></li>
+				<li>
+					<a href="#">
+						<i class="icon icon-settings"></i>
+						<i class="icon icon-down"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- header ends here -->
 
-    
-    </script> 
-    
-    
-    </head>
-    <body>
-     
+	<!-- main starts here -->
+	<div class="main">
+		
+		<div class="center clearfix">
+			<div class="sidebar sidebar1">
+				<p class="sb-signin">You are signed in as henrymb67@gmail.com</p>
+				<div class="sb-sec sb-sec1">
+					<ul class="list-default">
+						<li><a href="#"><i class="icon icon-feed"></i> Confession feed</a></li>
+						<li><a href="#"><i class="icon icon-group"></i> Joined Groups</a></li>
+					</ul>
+				</div>
+				<div class="sb-sec sb-sec2">
+					<p>Your Groups</p>
+					<ul class="list-default">
+						<li><a href="#"><i class="icon icon-group"></i> Confession feed</a></li>
+						<li><a href="#"><span>New Group</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.sidebar1 -->
+			<div class="content-area">
+				<div class="ca-inner">
+					<div class="posts">
+						<!-- /.post -->
+                                                <?php $this->load->view($module.'/'.$view_file) ?>
+						<!-- /.post -->
+					</div>
+				</div>
+			</div>
+			<!-- /.content-area -->
+			<div class="sidebar sidebar2 footer">
+				<p>Confessions.fm &copy; 2013</p>
+				<p>
+					<a href="#"><span>Privacy</span></a> . 
+					<a href="#"><span>Terms</span></a> . 
+					<a href="#"><span>Cookies</span></a> . 
+					<a href="#"><span>More</span></a>
 
-<!--<input type="checkbox" name="handler-right" class="handler" id="handler-right" onclick="null" />-->
-<input type="checkbox" name="handler-left" class="handler" id="handler-left" onclick="null" />
-        <div id="wrapper"> <!-- the wrapper -->
-       
-           
-                <p id="button">
-        <!--<label for="handler-right" id="right" href="#">Open right →</label>-->
-         
-            <h1><?php echo $title; ?></h1>
-        
-        <label for="handler-left" id="left" href="#"><div id="fly_in">
-                
-                </div></label>
-                </p>
-        
-        <div id="content">
-        <?php
-        $this->load->view($module.'/'.$view_file)
-        ?>
+				</p>
+			</div>
+		</div>
 
-        </div>
-    </div>
-                <div id="menu">
-   <ul>
-      <li><a href="/" id="test">Confession Groups</a></li>
-      <li><a href="/pages/search_field/">Search</a></li>
-      <li><?php echo Modules::run('users/login_status'); ?></li>
-   </ul>
-</div>
-<script type="application/javascript" src="<?php echo base_url().'ftscroller.js'; ?>"></script> 
-  
+	</div>
+	<!-- Main ends here -->
 
-<!--Set up the scroller, disabling horizontal scrolling-->
-<script type="application/javascript">
-var scroller = new FTScroller(document.getElementById('content'), {
-scrollbars: false,
-scrollingX: false,
-updateOnChanges: true,
-alwaysScroll: true,
-updateOnWindowResize: true,
-bouncing: false
-});
-
-$('a').click(function() {
-    $('#handler-left').prop('checked', false);
-});
-</script>
+</div><!-- container ends here -->
 </body>
 </html>

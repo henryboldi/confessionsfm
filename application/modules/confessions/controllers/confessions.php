@@ -25,6 +25,15 @@ function __construct() {
         $this->load->module('pages');
         $name = $this->pages->page_name($this->uri->segment(3));
         
+        $this->load->library('pagination');
+
+        $config['base_url'] = '/confessions/view/'.$this->uri->segment(3).'/';
+        $config['total_rows'] = 200;
+        $config['per_page'] = 10;
+
+        $this->pagination->initialize($config); 
+        
+        
         $data['module'] = "confessions";
         $data['view_file'] = "display";
         $data['title'] = $name;

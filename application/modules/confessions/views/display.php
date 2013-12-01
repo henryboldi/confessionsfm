@@ -7,9 +7,67 @@ echo anchor('confessions/create/'.$this->uri->segment(3), 'Confess');
 echo '</div>';
 foreach ($query->result() as $row) {
     $edit_url = base_url().'confessions/'.$row->id;
-    echo "<div id='".$row->id."'class='post'><a class='red' href='/confessions/view/".$row->page_id."'>".$this->pages->page_name($this->uri->segment(3))."</a><p>".$row->confession.'</p> at '.$row->confession_date_time;
+    //echo "<div id='".$row->id."'class='post'><a class='red' href='/confessions/view/".$row->page_id."'>".$this->pages->page_name($this->uri->segment(3))."</a><p>".$row->confession.'</p> at '.$row->confession_date_time;
+    echo '<div class="post-img"><img src="images/post-img1.png" alt=""></div><div class="post-snippet"><h2 class="post-title"><a href="/confessions/view/'.$row->page_id.'">'.$this->pages->page_name($this->uri->segment(3)).'</a></h2><div class="post-body"><p>'.$row->confession.'</p></div>'; //then title
+     //load comments
+    echo '
+     <!-- /.post -->
+<div class="post clearfix">
+        <div class="post-img">
+                <img src="images/post-img1.png" alt="">
+        </div>
+        <div class="post-snippet">
+                <h2 class="post-title"><a href="/confessions/view/'.$row->page_id.'">'.$this->pages->page_name($this->uri->segment(3)).'</a></h2>
+                <div class="post-body">
+                        <p>
+                                '.$row->confession.'
+                        </p>
+                        <a href="#" class="comments" id="button_'.$row->id.'">
+                             Show comments   
+                        </a>
+                        <span id="comments_'.$row->id.'">';
+    $this->load->module('comments'); // load comments module
+    $comments = $this->comments->view($row->id); // load comments view;
+    echo '</span>
+                </div>
+                <div class="post-foot">
+                        <ul class="inline-list">
+                                <li>
+                                        <span class="gasp-count">16</span>
+                                        <a href="#" class="btn btn-pink"><i class="icon icon-gasp"></i> Gasp</a>
+                                </li>
+                                <li>
+                                        <a href="#" class="btn btn-pink"><i class="icon icon-comment"></i> Comment</a>
+                                </li>
+                                <li>
+                                        <a href="#"><span>Share</span></a>
+                                </li>
+                        </ul>
+                </div>
+                <span class="post-time">
+                        <a href="#"><span>'.$row->confession_date_time.'</span></a>
+                </span>
+        </div>
+</div>
+<!-- /.post -->   
+
+    ';
     
-    
+    echo "<script type='text/javascript'>
+var button = document.getElementById('button_".$row->id."');
+
+button.onclick = function() {
+    var div = document.getElementById('comments_".$row->id."');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};  
+
+</script>";
+
     $this->load->module('gasps');
     
     $this->gasps->create($row->id);
@@ -22,9 +80,8 @@ foreach ($query->result() as $row) {
         }
     }
     
-    //load comments
-    $this->load->module('comments'); // load comments module
-    $this->comments->view($row->id); // load comments view
+   
+    
     $this->comments->create($row->id); // load comments create
     
     
@@ -34,7 +91,76 @@ foreach ($query->result() as $row) {
     echo '</div>';
 }
     
-
+echo $this->pagination->create_links();
 
 ?>
-    
+
+<!-- /.post -->
+<div class="post clearfix">
+        <div class="post-img">
+                <img src="images/post-img1.png" alt="">
+        </div>
+        <div class="post-snippet">
+                <h2 class="post-title"><a href="#">Highland Park High School</a></h2>
+                <div class="post-body">
+                        <p>
+                                This is the most amazing confession ever read in the history of historical confessions. This is truely amazing! Just wow.
+                        </p>
+                        <a href="#" class="comments">
+                                <span>5 Comments</span>
+                        </a>
+                </div>
+                <div class="post-foot">
+                        <ul class="inline-list">
+                                <li>
+                                        <span class="gasp-count">16</span>
+                                        <a href="#" class="btn btn-pink"><i class="icon icon-gasp"></i> Gasp</a>
+                                </li>
+                                <li>
+                                        <a href="#" class="btn btn-pink"><i class="icon icon-comment"></i> Comment</a>
+                                </li>
+                                <li>
+                                        <a href="#"><span>Share</span></a>
+                                </li>
+                        </ul>
+                </div>
+                <span class="post-time">
+                        <a href="#"><span>A few seconds ago</span></a>
+                </span>
+        </div>
+</div>
+<!-- /.post -->
+<div class="post clearfix">
+        <div class="post-img">
+                <img src="images/post-img1.png" alt="">
+        </div>
+        <div class="post-snippet">
+                <h2 class="post-title"><a href="#">Highland Park High School</a></h2>
+                <div class="post-body">
+                        <p>
+                                This is the most amazing confession ever read in the history of historical confessions. This is truely amazing! Just wow.
+                        </p>
+                        <a href="#" class="comments">
+                                <span>5 Comments</span>
+                        </a>
+                </div>
+                <div class="post-foot">
+                        <ul class="inline-list">
+                                <li>
+                                        <span class="gasp-count">16</span>
+                                        <a href="#" class="btn btn-pink"><i class="icon icon-gasp"></i> Gasp</a>
+                                </li>
+                                <li>
+                                        <a href="#" class="btn btn-pink"><i class="icon icon-comment"></i> Comment</a>
+                                </li>
+                                <li>
+                                        <a href="#"><span>Share</span></a>
+                                </li>
+                        </ul>
+                </div>
+                <span class="post-time">
+                        <a href="#"><span>A few seconds ago</span></a>
+                </span>
+        </div>
+</div>
+<!-- /.post -->
