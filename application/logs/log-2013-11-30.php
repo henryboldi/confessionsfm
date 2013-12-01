@@ -52,3 +52,16 @@ ERROR - 2013-11-30 18:08:13 --> 404 Page Not Found -->
 ERROR - 2013-11-30 18:42:20 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 77
 ERROR - 2013-11-30 20:30:33 --> 404 Page Not Found --> 
 ERROR - 2013-11-30 21:05:59 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 92
+ERROR - 2013-11-30 21:27:43 --> Severity: Warning  --> mysql_pconnect(): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-11-30 21:27:43 --> Unable to connect to the database
+ERROR - 2013-11-30 21:27:48 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\comments\controllers\comments.php 77
+ERROR - 2013-11-30 22:22:50 --> Severity: Notice  --> Array to string conversion C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\helpers\form_helper.php 450
+ERROR - 2013-11-30 22:22:51 --> Severity: Notice  --> Array to string conversion C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\helpers\form_helper.php 450
+ERROR - 2013-11-30 22:22:51 --> Severity: Notice  --> Array to string conversion C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\helpers\form_helper.php 450
+ERROR - 2013-11-30 22:24:40 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-11-30 22:24:42 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-11-30 22:26:28 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-11-30 22:26:29 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-11-30 22:26:32 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109
+ERROR - 2013-11-30 22:26:33 --> Severity: Notice  --> Use of undefined constant confession_id - assumed 'confession_id' C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\gasps\controllers\gasps.php 109

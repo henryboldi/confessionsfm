@@ -11,7 +11,8 @@ echo form_hidden('number_of_gasps', 1);
 
 echo form_hidden('confession_id', $confession_id);
 
-echo form_submit('submit', 'GASP!');
+$attributes ="class='btn btn-pink'";
+echo form_submit('submit', 'GASP!', $attributes);
 
 
 echo form_close();

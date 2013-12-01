@@ -17,10 +17,10 @@ class Gasps extends MX_Controller {
 
         }
             if (isset($data['number_of_gasps'])) {
-                echo '<br>'.$data['number_of_gasps'].' gasp(s)';
+                echo '<span class="gasp-count">'.$data['number_of_gasps'].'</span>';
             } else {
                 //no gasps yet
-                echo '<br>Be the first to GASP!';
+                echo '<span class="gasp-count">0</span>';
             }
         
         

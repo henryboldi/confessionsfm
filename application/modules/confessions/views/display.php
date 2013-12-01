@@ -34,7 +34,11 @@ foreach ($query->result() as $row) {
                 </div>
                 <div class="post-foot">
                         <ul class="inline-list">
-                                <li>
+                                <li>';
+    $this->load->module('gasps');
+    
+    $this->gasps->create($row->id);
+    echo '
                                         <span class="gasp-count">16</span>
                                         <a href="#" class="btn btn-pink"><i class="icon icon-gasp"></i> Gasp</a>
                                 </li>
@@ -89,9 +93,7 @@ button_2.onclick = function() {
 
 </script>";
 
-    $this->load->module('gasps');
     
-    $this->gasps->create($row->id);
     
     if ($this->session->flashdata('errors')){ //change!
         if ($this->session->flashdata('id') == $row->id) {
