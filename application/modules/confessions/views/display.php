@@ -49,7 +49,15 @@ foreach ($query->result() as $row) {
                 </div>
                 <span class="post-time">
                         <a href="#"><span>'.$row->confession_date_time.'</span></a>
-                </span>
+                </span>';
+    if ($this->session->flashdata('errors')){ //change!
+        if ($this->session->flashdata('id') == $row->id) {
+            echo "<div class='error'>";
+            echo $this->session->flashdata('errors');
+            echo "</div>";
+        }
+    }    
+            echo '
         </div>
 </div>
 <!-- /.post -->   
@@ -89,20 +97,7 @@ button_2.onclick = function() {
 };  
 
 </script>";
-
     
-    
-    if ($this->session->flashdata('errors')){ //change!
-        if ($this->session->flashdata('id') == $row->id) {
-            echo "<div class='error'>";
-            echo $this->session->flashdata('errors');
-            echo "</div>";
-        }
-    }
-    
-    
-    //end div
-
 }
     
 echo $this->pagination->create_links();

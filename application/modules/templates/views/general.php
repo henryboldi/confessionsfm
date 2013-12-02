@@ -15,7 +15,7 @@
 	<div class="header">	
 		<div class="center clearfix">
 			<div class="logo">
-				<h1><a href="#">Confession.fm</a></h1>
+				<h1><a href="/">Confession.fm</a></h1>
 			</div>
 			<!-- /.logo -->
                         <?php $this->load->module('pages');
@@ -53,11 +53,7 @@
 					</ul>
 				</div>
 				<div class="sb-sec sb-sec2">
-					<p>Your Groups</p>
-					<ul class="list-default">
-						<li><a href="#"><i class="icon icon-group"></i> Confession feed</a></li>
-						<li><a href="#"><span>New Group</span></a></li>
-					</ul>
+                                    <?php $this->pages->my_groups(); ?>
 				</div>
 			</div>
 			<!-- /.sidebar1 -->

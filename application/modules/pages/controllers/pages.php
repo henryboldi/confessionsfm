@@ -23,12 +23,8 @@ class Pages extends MX_Controller {
         $user_id = modules::run('users/get_user_id');       
         $data['query'] = $this->mdl_pages->get_where_by_user_id($user_id); //not working: only pulling first page by user.
         
-        $data['module'] = "pages";
-        $data['view_file'] = "my_pages";
-        $data['title'] = "My Groups";
-        echo Modules::run('templates/general', $data);
-        //$this->load->view('my_pages', $data);
-        
+       
+        $this->load->view('my_pages', $data);
     }
     
 

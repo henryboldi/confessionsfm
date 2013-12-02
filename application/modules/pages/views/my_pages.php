@@ -1,15 +1,16 @@
-<h1>Your Pages</h1>
 <?php
 
-echo anchor('pages/create', '<p>Create New Page</p>');
+echo '<p>Your Groups</p><ul class="list-default">';
 
 foreach ($query->result() as $row) {
     $edit_url = base_url().'confessions/'.$row->id;
-    echo "<h2><a href='../../confessions/view/".$row->id."'>".$row->name."</a></h1>";
+    if ( strlen($row->name) >= 15) {
+        $row->name = substr($row->name,0,15).'...';
+    }
+    echo '<li><a href="../../confessions/view/'.$row->id.'"><i class="icon icon-group"></i> '.$row->name."</a></li>";
 }
-echo '<hr>';
 
-echo Modules::run('users/login_status');
-    
+echo anchor('pages/create', ' New Group');
+echo '</ul>';
 
 ?>
