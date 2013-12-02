@@ -1,11 +1,10 @@
 <?php
+$form_attr = 'class="searchbox"';
+echo form_open('pages/search', $form_attr);
 
-echo form_open('pages/search');
-
-echo "<div class='post'>Search:";
-echo form_input('search_query');
-echo "<br>";
-
+//echo "<div class='post'>Search:";
+$field_attr = 'id="search"';
+echo form_input('search_query', '', $field_attr);
 
 
 echo form_submit('submit', 'Search');
