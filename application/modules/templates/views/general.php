@@ -25,11 +25,16 @@
 				<li><a href="/" class="home">Home</a></li>
 				<li>
 					<a href="#">
-						<i class="icon icon-settings"></i>
+						<i class="icon icon-settings"></i>			
 						<i class="icon icon-down"></i>
+						<ul class = "dropdown-menu">
+					    	<li class = "menu-item">
+					        	<a href = "#" class = "menu-item-link">Logout</a>
+					    	</li>            
+						</ul>
 					</a>
 				</li>
-			</ul>
+			</ul> 
 		</div>
 	</div>
 	<!-- header ends here -->
