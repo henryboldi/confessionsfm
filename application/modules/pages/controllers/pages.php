@@ -61,10 +61,7 @@ class Pages extends MX_Controller {
                 
     }
     function search_field() {
-        $data['module'] = "pages";
-        $data['view_file'] = "search_field";
-        $data['title'] = "Search";
-        echo Modules::run('templates/general', $data);
+        $this->load->view('search_field');
     }
     
     function get_query() {

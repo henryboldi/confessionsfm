@@ -52,6 +52,7 @@ body {
   float: left;
   position: relative;
   margin-top: 5px;
+  display: inline;
 }
 
 .header .searchbox input[type=text] {
@@ -72,7 +73,10 @@ body {
 
 .header .hr-nav {
 	float: right;
-	margin-top: 7px;
+        display: inline;
+        margin-right: 0px;
+        top: 0px;
+	margin-top: -10px;
 }
 
 .header .hr-nav li {

@@ -18,10 +18,8 @@
 				<h1><a href="#">Confession.fm</a></h1>
 			</div>
 			<!-- /.logo -->
-			<form action="#" method="post" class="searchbox">
-				<input type="text" name="search" placeholder="<?php echo $title; ?>" id="search">
-				<input type="submit" value="Search">
-			</form>
+                        <?php $this->load->module('pages');
+                              $this->pages->search_field(); ?>
 			<!-- /.searchbox -->
 			<ul class="hr-nav inline-list">
 				<li><a href="/" class="home">Home</a></li>
