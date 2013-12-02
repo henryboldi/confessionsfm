@@ -74,3 +74,6 @@ ERROR - 2013-12-01 16:42:31 --> Severity: Notice  --> mysql_pconnect(): send of 
  C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\database\drivers\mysql\mysql_driver.php 91
 ERROR - 2013-12-01 16:44:46 --> Severity: Notice  --> mysql_pconnect(): send of 5 bytes failed with errno=10053 An established connection was aborted by the software in your host machine.
  C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-12-01 17:30:42 --> Severity: Warning  --> mysql_pconnect(): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-12-01 17:30:42 --> Unable to connect to the database

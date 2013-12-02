@@ -96,7 +96,6 @@ a:hover {
 .inline-list {
 	margin: 0;
 	padding: 0;
-        display: inline-block;
 }
 
 .inline-list li {
