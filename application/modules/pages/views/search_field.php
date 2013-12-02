@@ -9,4 +9,6 @@ echo form_input('search_query', '', $field_attr);
 
 echo form_submit('submit', 'Search');
 
+echo form_close();
+
 ?>
