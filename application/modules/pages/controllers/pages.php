@@ -18,6 +18,7 @@ class Pages extends MX_Controller {
     }
     
     function my_groups() {
+        if($this->session->userdata('logged_in')) {
         $this->load->model('mdl_pages');
 
         $user_id = modules::run('users/get_user_id');       
@@ -25,6 +26,9 @@ class Pages extends MX_Controller {
         
        
         $this->load->view('my_pages', $data);
+        } else {
+            echo '';
+        }
     }
     
 
