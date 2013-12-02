@@ -219,9 +219,11 @@ body {
 
 .content-area .ca-inner {
 	padding: 29px 36px 10px;
+        width: 549px;
 }
 
 .main .posts {
+    width: 549px;
 
 }
 
