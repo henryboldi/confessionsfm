@@ -21,19 +21,19 @@ function __construct() {
     }
     function view() {
         $this->load->model('mdl_confessions');
-        $data['query'] = $this->mdl_confessions->get_where_custom('page_id', $this->uri->segment(3));
         $this->load->module('pages');
         $name = $this->pages->page_name($this->uri->segment(3));
         
         $this->load->library('pagination');
 
         $config['base_url'] = '/confessions/view/'.$this->uri->segment(3).'/';
-        $config['total_rows'] = 200;
+        $config['total_rows'] = $this->mdl_confessions->count_where_custom('page_id', $this->uri->segment(3));
         $config['per_page'] = 10;
+        $config['uri_segment'] = 4;
 
         $this->pagination->initialize($config); 
         
-        
+        $data['query'] = $this->mdl_confessions->get_where_custom_page('page_id', $this->uri->segment(3), $config['per_page'], $this->uri->segment(4));
         $data['module'] = "confessions";
         $data['view_file'] = "display";
         $data['title'] = $name;
@@ -103,6 +103,18 @@ function get_where($id){
 function get_where_custom($col, $value) {
     $this->load->model('mdl_confessions');
     $query = $this->mdl_confessions->get_where_custom($col, $value);
+    return $query;
+}
+
+function count_where_custom($col, $value) {
+    $this->load->model('mdl_confessions');
+    $query = $this->mdl_confessions->count_where_custom($col, $value);
+    return $query;
+}
+
+function get_where_custom_page($col, $value, $per_page, $uri_4) {
+    $this->load->model('mdl_confessions');
+    $query = $this->mdl_confessions->get_where_custom($col, $value, $per_page, $uri_4);
     return $query;
 }
 

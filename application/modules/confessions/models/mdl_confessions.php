@@ -44,6 +44,24 @@ function get_where_custom($col, $value) {
     return $query;
 }
 
+function count_where_custom($col, $value) {
+    $table = $this->get_table();
+    $this->db->order_by('id', 'desc'); // added for sort by latest
+    $this->db->where($col, $value);
+    
+    $query=$this->db->get($table)->num_rows();
+    return $query;
+}
+
+function get_where_custom_page($col, $value, $per_page, $uri_4) {
+    $table = $this->get_table();
+    $this->db->order_by('id', 'desc'); // added for sort by latest
+    $this->db->where($col, $value);
+    
+    $query=$this->db->get($table, $per_page, $uri_4);
+    return $query;
+}
+
 function _insert($data){
     $table = $this->get_table();
     $this->db->insert($table, $data);
