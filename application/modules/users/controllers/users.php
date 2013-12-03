@@ -44,8 +44,21 @@ class Users extends MX_Controller {
         } else {
             //NOT logged in
             //echo "You are not logged in. ";
-            echo anchor('users/login', 'Login');
+            echo anchor('users/login', 'Login').' or ';
+            echo anchor('users/create', 'Sign Up');
         }
+    }
+    
+    function login_logout() {
+        if($this->session->userdata('logged_in')) {
+            echo anchor('users/logout', 'Logout');            
+        } else {
+            //NOT logged in
+            //echo "You are not logged in. ";
+            echo '<li>'.anchor('users/login', 'Login').'</li>';
+            echo '<li>'.anchor('users/create', 'Sign Up').'</li>';
+        }
+        
     }
     
     function get_user_id() {

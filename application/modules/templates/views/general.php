@@ -23,17 +23,11 @@
 			<!-- /.searchbox -->
 			<ul class="hr-nav inline-list">
 				<li><a href="/" class="home">Home</a></li>
-				<li>
-					<a href="#">
-						<i class="icon icon-settings"></i>			
-						<i class="icon icon-down"></i>
-						<ul class = "dropdown-menu">
-					    	<li class = "menu-item">
-					        	<a href = "#" class = "menu-item-link">Logout</a>
-					    	</li>            
-						</ul>
-					</a>
-				</li>
+				
+                                    <?php $this->load->module('users');
+                              $this->users->login_logout(); ?>
+
+				
 			</ul> 
 		</div>
 	</div>
@@ -44,7 +38,7 @@
 		
 		<div class="center clearfix">
 			<div class="sidebar sidebar1">
-				<p class="sb-signin"><?php $this->load->module('users');
+				<p class="sb-signin"><?php 
                                 $this->users->login_status(); ?></p>
 				<div class="sb-sec sb-sec1">
 					<ul class="list-default">
