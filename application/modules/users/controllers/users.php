@@ -51,7 +51,7 @@ class Users extends MX_Controller {
     
     function login_logout() {
         if($this->session->userdata('logged_in')) {
-            echo anchor('users/logout', 'Logout');            
+            echo '<li>'.anchor('users/logout', 'Logout').'</li>';            
         } else {
             //NOT logged in
             //echo "You are not logged in. ";
