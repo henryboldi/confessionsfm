@@ -28,7 +28,7 @@ function __construct() {
 
         $config['base_url'] = '/confessions/view/'.$this->uri->segment(3).'/';
         $config['total_rows'] = $this->mdl_confessions->count_where_custom('page_id', $this->uri->segment(3));
-        $config['per_page'] = 3;
+        $config['per_page'] = 15;
         $config['uri_segment'] = 4;
 
         
