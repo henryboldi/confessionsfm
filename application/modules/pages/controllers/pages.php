@@ -11,7 +11,7 @@ class Pages extends MX_Controller {
         $config['base_url'] = '/pages/index/';
         $config['total_rows'] = $this->mdl_pages->get('id')->num_rows();
         $config['per_page'] = 15;
-        $config['uri_segment'] = 2;
+        $config['uri_segment'] = 3;
         $this->pagination->initialize($config); 
         $data['query'] = $this->mdl_pages->get_with_limit($config['per_page'], $this->uri->segment(3), 'id');
        
