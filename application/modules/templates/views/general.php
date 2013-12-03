@@ -43,7 +43,7 @@
 				<div class="sb-sec sb-sec1">
 					<ul class="list-default">
 						<li><a href="/"><i class="icon icon-feed"></i> Confession feed</a></li>
-						<li><a href="#"><i class="icon icon-group"></i> Joined Groups</a></li>
+						<!--<li><a href="#"><i class="icon icon-group"></i> Joined Groups</a></li>-->
 					</ul>
 				</div>
 				<div class="sb-sec sb-sec2">
