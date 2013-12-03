@@ -5,8 +5,16 @@ class Pages extends MX_Controller {
     function index() {
         
         $this->load->model('mdl_pages');
+        
+        $this->load->library('pagination');
+
+        $config['base_url'] = '/pages/index/';
+        $config['total_rows'] = $this->mdl_pages->get('id')->num_rows();
+        $config['per_page'] = 15;
+        $config['uri_segment'] = 2;
+        $this->pagination->initialize($config); 
+        $data['query'] = $this->mdl_pages->get_with_limit($config['per_page'], $this->uri->segment(3), 'id');
        
-        $data['query'] = $this->mdl_pages->get('id');
        
         $data['module'] = "pages";
         $data['view_file'] = "display";

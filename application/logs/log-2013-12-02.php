@@ -606,3 +606,11 @@ ERROR - 2013-12-02 18:04:36 --> Severity: Notice  --> Undefined property: stdCla
 ERROR - 2013-12-02 18:04:36 --> Severity: Notice  --> Undefined property: stdClass::$page_id C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\confessions\views\display.php 18
 ERROR - 2013-12-02 18:04:36 --> Severity: Notice  --> Undefined property: stdClass::$confession C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\confessions\views\display.php 21
 ERROR - 2013-12-02 18:04:36 --> Severity: Notice  --> Undefined property: stdClass::$confession_date_time C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\application\modules\confessions\views\display.php 51
+ERROR - 2013-12-02 18:29:28 --> Severity: Warning  --> mysql_pconnect(): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-12-02 18:29:28 --> Unable to connect to the database
+ERROR - 2013-12-02 19:20:00 --> Query error: Unknown column '
+LIMIT 15, 0' in 'order clause'
+ERROR - 2013-12-02 19:21:27 --> 404 Page Not Found --> pages/1
+ERROR - 2013-12-02 19:21:36 --> 404 Page Not Found --> pages/1
+ERROR - 2013-12-02 19:21:48 --> 404 Page Not Found --> 
