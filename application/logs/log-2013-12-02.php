@@ -614,3 +614,6 @@ LIMIT 15, 0' in 'order clause'
 ERROR - 2013-12-02 19:21:27 --> 404 Page Not Found --> pages/1
 ERROR - 2013-12-02 19:21:36 --> 404 Page Not Found --> pages/1
 ERROR - 2013-12-02 19:21:48 --> 404 Page Not Found --> 
+ERROR - 2013-12-02 19:26:14 --> Severity: Warning  --> mysql_pconnect(): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+ C:\BitNami\wampstack-5.4.22-0\apache2\htdocs\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2013-12-02 19:26:14 --> Unable to connect to the database

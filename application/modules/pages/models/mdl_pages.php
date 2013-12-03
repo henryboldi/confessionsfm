@@ -43,7 +43,7 @@ function get($order_by){
 function get_with_limit($limit, $offset, $order_by) {
     $table = $this->get_table();
     $this->db->limit($limit, $offset);
-    $this->db->order_by($order_by);
+    $this->db->order_by($order_by, 'desc');
     $query=$this->db->get($table);
     return $query;
 }
@@ -66,7 +66,7 @@ function get_where_by_user_id($where) {
     
     $table = $this->get_table();    
     $this->db->where('user_id', $where);
-    //$this->db->order_by('id');
+    $this->db->order_by('id', 'desc');
     //$this->db->limit(15);
     $query = $this->db->get($table);
     return $query;
