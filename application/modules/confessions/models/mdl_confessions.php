@@ -55,10 +55,10 @@ function count_where_custom($col, $value) {
 
 function get_where_custom_page($col, $value, $per_page, $uri_4) {
     $table = $this->get_table();
-    $this->db->order_by('id', 'desc'); // added for sort by latest
+    //$this->db->order_by('id', 'desc'); // added for sort by latest
     $this->db->where($col, $value);
     
-    $query=$this->db->get($table, $per_page, $uri_4);
+    $query = $this->db->get($table, $per_page, $uri_4);
     return $query;
 }
 

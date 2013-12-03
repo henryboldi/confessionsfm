@@ -1,6 +1,6 @@
 <?php
 
-//$this->load->module('pages');
+$this->load->module('pages');
 //echo '<h1>'.$this->pages->page_name($this->uri->segment(3)).'</h1>';
 echo "<div class='post' id='first'>";
 echo anchor('confessions/create/'.$this->uri->segment(3), 'Confess');

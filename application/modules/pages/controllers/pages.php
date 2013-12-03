@@ -18,14 +18,26 @@ class Pages extends MX_Controller {
     }
     
     function my_groups() {
+        $this->load->library('SimpleLoginSecure');
         if($this->session->userdata('logged_in')) {
-        $this->load->model('mdl_pages');
+        $user_data = $this->session->all_userdata(); //better way can be used here
+        $user_id = $user_data['user_id'];
+        $data['query'] = $this->get_where_custom('user_id', $user_id); //not working: only pulling first page by user.
+               
+        echo '<p>Your Groups</p><ul class="list-default">';
 
-        $user_id = modules::run('users/get_user_id');       
-        $data['query'] = $this->mdl_pages->get_where_by_user_id($user_id); //not working: only pulling first page by user.
-        
-       
-        $this->load->view('my_pages', $data);
+foreach ($data['query']->result() as $row) {
+    $name = $row->name;
+    if ( strlen($name) > 15) {
+        $short_name = substr($row->name,0,15).'...';
+    } else {
+       $short_name = $name; 
+    }
+    echo '<li><a href="../../confessions/view/'.$row->id.'"><i class="icon icon-group"></i> '.$short_name."</a></li>";
+}
+
+echo '</ul>';
+echo anchor('pages/create', ' New Group');
         } else {
             echo '';
         }

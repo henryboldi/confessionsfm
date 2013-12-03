@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+ <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Confessions extends MX_Controller {
 
@@ -28,15 +28,16 @@ function __construct() {
 
         $config['base_url'] = '/confessions/view/'.$this->uri->segment(3).'/';
         $config['total_rows'] = $this->mdl_confessions->count_where_custom('page_id', $this->uri->segment(3));
-        $config['per_page'] = 10;
+        $config['per_page'] = 3;
         $config['uri_segment'] = 4;
 
-        $this->pagination->initialize($config); 
+        
         
         $data['query'] = $this->mdl_confessions->get_where_custom_page('page_id', $this->uri->segment(3), $config['per_page'], $this->uri->segment(4));
         $data['module'] = "confessions";
         $data['view_file'] = "display";
         $data['title'] = $name;
+        $this->pagination->initialize($config); 
         echo Modules::run('templates/general', $data);
         //$this->load->view('display', $data);
     }
@@ -114,7 +115,7 @@ function count_where_custom($col, $value) {
 
 function get_where_custom_page($col, $value, $per_page, $uri_4) {
     $this->load->model('mdl_confessions');
-    $query = $this->mdl_confessions->get_where_custom($col, $value, $per_page, $uri_4);
+    $query = $this->mdl_confessions->get_where_custom_page($col, $value, $per_page, $uri_4);
     return $query;
 }
 
