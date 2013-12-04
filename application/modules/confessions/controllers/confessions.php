@@ -42,6 +42,30 @@ function __construct() {
         //$this->load->view('display', $data);
     }
     
+    function latest_confessions() {
+        $this->load->model('mdl_confessions');
+        $this->load->module('pages');
+        $name = 'Latest Confessions';
+        
+        $this->load->library('pagination');
+
+        $config['base_url'] = '/latest_confessions/';
+        $config['total_rows'] = $this->mdl_confessions->count();
+        $config['per_page'] = 15;
+        $config['uri_segment'] = 2;
+
+        
+        
+        $data['query'] = $this->mdl_confessions->get_where_custom_all($config['per_page'], $this->uri->segment(4));
+        $data['module'] = "confessions";
+        $data['view_file'] = "latest";
+        $data['title'] = $name;
+        $this->pagination->initialize($config); 
+        echo Modules::run('templates/general', $data);
+        //$this->load->view('display', $data);
+        
+    }
+    
      function get_data_from_post() {
         $data['confession'] = $this->input->post('confession', TRUE); 
         $data['confession_date_time'] = $this->input->post('confession_date_time', TRUE);
@@ -113,9 +137,21 @@ function count_where_custom($col, $value) {
     return $query;
 }
 
+function count() {
+    $this->load->model('mdl_confessions');
+    $query = $this->mdl_confessions->count();
+    return $query;
+}
+
 function get_where_custom_page($col, $value, $per_page, $uri_4) {
     $this->load->model('mdl_confessions');
     $query = $this->mdl_confessions->get_where_custom_page($col, $value, $per_page, $uri_4);
+    return $query;
+}
+
+function get_where_custom_all($value, $per_page, $uri_4) {
+    $this->load->model('mdl_confessions');
+    $query = $this->mdl_confessions->get_where_custom_all($value, $per_page, $uri_4);
     return $query;
 }
 
