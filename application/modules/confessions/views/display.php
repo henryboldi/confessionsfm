@@ -43,7 +43,7 @@ foreach ($query->result() as $row) {
                                         <input id="2_button_'.$row->id.'" class="btn btn-pink inline" type="submit" value="Comment"></input>
                                 </li>
                                 <li>
-                                        <a href="#"><span>Share</span></a>
+                                        <!--<a href="#"><span>Share</span></a>-->
                                 </li>
                         </ul>
                 </div>
