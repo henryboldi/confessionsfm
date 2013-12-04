@@ -64,19 +64,22 @@ foreach ($query->result() as $row) {
 
     ';
     
-    echo "<script type='text/javascript'>       
+    echo "<script type='text/javascript'>      
 
 var link = document.getElementById('button_".$row->id."');
 
+var toggle_".$row->id." = false;
+
 link.onclick = function() {
     var div = document.getElementById('comments_".$row->id."');
-    div.style.display = 'none';
-    if (div.style.display !== 'none') {
+    if (toggle_".$row->id." == true) {
         div.style.display = 'none';
+        var toggle_".$row->id." = false;
         return false;
     }
     else {
         div.style.display = 'block';
+        var toggle_".$row->id." = true;
         return false;
     }
     return false;
@@ -85,14 +88,15 @@ link.onclick = function() {
 var button_2 = document.getElementById('2_button_".$row->id."');
 
 button_2.onclick = function() {
-    div.style.display = 'none';
     var div = document.getElementById('comments_".$row->id."');
-    if (div.style.display !== 'none') {
+    if (toggle_".$row->id." == true) {
         div.style.display = 'none';
+        var toggle_".$row->id." = false;
         return false;
     }
     else {
         div.style.display = 'block';
+        var toggle_".$row->id." = true;
         return false;
     }
     return false;

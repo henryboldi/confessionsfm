@@ -61,36 +61,42 @@ foreach ($query->result() as $row) {
 
     ';
     
-    echo "<script type='text/javascript'>
-  function hide()
-  {
-    var div = document.getElementById('comments_".$row->id."');
-    div.style.display = 'none';
-  }
-  window.onload=hide;        
+    echo "<script type='text/javascript'>      
 
-var button = document.getElementById('button_".$row->id."');
+var link = document.getElementById('button_".$row->id."');
 
-button.onclick = function() {
+var toggle_".$row->id." = false;
+
+link.onclick = function() {
     var div = document.getElementById('comments_".$row->id."');
-    if (div.style.display !== 'none') {
+    if (toggle_".$row->id." == true) {
         div.style.display = 'none';
+        var toggle_".$row->id." = false;
+        return false;
     }
     else {
         div.style.display = 'block';
+        var toggle_".$row->id." = true;
+        return false;
     }
+    return false;
 };  
 
 var button_2 = document.getElementById('2_button_".$row->id."');
 
 button_2.onclick = function() {
     var div = document.getElementById('comments_".$row->id."');
-    if (div.style.display !== 'none') {
+    if (toggle_".$row->id." == true) {
         div.style.display = 'none';
+        var toggle_".$row->id." = false;
+        return false;
     }
     else {
         div.style.display = 'block';
+        var toggle_".$row->id." = true;
+        return false;
     }
+    return false;
 };  
 
 </script>";
