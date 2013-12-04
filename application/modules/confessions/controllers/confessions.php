@@ -56,7 +56,7 @@ function __construct() {
 
         
         
-        $data['query'] = $this->mdl_confessions->get_where_custom_all($config['per_page'], $this->uri->segment(4));
+        $data['query'] = $this->mdl_confessions->get_where_custom_all($config['per_page'], $this->uri->segment(3));
         $data['module'] = "confessions";
         $data['view_file'] = "latest";
         $data['title'] = $name;
