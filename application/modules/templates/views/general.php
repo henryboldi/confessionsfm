@@ -42,8 +42,8 @@
                                 $this->users->login_status(); ?></p>
 				<div class="sb-sec sb-sec1">
 					<ul class="list-default">
-						<li><a href="/"><i class="icon icon-feed"></i> Confession feed</a></li>
-						<!--<li><a href="#"><i class="icon icon-group"></i> Joined Groups</a></li>-->
+						<li><a href="/"><i class="icon icon-feed"></i> Latest Confessions</a></li>
+						<li><a href="/pages/"><i class="icon icon-group"></i> Group Directory</a></li>
 					</ul>
 				</div>
 				<div class="sb-sec sb-sec2">

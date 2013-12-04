@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "pages";
+$route['default_controller'] = "confessions/latest_confessions";
 $route['404_override'] = '';
 
 
