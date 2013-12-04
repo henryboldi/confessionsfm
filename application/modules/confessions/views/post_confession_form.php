@@ -4,8 +4,8 @@ echo validation_errors('<p style="color: red;">', '</p>');
 
 echo form_open('confessions/submit');
 echo "<div class='post' id='first'>";
-echo "Confession: ";
-echo form_input('confession', $confession);
+echo "Confession: <br>";
+echo form_textarea('confession', $confession);
 
 echo "<br>";
 
