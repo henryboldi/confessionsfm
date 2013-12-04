@@ -49,10 +49,10 @@ function __construct() {
         
         $this->load->library('pagination');
 
-        $config['base_url'] = '/latest_confessions/';
+        $config['base_url'] = '/confessions/latest_confessions/';
         $config['total_rows'] = $this->mdl_confessions->count();
         $config['per_page'] = 15;
-        $config['uri_segment'] = 2;
+        $config['uri_segment'] = 3;
 
         
         
