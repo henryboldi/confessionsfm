@@ -64,10 +64,8 @@
 			<div class="sidebar sidebar2 footer">
 				<p>Confessions.fm &copy; 2013</p>
 				<p>
-					<a href="#"><span>Privacy</span></a> . 
-					<a href="#"><span>Terms</span></a> . 
-					<a href="#"><span>Cookies</span></a> . 
-					<a href="#"><span>More</span></a>
+					<a href="/statics/privacy_policy"><span>Privacy</span></a> . 
+					<a href="/statics/terms"><span>Terms</span></a>
 
 				</p>
 			</div>
