@@ -65,7 +65,7 @@ function __construct() {
 
 		$this->load->library('form_validation');
                 //checks
-                $this->form_validation->set_rules('comment', 'Comment', 'required|min_length[20]|xss_clean|max_length[300]');
+                $this->form_validation->set_rules('comment', 'Comment', 'required|min_length[5]|xss_clean|max_length[300]');
                 
                 
                 
@@ -79,7 +79,7 @@ function __construct() {
                                     $url = '/confessions/view/'.$row->page_id.'/#'.$row->id;                                    
                                 }
                                 //row 
-                                $this->session->set_flashdata('errors', 'Min 20 chars');
+                                $this->session->set_flashdata('errors', 'Minimum 5 characters');
                                 $this->session->set_flashdata('id', $row->id);
                                 redirect($url);
 		}
