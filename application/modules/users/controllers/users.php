@@ -121,7 +121,7 @@ class Users extends MX_Controller {
                     $data = $this->get_data_from_post();
                                                                   
                     $this->simpleloginsecure->create($data['user_email'], $data['user_pass']);
-                    redirect('users/login');
+                    redirect('/');
                     //need to add flash data that the account has been made or have it auto-login
                      
                     
