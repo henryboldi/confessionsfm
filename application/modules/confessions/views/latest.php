@@ -12,7 +12,7 @@ foreach ($query->result() as $row) {
 <div class="post clearfix">
         
         <div class="post-snippet">
-                <h2 class="post-title"><a href="/confessions/view/'.$row->page_id.'">'.$this->pages->page_name($row->id).'</a></h2>
+                <h2 class="post-title"><a href="/confessions/view/'.$row->page_id.'">'.$this->pages->page_name($row->page_id).'</a></h2>
                 <div class="post-body">
                         <p>
                                 '.$row->confession.'
