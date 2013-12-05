@@ -42,6 +42,12 @@ function __construct() {
         //$this->load->view('display', $data);
     }
     
+    function time_ago($time) {
+        $this->load->helper('date');
+        $unix = strtotime($time);
+        echo timespan($unix) . ' ago';
+    }
+            
     function latest_confessions() {
         $this->load->model('mdl_confessions');
         $this->load->module('pages');
