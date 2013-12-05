@@ -44,8 +44,9 @@ function __construct() {
     
     function time_ago($time) {
         $this->load->helper('date');
+        $now = time();
         $unix = strtotime($time);
-        echo timespan($unix) . ' ago';
+        echo timespan($unix, $now) . ' ago';
     }
             
     function latest_confessions() {

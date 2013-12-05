@@ -48,10 +48,7 @@ foreach ($query->result() as $row) {
                         </ul>
                 </div>
                 <span class="post-time">
-                        <a href="#"><span>';
-    $this->load->module('confessions');
-    $this->confessions->time_ago($row->confession_date_time);
-                                echo '</span></a>
+                        <a href="#"><span>'.$row->confession_date_time.'</span></a>
                 </span>';
     if ($this->session->flashdata('errors')){ //change!
         if ($this->session->flashdata('id') == $row->id) {
