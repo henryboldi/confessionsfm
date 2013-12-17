@@ -82,21 +82,15 @@ class Gasps extends MX_Controller {
                             
                             modules::run('did_user_gasp/add_user_gasp', $confession_id, $user_id);
                             //need to fix to know if it's updating
-                            if ($data['number_of_gasps'] > 1) {
+                            if ($data['number_of_gasps'] >= 1) {
                                 //already had a gasp
                                 $this->_update($confession_id, $data);
-                                redirect('confession/view/');
+                                echo 'added 1';
                                 //needs to refresh
                             } else {
                                 //new                           
                                 $this->_insert($data);                   
-                                $this->load->module('confessions');// load confessions
-                                $query = $this->confessions->get_where($data[confession_id]); // place confession id to get array
-                                foreach ($query->result() as $row) {
-                                    $url = '/confessions/view/'.$row->page_id.'/#'.$row->id;
-                                }
-                                //row 
-                                redirect($url);
+                                echo 'created 1 new';
                                 //here also
                             }
                         } else {
@@ -104,16 +98,8 @@ class Gasps extends MX_Controller {
                         }
 	
                    } else {
-                       
-                       $this->load->module('confessions');// load confessions
-                                $query = $this->confessions->get_where($data[confession_id]); // place confession id to get array
-                                foreach ($query->result() as $row) {
-                                    $url = '/confessions/view/'.$row->page_id.'/#'.$row->id;
-                                }
-                                //row 
-                                $this->session->set_flashdata('errors', 'You must be logged in to gasp!');
-                                $this->session->set_flashdata('id', $row->id);
-                                redirect($url);
+                       //pleas login
+                        echo 'please login';
                    }
     }
     

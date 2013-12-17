@@ -28,7 +28,7 @@ foreach ($query->result() as $row) {
     echo '</span>
                 </div>
                 <div class="post-foot">
-                        <ul class="inline-list">
+                        <ul class="inline-list inline-list-'.$row->id.'">
                                 <li>';
     $this->load->module('gasps');
     
