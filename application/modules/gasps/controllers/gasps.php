@@ -11,11 +11,8 @@ class Gasps extends MX_Controller {
         $data['view_file'] = "gasp_button";
         
         $data['confession_id'] = $confession_id;
-        $query = $this->get_where_custom('confession_id', $confession_id);
-        foreach($query->result() as $row) {
-            $data['number_of_gasps'] = $row->number_of_gasps;
+        $data['number_of_gasps'] = modules::run('did_user_gasp/count_gasps', $data['confession_id']);
 
-        }
             if (isset($data['number_of_gasps'])) {
                 $data['gasp_counter'] = '<span class="gasp-count">'.$data['number_of_gasps'].'</span>';
             } else {
@@ -37,14 +34,12 @@ class Gasps extends MX_Controller {
         //here
             
             $data = $this->get_data_from_db($this->input->post('confession_id', TRUE));
-       
-        if ($data['number_of_gasps'] < 1) {
-            $data['number_of_gasps'] = $this->input->post('number_of_gasps', TRUE);
-            $data['confession_id'] = $this->input->post('confession_id', TRUE);          
-        } else {
+            if (!isset($data['number_of_gasps'])) {
+                $data['number_of_gasps'] = 0;
+            }
+
             $data['number_of_gasps'] = $data['number_of_gasps'] + 1;
             $data['confession_id'] = $this->input->post('confession_id', TRUE);
-        }
         
         return $data;
     }
@@ -59,6 +54,8 @@ class Gasps extends MX_Controller {
         }
         if (isset($data)) {
         return $data;
+        } else {
+            return false;
         }
     }
     
@@ -89,7 +86,7 @@ class Gasps extends MX_Controller {
                                 //needs to refresh
                             } else {
                                 //new                           
-                                $this->_insert($data);                   
+                                $this->_insert($confession_id, $data);                   
                                 echo 'created 1 new';
                                 //here also
                             }

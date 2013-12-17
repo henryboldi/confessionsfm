@@ -38,6 +38,13 @@ function did_user_gasp($gasp_id, $user_id){
     }
 }
 
+function count_gasps($gasp_id){
+    $id = intval($gasp_id);
+    $query = $this->count_where('gasp_id', $id);
+
+    return $query;
+}
+
     function get_data_from_db($gasp_id, $user_id) {
         $query = $this->get_where_gasp_user($gasp_id, $user_id);
         foreach($query->result() as $row) {
@@ -48,6 +55,8 @@ function did_user_gasp($gasp_id, $user_id){
         return $data;
         }
     }
+
+
 
 function get($order_by){
     $this->load->model('mdl_did_user_gasp');
