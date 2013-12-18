@@ -45,7 +45,7 @@ foreach ($query->result() as $row) {
                         </ul>
                 </div>
                 <span class="post-time">
-                        <a href="#"><span>'.$row->confession_date_time.'</span></a>
+                        <a href="#"><span data-livestamp="'.date(DATE_ISO8601, strtotime($row->confession_date_time)).'"></span></a>
                 </span>';
     if ($this->session->flashdata('errors')){ //change!
         if ($this->session->flashdata('id') == $row->id) {
