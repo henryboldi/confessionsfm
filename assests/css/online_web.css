@@ -229,6 +229,10 @@ body {
         
 }
 
+.comments a {
+	color: rgb(113, 112, 112);
+}
+
 .content-area .ca-inner {
 	padding: 29px 36px 10px;
         width: 549px;
@@ -260,7 +264,7 @@ body {
 
 .content-area .post .post-snippet .post-title {
   font-size: 18px;
-  font-weight: normal;
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 10px;
 }
