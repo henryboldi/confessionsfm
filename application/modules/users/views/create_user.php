@@ -20,5 +20,5 @@ echo form_submit('submit', 'Submit');
 
 echo form_close();
 
-echo "</br><div class='havean'>Already have an account? ".anchor('users/login', 'Login').'</div>';
+echo "</br><div class='havean'>Already have an account? ".anchor('users/login', 'Login', 'class="red"').'</div>';
 echo "</div>";

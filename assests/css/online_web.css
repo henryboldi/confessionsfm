@@ -18,6 +18,11 @@ body {
     font-family: sans-serif;
 }
 
+.red {
+	color: rgb(199, 13, 88);
+	font-weight: bold;
+}
+
 .main p{
         font-family: sans-serif;
 	font-size: 16px;
