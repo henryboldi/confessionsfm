@@ -39,13 +39,12 @@ class Users extends MX_Controller {
             //$this->data['user_email'] = $this->session->userdata('user_email');
             //print_r($this->session->all_userdata());
             $user_data = $this->session->all_userdata(); //i know there is a better way of doing this.
+            echo '<p class="sb-signin">';
             echo 'You are logged in as '.$user_data['user_email'].' ';
-            echo anchor('users/logout', 'Logout');            
+            echo anchor('users/logout', 'Logout').'</p>';            
         } else {
             //NOT logged in
             //echo "You are not logged in. ";
-            echo anchor('users/login', 'Login').' or ';
-            echo anchor('users/create', 'Sign Up');
         }
     }
     

@@ -38,8 +38,8 @@
 		
 		<div class="center clearfix">
 			<div class="sidebar sidebar1">
-				<p class="sb-signin"><?php 
-                                $this->users->login_status(); ?></p>
+				<?php 
+                                $this->users->login_status(); ?>
 				<div class="sb-sec sb-sec1">
 					<ul class="list-default">
 						<li><a href="/"><i class="icon icon-feed"></i> Latest Confessions</a></li>
