@@ -6,7 +6,6 @@
 
 <link type="text/css" rel="stylesheet" href="<?php echo base_url().'assests/css/style.css'; ?>" />
 <link type="text/css" rel="stylesheet" href="<?php echo base_url().'assests/css/online_web.css'; ?>" />
-
 </head>
 
 <body class="online_web_page">

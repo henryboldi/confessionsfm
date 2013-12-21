@@ -49,6 +49,7 @@ class Users extends MX_Controller {
     }
     
     function login_logout() {
+        $this->load->library('SimpleLoginSecure');
         if($this->session->userdata('logged_in')) {
             echo '<li>'.anchor('users/logout', 'Logout').'</li>';            
         } else {

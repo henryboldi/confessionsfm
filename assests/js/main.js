@@ -1,3 +1,5 @@
+jQuery.fn.exists = function(){return this.length>0;}
+
 $('form.gasp_btn').each(function() {
 	var form_id = this.id;
 	$('form#' + form_id).on('submit', function() {
@@ -19,8 +21,12 @@ $('form.gasp_btn').each(function() {
 			data: data,
 			success: function(response) {
 				console.log(response);
-				$('.inline-list-' + form_id).append( '<li>' + response + '</li>' );
+				 if($('.inline-list-' + form_id + ' li .response').exists())
+					$('.inline-list-' + form_id + ' li .response').html(response);
+				else
+					$('.inline-list-' + form_id).append( '<li class="response">' + response + '</li>' );
 			}
+			
 
 		});
 
